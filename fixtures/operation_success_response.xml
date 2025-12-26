@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <control>
+    <status>success</status>
+    <controlid>CTRL-1</controlid>
+  </control>
+  <operation>
+    <result>
+      <status>success</status>
+      <controlid>CTRL-1</controlid>
+      <data>
+        <key>KEY-1</key>
+        <recordno>1001</recordno>
+      </data>
+    </result>
+  </operation>
+</response>

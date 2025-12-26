@@ -1,0 +1,169 @@
+Metadata-Version: 2.4
+Name: intacct-sdk
+Version: 0.1.0
+Summary: Sage Intacct XML API SDK
+Project-URL: Changelog, CHANGELOG.md
+Project-URL: Documentation, Docs/usage.md
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Sage Intacct XML API SDK
+
+Python SDK for the Sage Intacct XML API with session authentication, CRUD/readByQuery helpers,
+and generated operation helpers. It is designed to be used locally or installed in editable
+mode during development.
+
+## Install
+
+```bash
+pip install -e .
+```
+
+## Configure
+
+Set environment variables (required unless noted):
+
+- `INTACCT_ENDPOINT_URL`
+- `INTACCT_SENDER_ID`
+- `INTACCT_SENDER_PASSWORD`
+- `INTACCT_COMPANY_ID`
+- `INTACCT_USER_ID`
+- `INTACCT_USER_PASSWORD`
+- `INTACCT_CLIENT_ID` (optional)
+- `INTACCT_ENTITY_ID` (optional)
+
+## Quickstart: list customers
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig
+
+config = IntacctConfig.from_env()
+client = IntacctClient(config)
+session = client.get_api_session()
+api = client.session_client(session)
+
+results = api.objects.customer.read_by_query(
+    fields=["RECORDNO", "CUSTOMERID", "NAME"],
+    page_size=100,
+)
+
+for record in results.records:
+    print(record.fields)
+```
+
+## Read by query with paging
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig
+
+config = IntacctConfig.from_env()
+client = IntacctClient(config)
+api = client.session_client(client.get_api_session())
+
+page_size = 100
+offset = 0
+
+while True:
+    page = api.objects.customer.read_by_query(
+        fields=["RECORDNO", "CUSTOMERID", "NAME"],
+        page_size=page_size,
+        offset=offset,
+    )
+    for record in page.records:
+        print(record.fields)
+
+    if not page.num_remaining:
+        break
+    offset += page_size
+```
+
+## CRUD via object services
+
+`api.objects.<object>` gives an object-specific helper for common operations.
+Object names are uppercased automatically.
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig
+
+config = IntacctConfig.from_env()
+client = IntacctClient(config)
+api = client.session_client(client.get_api_session())
+
+# Read by keys
+vendor = api.objects.vendor.read(keys=["VEND123"], fields=["VENDORID", "NAME"])
+print(vendor.fields)
+
+# Create/update/delete (required fields vary by object)
+created = api.objects.department.create({"DEPARTMENTID": "ENG", "NAME": "Engineering"})
+updated = api.objects.department.update({"DEPARTMENTID": "ENG", "NAME": "Engineering - HQ"})
+api.objects.department.delete("DEPARTMENTID", "ENG")
+```
+
+## Generic operations and payloads
+
+For non-CRUD operations, use `api.operations.<operation>()` or `api.execute()`.
+Payloads are tuples of `(tag, value[, attrs])` and can be nested.
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig
+
+config = IntacctConfig.from_env()
+client = IntacctClient(config)
+api = client.session_client(client.get_api_session())
+
+result = api.operations.update_apaccountlabel(
+    payload=[("glaccountno", "6090", None)],
+    operation_attrs={"accountlabel": "Travel Expenses"},
+)
+print(result.fields)
+
+# Equivalent generic call
+result = api.execute(
+    "update_apaccountlabel",
+    payload=[("glaccountno", "6090", None)],
+    operation_attrs={"accountlabel": "Travel Expenses"},
+)
+```
+
+## Module helpers
+
+Some modules are exposed as dedicated helpers for convenience.
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig
+
+config = IntacctConfig.from_env()
+client = IntacctClient(config)
+api = client.session_client(client.get_api_session())
+
+ar = api.ar
+result = ar.update_araccountlabel(
+    payload=[("glaccountno", "6090", None)],
+    operation_attrs={"accountlabel": "Travel Expenses"},
+)
+print(result.fields)
+```
+
+## Error handling
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig, IntacctError, TransportError
+
+try:
+    config = IntacctConfig.from_env()
+    client = IntacctClient(config)
+    session = client.get_api_session()
+    api = client.session_client(session)
+    api.objects.customer.read_by_query(fields=["RECORDNO"], page_size=1)
+except IntacctError as exc:
+    print(f"Intacct API error: {exc}")
+except TransportError as exc:
+    print(f"Transport error: {exc}")
+```
+
+## More docs and examples
+
+- `Docs/usage.md` has a concise usage reference.
+- `examples/list_customers.py` is a runnable script.

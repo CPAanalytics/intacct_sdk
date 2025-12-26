@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <control>
+    <status>success</status>
+    <controlid>list-customers</controlid>
+  </control>
+  <operation>
+    <result>
+      <status>success</status>
+      <controlid>list-customers</controlid>
+      <data>
+        <resultId>RESULT-1</resultId>
+        <numremaining>0</numremaining>
+        <totalcount>2</totalcount>
+        <CUSTOMER>
+          <RECORDNO>1001</RECORDNO>
+          <CUSTOMERID>CUST-1</CUSTOMERID>
+          <NAME>Alpha Co</NAME>
+        </CUSTOMER>
+        <CUSTOMER>
+          <RECORDNO>1002</RECORDNO>
+          <CUSTOMERID>CUST-2</CUSTOMERID>
+          <NAME>Beta Co</NAME>
+        </CUSTOMER>
+      </data>
+    </result>
+  </operation>
+</response>

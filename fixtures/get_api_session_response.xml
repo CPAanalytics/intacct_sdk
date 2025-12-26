@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <control>
+    <status>success</status>
+    <controlid>auth</controlid>
+  </control>
+  <operation>
+    <authentication>
+      <status>success</status>
+      <userid>user</userid>
+      <companyid>company</companyid>
+    </authentication>
+    <result>
+      <status>success</status>
+      <controlid>get-session</controlid>
+      <data>
+        <api>
+          <sessionid>SESSION123</sessionid>
+          <endpoint>https://sandbox.intacct.com/ia/xml/xmlgw.phtml</endpoint>
+        </api>
+      </data>
+    </result>
+  </operation>
+</response>
