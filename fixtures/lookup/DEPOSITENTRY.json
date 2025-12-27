@@ -1,0 +1,525 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDKEY",
+      "iscustom": "false",
+      "label": "Parent key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Record type",
+      "id": "RECORDTYPE",
+      "iscustom": "false",
+      "label": "Record type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "Account no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACCOUNTLABEL",
+      "iscustom": "false",
+      "label": "Account label",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ACCOUNTLABELKEY",
+      "iscustom": "false",
+      "label": "Account label key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "AMOUNT",
+      "iscustom": "false",
+      "label": "Base amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_AMOUNT",
+      "iscustom": "false",
+      "label": "Transaction amount",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DEPT#",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DEPTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LOCATION#",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "EXCH_RATE_DATE",
+      "iscustom": "false",
+      "label": "Exchange rate date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EXCH_RATE_TYPE_ID",
+      "iscustom": "false",
+      "label": "Exchange rate type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXCHANGE_RATE",
+      "iscustom": "false",
+      "label": "Exchange rate",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LINEITEM",
+      "iscustom": "false",
+      "label": "Line item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "T",
+        "F"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Transaction currency",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BASECURR",
+      "iscustom": "false",
+      "label": "Base currency",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "BASELOCATION",
+      "iscustom": "false",
+      "label": "Base location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTOMERDIMKEY",
+      "iscustom": "false",
+      "label": "Customerdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "VENDORDIMKEY",
+      "iscustom": "false",
+      "label": "Vendordimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "VENDORID",
+      "iscustom": "false",
+      "label": "Vendor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "VENDORNAME",
+      "iscustom": "false",
+      "label": "Vendor name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPLOYEEDIMKEY",
+      "iscustom": "false",
+      "label": "Employeedimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEENAME",
+      "iscustom": "false",
+      "label": "Employee name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ITEMDIMKEY",
+      "iscustom": "false",
+      "label": "Itemdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTDIMKEY",
+      "iscustom": "false",
+      "label": "Projectdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CLASSDIMKEY",
+      "iscustom": "false",
+      "label": "Classdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSID",
+      "iscustom": "false",
+      "label": "Class",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSNAME",
+      "iscustom": "false",
+      "label": "Class name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "DEPOSITENTRY",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "GLACCOUNT",
+      "objectpath": "GLACCOUNT",
+      "relatedby": "ACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ARACCOUNTLABEL",
+      "objectpath": "ACCOUNTLABEL",
+      "relatedby": "ACCOUNTLABEL",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPARTMENT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATION",
+      "objectpath": "LOCATION",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

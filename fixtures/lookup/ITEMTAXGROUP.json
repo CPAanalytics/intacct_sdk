@@ -1,0 +1,140 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Group type",
+      "id": "GROUPTYPE",
+      "iscustom": "false",
+      "label": "Group type",
+      "readonly": "true",
+      "required": "true",
+      "valid_values": [
+        "Contact",
+        "Item",
+        "Account Label"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "System generated field",
+      "id": "SYSGENERATED",
+      "iscustom": "false",
+      "label": "System generated field",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ITEMTAXGROUP",
+  "relationships": [
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

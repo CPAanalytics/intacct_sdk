@@ -1,0 +1,132 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ALLOCITEMPRCLSTKEY",
+      "iscustom": "false",
+      "label": "Item price list key",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Start date",
+      "id": "STARTDATE",
+      "iscustom": "false",
+      "label": "Start date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Flat amount",
+      "id": "VALUE",
+      "iscustom": "false",
+      "label": "Flat amount/percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "+",
+      "id": "MARKUP",
+      "iscustom": "false",
+      "label": "+",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "-",
+      "id": "MARKDOWN",
+      "iscustom": "false",
+      "label": "-",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Upper limit",
+      "id": "BANDUP",
+      "iscustom": "false",
+      "label": "Upper limit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Lower limit",
+      "id": "BANDDOWN",
+      "iscustom": "false",
+      "label": "Lower limit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change notes",
+      "id": "MEMO",
+      "iscustom": "false",
+      "label": "Notes",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTMEAITEMPRICELISTENTRY",
+  "relationships": []
+}

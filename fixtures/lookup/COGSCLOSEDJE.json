@@ -1,0 +1,270 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document name",
+      "id": "DOCUMENTNAME",
+      "iscustom": "false",
+      "label": "Document name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "WAREHOUSEID",
+      "id": "WAREHOUSEID",
+      "iscustom": "false",
+      "label": "Warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "WAREHOUSENAME",
+      "id": "WAREHOUSENAME",
+      "iscustom": "false",
+      "label": "Warehouse name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "LOCATIONNAME",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ASOFDATE",
+      "iscustom": "false",
+      "label": "As of date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "CURRENTCOST",
+      "iscustom": "false",
+      "label": "CURRENTCOST",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "CURRENTGLCOGS",
+      "iscustom": "false",
+      "label": "CURRENTGLCOGS",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "DIFFERENCE",
+      "iscustom": "false",
+      "label": "Difference",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Amount",
+      "id": "AMOUNT",
+      "iscustom": "false",
+      "label": "Amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Currency",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Txn amount",
+      "id": "TRX_AMOUNT",
+      "iscustom": "false",
+      "label": "Txn amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Cost adj needed",
+      "id": "NEEDSADJUSTMENT",
+      "iscustom": "false",
+      "label": "Adjustment needed",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Posting ID",
+      "id": "POSTINGID",
+      "iscustom": "false",
+      "label": "Posting ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Manual adjustment",
+      "id": "MANUAL_ADJUSTMENT",
+      "iscustom": "false",
+      "label": "Manually adjusted",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "DOCHDRID",
+      "id": "DOCHDRID",
+      "iscustom": "false",
+      "label": "Document ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Line no.",
+      "id": "LINENO",
+      "iscustom": "false",
+      "label": "Line no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "DeGLresolve_GLentrykey",
+      "id": "DEGLRESOLVE_GLENTRYKEY",
+      "iscustom": "false",
+      "label": "deglresolve_glentrykey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "deglresolve_cogsposting",
+      "id": "DEGLRESOLVE_COGSPOSTING",
+      "iscustom": "false",
+      "label": "deglresolve_cogsposting",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "deglresolve_recordno",
+      "id": "DEGLRESOLVE_RECORDNO",
+      "iscustom": "false",
+      "label": "deglresolve_recordno",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "COGSCLOSEDJE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "ITEMID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATION",
+      "objectpath": "LOCATION",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "WAREHOUSE",
+      "objectpath": "WAREHOUSE",
+      "relatedby": "WAREHOUSE.LOCATION_NO",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

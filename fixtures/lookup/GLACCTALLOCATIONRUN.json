@@ -1,0 +1,330 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "As of date",
+      "id": "ASOFDATE",
+      "iscustom": "false",
+      "label": "As of date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "GL posting date",
+      "id": "GLPOSTINGDATE",
+      "iscustom": "false",
+      "label": "GL posting date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Your email address",
+      "id": "EMAIL",
+      "iscustom": "false",
+      "label": "Your email address",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "NAMEORID",
+      "iscustom": "false",
+      "label": "Allocation group or ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account allocation ID",
+      "id": "GLACCTALLOCATION",
+      "iscustom": "false",
+      "label": "Account allocation ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Allocation type",
+      "id": "GLACCTALLOCATIONTYPE",
+      "iscustom": "false",
+      "label": "Allocation type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Dynamic Allocation",
+        "Restriction Release"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Allocation group ID",
+      "id": "GLACCTALLOCATIONGRP",
+      "iscustom": "false",
+      "label": "Allocation group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PARENTRUNKEY",
+      "iscustom": "false",
+      "label": "Parent allocation run record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Status",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Pass",
+        "Fail",
+        "In progress",
+        "In queue",
+        "Partially pass"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Allocation run type",
+      "id": "ALLOCRUNTYPE",
+      "iscustom": "false",
+      "label": "Allocation run type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Regular",
+        "Parent",
+        "Child"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Status details",
+      "id": "MESSAGE",
+      "iscustom": "false",
+      "label": "Status details",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Recurring allocation record number",
+      "id": "RECURRECORDNO",
+      "iscustom": "false",
+      "label": "Recurring allocation record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Job ID",
+      "id": "JOBID",
+      "iscustom": "false",
+      "label": "Job ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPLOYEEDIMKEY",
+      "iscustom": "false",
+      "label": "Employeedimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEENAME",
+      "iscustom": "false",
+      "label": "Employee name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTDIMKEY",
+      "iscustom": "false",
+      "label": "Projectdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GLACCTALLOCATIONRUN",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "GLACCTALLOCATION",
+      "objectpath": "GLACCTALLOCATION",
+      "relatedby": "RECORDNO",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

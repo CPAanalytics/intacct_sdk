@@ -1,0 +1,207 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Reference type",
+      "id": "REFTYPE",
+      "iscustom": "false",
+      "label": "Reference type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Customer",
+        "Vendor",
+        "Substitute",
+        "Upgrade",
+        "Downgrade",
+        "Complement"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMIDREST",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Vendor key",
+      "id": "VENDORKEY",
+      "iscustom": "false",
+      "label": "Vendor key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Vendor ID",
+      "id": "VENDORID",
+      "iscustom": "false",
+      "label": "Vendor ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Vendor ID",
+      "id": "VENDORIDREST",
+      "iscustom": "false",
+      "label": "Vendor ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Customer key",
+      "id": "CUSTOMERKEY",
+      "iscustom": "false",
+      "label": "Customer key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ID",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ID",
+      "id": "CUSTOMERIDREST",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Cross-reference item ID",
+      "id": "ITEMALIASID",
+      "iscustom": "false",
+      "label": "Cross-reference item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Cross-reference item description",
+      "id": "ITEMALIASDESC",
+      "iscustom": "false",
+      "label": "Cross-reference item description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Unit",
+      "id": "UNIT",
+      "iscustom": "false",
+      "label": "Unit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM key",
+      "id": "UNITKEY",
+      "iscustom": "false",
+      "label": "UOM key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Reference type",
+      "id": "REFTYPECONTEXT",
+      "iscustom": "false",
+      "label": "Reference type context",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Internal",
+        "External"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Alternate item ID",
+      "id": "ALTERNATEITEMID",
+      "iscustom": "false",
+      "label": "Alternate item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Alternate item ID",
+      "id": "ALTERNATEITEMIDREST",
+      "iscustom": "false",
+      "label": "Alternate item ID",
+      "readonly": "false",
+      "required": "false"
+    }
+  ],
+  "object_name": "ITEMCROSSREF",
+  "relationships": []
+}

@@ -1,0 +1,325 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FINANCIALENTITY",
+      "iscustom": "false",
+      "label": "Bank account",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "BANKACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Bank account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "Date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPOSITID",
+      "iscustom": "false",
+      "label": "ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RECORDTYPE",
+      "iscustom": "false",
+      "label": "Record type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BASECURR",
+      "iscustom": "false",
+      "label": "Base currency",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Transaction currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALENTERED",
+      "iscustom": "false",
+      "label": "Total base amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_TOTALENTERED",
+      "iscustom": "false",
+      "label": "Total transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "BATCHDATE",
+      "iscustom": "false",
+      "label": "Summary date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BANKNAME",
+      "iscustom": "false",
+      "label": "Bank name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "REVERSALKEY",
+      "iscustom": "false",
+      "label": "Reversal key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REVERSALDATE",
+      "iscustom": "false",
+      "label": "Reversal date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "REVERSEDKEY",
+      "iscustom": "false",
+      "label": "Reversed key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REVERSEDDATE",
+      "iscustom": "false",
+      "label": "Transaction date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "V",
+        "A"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RAWSTATE",
+      "iscustom": "false",
+      "label": "Raw state",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLEARED",
+      "iscustom": "false",
+      "label": "Cleared",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "T",
+        "F",
+        "M"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "AUWHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PRBATCHKEY",
+      "iscustom": "false",
+      "label": "PRBatch key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SUPDOCID",
+      "iscustom": "false",
+      "label": "Attachment",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "DEPOSIT",
+  "relationships": [
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

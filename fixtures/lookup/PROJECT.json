@@ -1,0 +1,1414 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Project currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTCATEGORY",
+      "iscustom": "false",
+      "label": "Project category",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Contract",
+        "Capitalized",
+        "Internal Non-billable",
+        "Internal Billable"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTSTATUSKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTSTATUS",
+      "iscustom": "false",
+      "label": "Project status",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PREVENTTIMESHEET",
+      "iscustom": "false",
+      "label": "Prevent timesheet entry",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PREVENTEXPENSE",
+      "iscustom": "false",
+      "label": "Prevent expense entry",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PREVENTAPPO",
+      "iscustom": "false",
+      "label": "Prevent AP/PO entry",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PREVENTGENINVOICE",
+      "iscustom": "false",
+      "label": "Prevent generate invoices",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "BEGINDATE",
+      "iscustom": "false",
+      "label": "Begin date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ENDDATE",
+      "iscustom": "false",
+      "label": "End date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BUDGETAMOUNT",
+      "iscustom": "false",
+      "label": "Projected billing amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "CONTRACTAMOUNT",
+      "iscustom": "false",
+      "label": "Contract amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "ACTUALAMOUNT",
+      "iscustom": "false",
+      "label": "Actual amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BUDGETQTY",
+      "iscustom": "false",
+      "label": "Projected duration (hours)",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "ESTQTY",
+      "iscustom": "false",
+      "label": "Estimated duration",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "ACTUALQTY",
+      "iscustom": "false",
+      "label": "Actual duration",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "APPROVEDQTY",
+      "iscustom": "false",
+      "label": "Approved duration",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "REMAININGQTY",
+      "iscustom": "false",
+      "label": "Remaining duration",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Calculated percent completed",
+      "id": "PERCENTCOMPLETE",
+      "iscustom": "false",
+      "label": "Calculated percent completed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Observed percent completed",
+      "id": "OBSPERCENTCOMPLETE",
+      "iscustom": "false",
+      "label": "Observed percent completed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BILLINGTYPE",
+      "iscustom": "false",
+      "label": "Billing type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Time & Material",
+        "Fixed Fee",
+        "Fixed Fee & Expenses"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SONUMBER",
+      "iscustom": "false",
+      "label": "Sales order number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PONUMBER",
+      "iscustom": "false",
+      "label": "Purchase order number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "POAMOUNT",
+      "iscustom": "false",
+      "label": "Purchase order amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PQNUMBER",
+      "iscustom": "false",
+      "label": "Purchase quote number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SFDCKEY",
+      "iscustom": "false",
+      "label": "Salesforce key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "QARROWKEY",
+      "iscustom": "false",
+      "label": "Quick arrow key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "OAKEY",
+      "iscustom": "false",
+      "label": "Open air key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PARENTKEY",
+      "iscustom": "false",
+      "label": "Parent project key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PARENTID",
+      "iscustom": "false",
+      "label": "Parent project ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PARENTNAME",
+      "iscustom": "false",
+      "label": "Parent project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INVOICEWITHPARENT",
+      "iscustom": "false",
+      "label": "Invoice with parent",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTOMERKEY",
+      "iscustom": "false",
+      "label": "Customer key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "SALESCONTACTKEY",
+      "iscustom": "false",
+      "label": "Sales contact key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SALESCONTACTID",
+      "iscustom": "false",
+      "label": "Sales contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SALESCONTACTNAME",
+      "iscustom": "false",
+      "label": "Sales contact name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTTYPEKEY",
+      "iscustom": "false",
+      "label": "Project type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTTYPE",
+      "iscustom": "false",
+      "label": "Project type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MANAGERKEY",
+      "iscustom": "false",
+      "label": "Project manager key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MANAGERID",
+      "iscustom": "false",
+      "label": "Project manager ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MANAGERCONTACTNAME",
+      "iscustom": "false",
+      "label": "Project manager name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTDEPTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTLOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name to be used to identify the contact in lists",
+      "id": "CONTACTINFO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "Primary contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name to be used to identify the contact in lists",
+      "id": "SHIPTO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "Ship-to contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name to be used to identify the contact in lists",
+      "id": "BILLTO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "Bill-to contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TERMSKEY",
+      "iscustom": "false",
+      "label": "Term key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TERMNAME",
+      "iscustom": "false",
+      "label": "Term",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DOCNUMBER",
+      "iscustom": "false",
+      "label": "Reference number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTUSERKEY",
+      "iscustom": "false",
+      "label": "External user customer key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTUSERID",
+      "iscustom": "false",
+      "label": "External user customer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "No description specified",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BUDGETEDCOST",
+      "iscustom": "false",
+      "label": "Projected cost",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSID",
+      "iscustom": "false",
+      "label": "Class ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSNAME",
+      "iscustom": "false",
+      "label": "Class name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CLASSKEY",
+      "iscustom": "false",
+      "label": "Class key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "USERRESTRICTIONS",
+      "iscustom": "false",
+      "label": "Timesheet and expense user restrictions",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "System Default",
+        "Any User",
+        "Project Users",
+        "Project Task Users"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "BILLABLEEXPDEFAULT",
+      "iscustom": "false",
+      "label": "Default employee expenses to billable",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "BILLABLEAPPODEFAULT",
+      "iscustom": "false",
+      "label": "Default AP and PO entries to billable",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL budget ID",
+      "id": "BUDGETID",
+      "iscustom": "false",
+      "label": "GL budget ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Budget key",
+      "id": "BUDGETKEY",
+      "iscustom": "false",
+      "label": "Budget key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BILLINGRATE",
+      "iscustom": "false",
+      "label": "Default labor rate or fee percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BILLINGPRICING",
+      "iscustom": "false",
+      "label": "Labor pricing option",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Billing rate",
+        "Cost plus fee"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXPENSERATE",
+      "iscustom": "false",
+      "label": "Default expense rate or fee percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXPENSEPRICING",
+      "iscustom": "false",
+      "label": "Expense pricing option",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Billing rate",
+        "Cost plus fee"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "POAPRATE",
+      "iscustom": "false",
+      "label": "Default AP and PO rate or fee percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "POAPPRICING",
+      "iscustom": "false",
+      "label": "AP and PO pricing option",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Cost plus fee"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CONTACTKEY",
+      "iscustom": "false",
+      "label": "Contact record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "SHIPTOKEY",
+      "iscustom": "false",
+      "label": "Ship-to contact record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "BILLTOKEY",
+      "iscustom": "false",
+      "label": "Bill-to contact record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "INVOICEMESSAGE",
+      "iscustom": "false",
+      "label": "Invoice message",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "INVOICECURRENCY",
+      "iscustom": "false",
+      "label": "Invoice currency override",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BILLINGOVERMAX",
+      "iscustom": "false",
+      "label": "If actual billings exceed projected billing amount",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Do nothing",
+        "Issue a warning message",
+        "Prevent billing"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "EXCLUDEEXPENSES",
+      "iscustom": "false",
+      "label": "Exclude expenses",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CONTRACTKEY",
+      "iscustom": "false",
+      "label": "Contract key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Attachment",
+      "id": "SUPDOCID",
+      "iscustom": "false",
+      "label": "Attachment",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "SUPDOCKEY",
+      "iscustom": "false",
+      "label": "Attachment key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ROOTPARENTKEY",
+      "iscustom": "false",
+      "label": "Root project key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ROOTPARENTID",
+      "iscustom": "false",
+      "label": "Root project ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ROOTPARENTNAME",
+      "iscustom": "false",
+      "label": "Root project name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CFDA",
+      "iscustom": "false",
+      "label": "ALN",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FUNDEDNAME",
+      "iscustom": "false",
+      "label": "Funded name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "AGENCY",
+      "iscustom": "false",
+      "label": "Agency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PAYER",
+      "iscustom": "false",
+      "label": "Payer",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Federal",
+        "Third-party"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FUNDINGOTHERID",
+      "iscustom": "false",
+      "label": "Other ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ASSISTANCETYPE",
+      "iscustom": "false",
+      "label": "Assistance provided",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Cash",
+        "Non-Cash"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REVRESTRICTION",
+      "iscustom": "false",
+      "label": "Revenue restriction",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Purpose",
+        "Time",
+        "NA"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RESTRICTIONEXPIRY",
+      "iscustom": "false",
+      "label": "Restriction expiration years",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date",
+      "id": "RESTRICTIONEXPIRATIONDATE",
+      "iscustom": "false",
+      "label": "First restriction expiration date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "TIMESATISFACTIONSCHEDULED",
+      "iscustom": "false",
+      "label": "Time satisfaction scheduled",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ROLLUP_PROJ_KEY",
+      "iscustom": "false",
+      "label": "Roll up WIP project key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ROLLUPPROJECTID",
+      "iscustom": "false",
+      "label": "Roll up project ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ROLLUPPROJECTNAME",
+      "iscustom": "false",
+      "label": "Roll up project name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "WIPEXCLUDE",
+      "iscustom": "false",
+      "label": "Exclude from WIP schedule",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MELOCATIONKEY",
+      "iscustom": "false",
+      "label": "Multi-entity location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MELOCATIONID",
+      "iscustom": "false",
+      "label": "Multi-entity location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MELOCATIONNAME",
+      "iscustom": "false",
+      "label": "Multi-entity location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SCOPE",
+      "iscustom": "false",
+      "label": "Scope",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "INCLUSIONS",
+      "iscustom": "false",
+      "label": "Inclusions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXCLUSIONS",
+      "iscustom": "false",
+      "label": "Exclusions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TERMS",
+      "iscustom": "false",
+      "label": "Terms",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "SCHEDULESTARTDATE",
+      "iscustom": "false",
+      "label": "Scheduled start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ACTUALSTARTDATE",
+      "iscustom": "false",
+      "label": "Actual start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "SCHEDULEDCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Scheduled completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "REVISEDCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Revised completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "SUBSTANTIALCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Substantial completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ACTUALCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Actual completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "NOTICETOPROCEED",
+      "iscustom": "false",
+      "label": "Notice to proceed",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "RESPONSEDUE",
+      "iscustom": "false",
+      "label": "Response due",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "EXECUTEDON",
+      "iscustom": "false",
+      "label": "Executed on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SCHEDULEIMPACT",
+      "iscustom": "false",
+      "label": "Schedule impact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Purchasing tax schedule",
+      "id": "POTAXSCHEDULEID",
+      "iscustom": "false",
+      "label": "Purchasing tax schedule",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "This is the WC policy number related to a project",
+      "id": "POLICY_",
+      "iscustom": "true",
+      "label": "Policy #",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PROJECT",
+  "relationships": [
+    {
+      "label": "Parent project",
+      "objectname": "PROJECT",
+      "objectpath": "PARENT",
+      "relatedby": "PARENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Ship-to contact",
+      "objectname": "CONTACT",
+      "objectpath": "SHIPTOCONTACT",
+      "relatedby": "SHIPTO.CONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Bill-to contact",
+      "objectname": "CONTACT",
+      "objectpath": "BILLTOCONTACT",
+      "relatedby": "BILLTO.CONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Primary contact",
+      "objectname": "CONTACT",
+      "objectpath": "PRIMARYCONTACT",
+      "relatedby": "CONTACTINFO.CONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Sales contact",
+      "objectname": "EMPLOYEE",
+      "objectpath": "SALESCONTACT",
+      "relatedby": "SALESCONTACTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ARTERM",
+      "objectpath": "TERM",
+      "relatedby": "TERMNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Manager",
+      "objectname": "EMPLOYEE",
+      "objectpath": "MANAGER",
+      "relatedby": "MANAGERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Customer",
+      "objectname": "CUSTOMER",
+      "objectpath": "CUSTOMER",
+      "relatedby": "CUSTOMERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "External user customer",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMST",
+      "relatedby": "CUSTUSERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Root project",
+      "objectname": "PROJECT",
+      "objectpath": "ROOTPARENT",
+      "relatedby": "ROOTPARENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Roll up to WIP project",
+      "objectname": "PROJECT",
+      "objectpath": "ROLLUPPROJECT",
+      "relatedby": "ROLLUPPROJECTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

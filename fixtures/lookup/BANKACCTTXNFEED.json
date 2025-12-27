@@ -1,0 +1,286 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "FINANCIALENTITY",
+      "iscustom": "false",
+      "label": "Bank account ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FINANCIALENTITYNAME",
+      "iscustom": "false",
+      "label": "Bank account name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FINANCIALACCOUNTTYPE",
+      "iscustom": "false",
+      "label": "Account type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Bank",
+        "Credit card"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date added",
+      "id": "FEEDDATE",
+      "iscustom": "false",
+      "label": "Date added",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Feed type",
+      "id": "FEEDTYPE",
+      "iscustom": "false",
+      "label": "Feed type",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "inprogress",
+        "processed",
+        "failed"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "File type",
+      "id": "FILENAME",
+      "iscustom": "false",
+      "label": "File name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Recon number",
+      "id": "BANKACCTRECONKEY",
+      "iscustom": "false",
+      "label": "Account recon number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Attribute map number",
+      "id": "ATTRMAPNO",
+      "iscustom": "false",
+      "label": "Attribute map number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Error ID",
+      "id": "ERRORID",
+      "iscustom": "false",
+      "label": "Error ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Error message",
+      "id": "ERRORMSG",
+      "iscustom": "false",
+      "label": "Error message",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ENTITYKEY",
+      "iscustom": "false",
+      "label": "Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Import ID",
+      "id": "IMPORTID",
+      "iscustom": "false",
+      "label": "Import ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "IMPORTEDFILESTATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "INITIATED",
+        "LOADING",
+        "COMPLETED",
+        "PARTIALLYDELETED",
+        "DELETED",
+        "CANCELED"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EXPECTEDTRANSACTIONS",
+      "iscustom": "false",
+      "label": "Expected transactions",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DOWNLOADEDTRANACTIONS",
+      "iscustom": "false",
+      "label": "No. of transactions",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PARENTFEEDKEY",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Added by",
+      "id": "ADDEDBY",
+      "iscustom": "false",
+      "label": "Added by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "BANKACCTTXNFEED",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "FINACCTTXNATTRMAP",
+      "objectpath": "FINACCTTXNATTRMAP",
+      "relatedby": "ATTRMAPNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "BANKACCTRECON",
+      "objectpath": "BANKACCTRECON",
+      "relatedby": "BANKACCTRECONKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

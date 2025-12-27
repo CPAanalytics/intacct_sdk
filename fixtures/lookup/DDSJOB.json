@@ -1,0 +1,152 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Object name",
+      "id": "OBJECT",
+      "iscustom": "false",
+      "label": "Object",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Job type",
+      "id": "JOBTYPE",
+      "iscustom": "false",
+      "label": "Job type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "all",
+        "change"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "DDS subscription",
+      "id": "SUBSCRIPTIONKEY",
+      "iscustom": "false",
+      "label": "DDS subscription",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Queue time",
+      "id": "QUEUETIME",
+      "iscustom": "false",
+      "label": "Queue time",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Start time",
+      "id": "STARTTIME",
+      "iscustom": "false",
+      "label": "Start time",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "End time",
+      "id": "ENDTIME",
+      "iscustom": "false",
+      "label": "End time",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Created",
+      "id": "RECORDSCREATED",
+      "iscustom": "false",
+      "label": "Created",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Updated",
+      "id": "RECORDSUPDATED",
+      "iscustom": "false",
+      "label": "Updated",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Deleted",
+      "id": "RECORDSDELETED",
+      "iscustom": "false",
+      "label": "Deleted",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Job status",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Job status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Queued",
+        "Processing",
+        "Failed",
+        "Completed",
+        "Cancelled"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Job error",
+      "id": "ERROR",
+      "iscustom": "false",
+      "label": "Job error",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "List of files.",
+      "id": "FILELIST",
+      "iscustom": "false",
+      "label": "List of files.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "DDS history key",
+      "id": "DDSHISTORYKEY",
+      "iscustom": "false",
+      "label": "DDS history key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Selected fields",
+      "id": "FIELDS",
+      "iscustom": "false",
+      "label": "Fields",
+      "readonly": "false",
+      "required": "false"
+    }
+  ],
+  "object_name": "DDSJOB",
+  "relationships": []
+}

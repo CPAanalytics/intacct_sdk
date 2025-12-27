@@ -48,6 +48,24 @@ result = api.operations.update_apaccountlabel(
 print(result.fields)
 ```
 
+## Typed models
+
+Typed models are generated from live lookup definitions and provide convenience
+methods for create/update and response parsing.
+
+```python
+from intacct_sdk import typed_models
+
+dept = typed_models.DepartmentModel(
+    departmentid="ENG",
+    title="Engineering",
+)
+api.objects.department.create(dept)
+
+dept_model = api.objects.department.read_model(keys=["ENG"], fields=["DEPARTMENTID", "TITLE"])
+print(dept_model)
+```
+
 ## Accounts Receivable (AR)
 
 ```python

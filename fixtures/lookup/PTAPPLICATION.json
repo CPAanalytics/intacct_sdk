@@ -1,0 +1,105 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Application name",
+      "id": "APPLICATIONNAME",
+      "iscustom": "false",
+      "label": "Application name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "The order of the applications in the UI list",
+      "id": "ORDERNO",
+      "iscustom": "false",
+      "label": "Order number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Properties (XML formatted)",
+      "id": "PROPERTIES",
+      "iscustom": "false",
+      "label": "Properties",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Version",
+      "id": "VERSION",
+      "iscustom": "false",
+      "label": "Version",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Application unique identifier in Intacct",
+      "id": "ORIGINALID",
+      "iscustom": "false",
+      "label": "Original ID",
+      "readonly": "false",
+      "required": "false"
+    }
+  ],
+  "object_name": "PTAPPLICATION",
+  "relationships": []
+}

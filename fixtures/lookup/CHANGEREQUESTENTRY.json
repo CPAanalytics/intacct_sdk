@@ -1,0 +1,488 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Change request key",
+      "id": "CHANGEREQUESTKEY",
+      "iscustom": "false",
+      "label": "Change request key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change request ID",
+      "id": "CHANGEREQUESTID",
+      "iscustom": "false",
+      "label": "Change request ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Line number",
+      "id": "LINENO",
+      "iscustom": "false",
+      "label": "Line number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Record type",
+      "id": "RECORDTYPE",
+      "iscustom": "false",
+      "label": "Record type",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Workflow type",
+      "id": "WFTYPE",
+      "iscustom": "false",
+      "label": "Workflow type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "none",
+        "original",
+        "revision",
+        "forecast",
+        "approved change",
+        "pending change",
+        "other"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location ID",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location name",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Department key",
+      "id": "DEPARTMENTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department ID",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department name",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Production units",
+      "id": "PRODUCTIONUNITS",
+      "iscustom": "false",
+      "label": "Production units",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Production unit description",
+      "id": "PRODUCTIONUNITDESC",
+      "iscustom": "false",
+      "label": "Production unit description",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity",
+      "id": "QTY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External UOM",
+      "id": "EUOM",
+      "iscustom": "false",
+      "label": "External UOM",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Unit cost",
+      "id": "UNITCOST",
+      "iscustom": "false",
+      "label": "Unit cost",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Cost",
+      "id": "COST",
+      "iscustom": "false",
+      "label": "Cost",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Unit price",
+      "id": "UNITPRICE",
+      "iscustom": "false",
+      "label": "Unit price",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Price",
+      "id": "PRICE",
+      "iscustom": "false",
+      "label": "Price",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Price markup percent",
+      "id": "PRICEMARKUPPERCENT",
+      "iscustom": "false",
+      "label": "Price markup percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Price markup amount",
+      "id": "PRICEMARKUPAMOUNT",
+      "iscustom": "false",
+      "label": "Price markup amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Line price",
+      "id": "LINEPRICE",
+      "iscustom": "false",
+      "label": "Line price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project change order key",
+      "id": "PROJECTCHANGEORDERKEY",
+      "iscustom": "false",
+      "label": "Project change order key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project change order ID",
+      "id": "PROJECTCHANGEORDERID",
+      "iscustom": "false",
+      "label": "Project change order ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Memo",
+      "id": "MEMO",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Estimate key",
+      "id": "PJESTIMATEKEY",
+      "iscustom": "false",
+      "label": "Estimate key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Estimate ID",
+      "id": "PJESTIMATEID",
+      "iscustom": "false",
+      "label": "Estimate ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "GL account key",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "GL account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account title",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "GL account title",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project contract key",
+      "id": "PROJECTCONTRACTKEY",
+      "iscustom": "false",
+      "label": "Project contract key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract ID",
+      "id": "PROJECTCONTRACTID",
+      "iscustom": "false",
+      "label": "Project contract ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract name",
+      "id": "PROJECTCONTRACTNAME",
+      "iscustom": "false",
+      "label": "Project contract name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTCONTRACTLINEKEY",
+      "iscustom": "false",
+      "label": "Project contract line key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTCONTRACTLINEID",
+      "iscustom": "false",
+      "label": "Project contract line ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract line name",
+      "id": "PROJECTCONTRACTLINENAME",
+      "iscustom": "false",
+      "label": "Project contract line name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Update project contract",
+      "id": "UPDATEPJCONTRACT",
+      "iscustom": "false",
+      "label": "Update project contract",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CHANGEREQUESTENTRY",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "CHANGEREQUEST",
+      "objectpath": "CHANGEREQUEST",
+      "relatedby": "CHANGEREQUESTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATION",
+      "objectpath": "LOCATION",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPARTMENT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "GLACCOUNT",
+      "objectpath": "GLACCOUNT",
+      "relatedby": "ACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PJESTIMATE",
+      "objectpath": "PJESTIMATE",
+      "relatedby": "PJESTIMATEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PROJECTCONTRACT",
+      "objectpath": "PROJECTCONTRACT",
+      "relatedby": "PROJECTCONTRACTID",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PROJECTCONTRACTLINE",
+      "objectpath": "PROJECTCONTRACTLINE",
+      "relatedby": "PROJECTCONTRACTLINEID",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

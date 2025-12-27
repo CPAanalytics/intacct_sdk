@@ -1,0 +1,270 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project contract line key",
+      "id": "PROJECTCONTRACTLINEKEY",
+      "iscustom": "false",
+      "label": "Project contract line key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract line ID",
+      "id": "PROJECTCONTRACTLINEID",
+      "iscustom": "false",
+      "label": "Project contract line ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Record type",
+      "id": "RECORDTYPE",
+      "iscustom": "false",
+      "label": "Record type",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Workflow type",
+      "id": "WFTYPE",
+      "iscustom": "false",
+      "label": "Workflow type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "original",
+        "revision",
+        "forecast",
+        "other"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location name",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Department key",
+      "id": "DEPARTMENTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department name",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity",
+      "id": "QTY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External UOM",
+      "id": "EUOM",
+      "iscustom": "false",
+      "label": "External UOM",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Unit price",
+      "id": "UNITPRICE",
+      "iscustom": "false",
+      "label": "Unit price",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Price",
+      "id": "PRICE",
+      "iscustom": "false",
+      "label": "Price",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Price markup percent",
+      "id": "PRICEMARKUPPERCENT",
+      "iscustom": "false",
+      "label": "Price markup percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Price markup amount",
+      "id": "PRICEMARKUPAMOUNT",
+      "iscustom": "false",
+      "label": "Price markup amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Line price",
+      "id": "LINEPRICE",
+      "iscustom": "false",
+      "label": "Line price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Memo",
+      "id": "MEMO",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Price effective date",
+      "id": "PRICEEFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Price effective date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PROJECTCONTRACTLINEENTRY",
+  "relationships": [
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

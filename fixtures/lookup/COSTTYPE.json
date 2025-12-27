@@ -1,0 +1,472 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTKEY",
+      "iscustom": "false",
+      "label": "Project key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project ID",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Task key",
+      "id": "TASKKEY",
+      "iscustom": "false",
+      "label": "Task key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Task ID",
+      "id": "TASKID",
+      "iscustom": "false",
+      "label": "Task ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Task name",
+      "id": "TASKNAME",
+      "iscustom": "false",
+      "label": "Task name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COSTTYPEID",
+      "iscustom": "false",
+      "label": "Cost type ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Accumulation type",
+      "id": "ACCUMULATIONTYPEKEY",
+      "iscustom": "false",
+      "label": "Accumulation type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Accumulation type name",
+      "id": "ACCUMULATIONTYPENAME",
+      "iscustom": "false",
+      "label": "Accumulation type name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Cost unit description",
+      "id": "COSTUNITDESCRIPTION",
+      "iscustom": "false",
+      "label": "Cost unit description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "GL account key",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "GL account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Parent cost type key",
+      "id": "PARENTKEY",
+      "iscustom": "false",
+      "label": "Parent cost type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PARENTID",
+      "iscustom": "false",
+      "label": "Parent ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PARENTNAME",
+      "iscustom": "false",
+      "label": "Parent - Name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Item key",
+      "id": "ITEMKEY",
+      "iscustom": "false",
+      "label": "Item key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item name",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Planned begin date",
+      "id": "PLANNEDBEGINDATE",
+      "iscustom": "false",
+      "label": "Planned begin date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Planned end date",
+      "id": "PLANNEDENDDATE",
+      "iscustom": "false",
+      "label": "Planned end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Actual begin date",
+      "id": "ACTUALBEGINDATE",
+      "iscustom": "false",
+      "label": "Actual begin date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Actual end date",
+      "id": "ACTUALENDDATE",
+      "iscustom": "false",
+      "label": "Actual end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ROOTPARENTKEY",
+      "iscustom": "false",
+      "label": "Root cost type key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ROOTPARENTID",
+      "iscustom": "false",
+      "label": "Root cost type ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ROOTPARENTNAME",
+      "iscustom": "false",
+      "label": "Root cost type name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "STANDARDCOSTTYPEKEY",
+      "iscustom": "false",
+      "label": "Standard cost type key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Standard cost type ID",
+      "id": "STANDARDCOSTTYPEID",
+      "iscustom": "false",
+      "label": "Standard cost type ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "STANDARDCOSTTYPENAME",
+      "iscustom": "false",
+      "label": "Standard cost type name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Purchasing tax schedule",
+      "id": "POTAXSCHEDULEID",
+      "iscustom": "false",
+      "label": "Purchasing tax schedule",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Override default purchasing tax schedule",
+      "id": "OVERRIDEPURCHASINGTAXSCHEDULE",
+      "iscustom": "false",
+      "label": "Override default purchasing tax schedule",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "COSTTYPE",
+  "relationships": [
+    {
+      "label": "Standard cost type",
+      "objectname": "STANDARDCOSTTYPE",
+      "objectpath": "STANDARDCOSTTYPE",
+      "relatedby": "STANDARDCOSTTYPEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Project",
+      "objectname": "PROJECT",
+      "objectpath": "PROJECT",
+      "relatedby": "PROJECTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Parent cost type",
+      "objectname": "COSTTYPE",
+      "objectpath": "PARENT",
+      "relatedby": "COSTTYPEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "GLACCOUNT",
+      "relatedby": "ACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Task",
+      "objectname": "TASK",
+      "objectpath": "TASK",
+      "relatedby": "TASKID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Root cost type",
+      "objectname": "COSTTYPE",
+      "objectpath": "ROOTPARENT",
+      "relatedby": "ROOTPARENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Accumulation type",
+      "objectname": "ACCUMULATIONTYPE",
+      "objectpath": "ACCUMULATIONTYPE",
+      "relatedby": "ACCUMULATIONTYPENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Item",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "ITEMID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

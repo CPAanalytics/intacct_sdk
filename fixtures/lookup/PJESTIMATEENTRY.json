@@ -1,0 +1,353 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Line number",
+      "id": "LINENO",
+      "iscustom": "false",
+      "label": "Line number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project estimate ID",
+      "id": "PJESTIMATEID",
+      "iscustom": "false",
+      "label": "Project estimate ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project estimate key",
+      "id": "PJESTIMATEKEY",
+      "iscustom": "false",
+      "label": "Project estimate key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External UOM",
+      "id": "EUOM",
+      "iscustom": "false",
+      "label": "External UOM",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity",
+      "id": "QTY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Unit rate",
+      "id": "UNITCOST",
+      "iscustom": "false",
+      "label": "Unit rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Amount",
+      "id": "AMOUNT",
+      "iscustom": "false",
+      "label": "Amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Memo",
+      "id": "MEMO",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Currency",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Currency",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Workflow type",
+      "id": "WFTYPE",
+      "iscustom": "false",
+      "label": "Workflow type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "original",
+        "revision",
+        "forecast",
+        "approved change",
+        "pending change",
+        "other"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Post to GL",
+      "id": "POSTED",
+      "iscustom": "false",
+      "label": "Post to GL",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "GL account key",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "GL account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account title",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "GL account title",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Department key",
+      "id": "DEPTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department ID",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department name",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location ID",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location name",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Effective date",
+      "id": "EFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Effective date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Production units",
+      "id": "PRODUCTIONUNITS",
+      "iscustom": "false",
+      "label": "Production units",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Production unit description",
+      "id": "PRODUCTIONUNITDESC",
+      "iscustom": "false",
+      "label": "Production unit description",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Change request key",
+      "id": "CHANGEREQUESTKEY",
+      "iscustom": "false",
+      "label": "Change request key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change request ID",
+      "id": "CHANGEREQUESTID",
+      "iscustom": "false",
+      "label": "Change request ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Change request entry key",
+      "id": "CHANGEREQUESTENTRYKEY",
+      "iscustom": "false",
+      "label": "Change request entry key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PJESTIMATEENTRY",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "GLACCOUNT",
+      "objectpath": "GLACCOUNT",
+      "relatedby": "ACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CHANGEREQUESTENTRY",
+      "objectpath": "CHANGEREQUESTENTRY",
+      "relatedby": "CRDETAILKEY",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

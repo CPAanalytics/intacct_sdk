@@ -1,0 +1,469 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Transaction no.",
+      "id": "BATCHNO",
+      "iscustom": "false",
+      "label": "Transaction number",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "BATCH_TITLE",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Balance",
+      "id": "BALANCE",
+      "iscustom": "false",
+      "label": "Balance",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal",
+      "id": "JOURNAL",
+      "iscustom": "false",
+      "label": "Journal",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Statistical",
+      "id": "STATISTICAL",
+      "iscustom": "false",
+      "label": "Statistical",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Posting date",
+      "id": "BATCH_DATE",
+      "iscustom": "false",
+      "label": "Posting date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Module",
+      "id": "MODULE",
+      "iscustom": "false",
+      "label": "Module",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User key",
+      "id": "USERKEY",
+      "iscustom": "false",
+      "label": "User",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Reference number",
+      "id": "REFERENCENO",
+      "iscustom": "false",
+      "label": "Reference number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Automatic reversal date",
+      "id": "REVERSED",
+      "iscustom": "false",
+      "label": "Automatic reversal date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Reversed key",
+      "id": "REVERSEDKEY",
+      "iscustom": "false",
+      "label": "Reversed key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Reversed from",
+      "id": "REVERSEDFROM",
+      "iscustom": "false",
+      "label": "Reversed from",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Template key",
+      "id": "TEMPLATEKEY",
+      "iscustom": "false",
+      "label": "Template key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Template ID",
+      "id": "TEMPLATEID",
+      "iscustom": "false",
+      "label": "Template ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "PRBatch key",
+      "id": "PRBATCHKEY",
+      "iscustom": "false",
+      "label": "PRBatch key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Last modified date and time",
+      "id": "MODIFIED",
+      "iscustom": "false",
+      "label": "Last modified date and time",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Last modified by",
+      "id": "MODIFIEDBYID",
+      "iscustom": "false",
+      "label": "Last modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Scheduled operation key",
+      "id": "SCHOPKEY",
+      "iscustom": "false",
+      "label": "Scheduled operation key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "GL account allocation run key",
+      "id": "GLACCTALLOCATIONRUNKEY",
+      "iscustom": "false",
+      "label": "GL account allocation run key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account allocation ID",
+      "id": "GLACCTALLOCATIONID",
+      "iscustom": "false",
+      "label": "GL account allocation ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BASELOCATION",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Source entity",
+      "id": "BASELOCATION_NO",
+      "iscustom": "false",
+      "label": "Source entity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "User ID",
+      "id": "USERINFO.LOGINID",
+      "iscustom": "false",
+      "label": "User ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Draft",
+        "Submitted",
+        "Partially Approved",
+        "Approved",
+        "Posted",
+        "Declined",
+        "Reversal pending",
+        "Reversed"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Accounting sequence number",
+      "id": "JOURNALSEQNO",
+      "iscustom": "false",
+      "label": "Accounting sequence number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Indicate whether you want to add taxes to the journal entries. Valid values are none, inbound, or outbound",
+      "id": "TAXIMPLICATIONS",
+      "iscustom": "false",
+      "label": "Tax implications",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "None",
+        "Inbound",
+        "Outbound"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Vendor ID when tax implication is inbound taxes for purchases",
+      "id": "VATVENDORID",
+      "iscustom": "false",
+      "label": "Vendor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ID when tax implication is outbound taxes for sales",
+      "id": "VATCUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ship-to contact ID for sales journals, or the vendor pay-to contact ID for purchase journals",
+      "id": "VATCONTACTID",
+      "iscustom": "false",
+      "label": "Contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Transaction source",
+      "id": "TRANSACTIONSOURCE",
+      "iscustom": "false",
+      "label": "Transaction source",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "BANK"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Attachment",
+      "id": "SUPDOCID",
+      "iscustom": "false",
+      "label": "Attachment",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Attachment key",
+      "id": "SUPDOCKEY",
+      "iscustom": "false",
+      "label": "Attachment key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RPESENTRY",
+      "iscustom": "false",
+      "label": "Prepaid Expense Schedule Entry",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GLBATCH",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "JOURNAL",
+      "objectpath": "JOURNAL",
+      "relatedby": "JOURNAL",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Prepaid Expense Schedule Entry",
+      "objectname": "PESENTRY",
+      "objectpath": "RPESENTRYGLBATCH",
+      "relatedby": "RPESENTRY",
+      "relationshiptype": "ONE2ONE"
+    }
+  ]
+}

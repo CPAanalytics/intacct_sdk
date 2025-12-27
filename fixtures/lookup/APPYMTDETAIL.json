@@ -1,0 +1,488 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDKEY",
+      "iscustom": "false",
+      "label": "Bill record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ENTRYKEY",
+      "iscustom": "false",
+      "label": "Bill entry record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "POSADJKEY",
+      "iscustom": "false",
+      "label": "Positive adjustment record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "POSADJENTRYKEY",
+      "iscustom": "false",
+      "label": "Positive adjustment record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PAYMENTKEY",
+      "iscustom": "false",
+      "label": "Payment record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PAYMENTENTRYKEY",
+      "iscustom": "false",
+      "label": "Payment entry record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "PAYMENTDATE",
+      "iscustom": "false",
+      "label": "Payment date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "PAYMENTAMOUNT",
+      "iscustom": "false",
+      "label": "Payment base amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "TRX_PAYMENTAMOUNT",
+      "iscustom": "false",
+      "label": "Payment transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "INLINEKEY",
+      "iscustom": "false",
+      "label": "Inline transaction record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "INLINEENTRYKEY",
+      "iscustom": "false",
+      "label": "Inline transaction entry record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "INLINEAMOUNT",
+      "iscustom": "false",
+      "label": "Inline transaction base amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "TRX_INLINEAMOUNT",
+      "iscustom": "false",
+      "label": "Inline transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DISCOUNTKEY",
+      "iscustom": "false",
+      "label": "Discount record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DISCOUNTENTRYKEY",
+      "iscustom": "false",
+      "label": "Discount entry record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "DISCOUNTDATE",
+      "iscustom": "false",
+      "label": "Discount date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "DISCOUNTAMOUNT",
+      "iscustom": "false",
+      "label": "Discount base amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "TRX_DISCOUNTAMOUNT",
+      "iscustom": "false",
+      "label": "Discount transaction amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ADJUSTMENTKEY",
+      "iscustom": "false",
+      "label": "Adjustment transaction record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ADJUSTMENTENTRYKEY",
+      "iscustom": "false",
+      "label": "Adjustment transaction entry record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "ADJUSTMENTAMOUNT",
+      "iscustom": "false",
+      "label": "Adjustment transaction base amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "TRX_ADJUSTMENTAMOUNT",
+      "iscustom": "false",
+      "label": "Adjustment transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ADVANCEKEY",
+      "iscustom": "false",
+      "label": "Advance record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ADVANCEENTRYKEY",
+      "iscustom": "false",
+      "label": "Advance entry record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "POSTEDADVANCEKEY",
+      "iscustom": "false",
+      "label": "Posted advance record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "POSTEDADVANCEENTRYKEY",
+      "iscustom": "false",
+      "label": "Posted advance entry record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "POSTEDADVANCEAMOUNT",
+      "iscustom": "false",
+      "label": "Posted advance base amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "TRX_POSTEDADVANCEAMOUNT",
+      "iscustom": "false",
+      "label": "Posted advance transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Payment currency",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MODULEKEY",
+      "iscustom": "false",
+      "label": "Module key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Joint payee",
+      "id": "JOINTPAYEENAME",
+      "iscustom": "false",
+      "label": "Joint payee",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Joint payee print as",
+      "id": "JOINTPAYEEPRINTAS",
+      "iscustom": "false",
+      "label": "Joint payee print as",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "APPYMTDETAIL",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "APBILL",
+      "objectpath": "APBILL",
+      "relatedby": "RECORDKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APBILLITEM",
+      "objectpath": "APBILLITEM",
+      "relatedby": "ENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "AP positive adjustment",
+      "objectname": "APADJUSTMENT",
+      "objectpath": "POSADJ",
+      "relatedby": "POSADJKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "AP positive adjustment detail",
+      "objectname": "APADJUSTMENTITEM",
+      "objectpath": "POSADJITEM",
+      "relatedby": "POSADJENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APPYMT",
+      "objectpath": "APPYMT",
+      "relatedby": "PAYMENTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APPYMTENTRY",
+      "objectpath": "APPYMTENTRY",
+      "relatedby": "PAYMENTENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "AP inline bill",
+      "objectname": "APBILL",
+      "objectpath": "INLINEBILL",
+      "relatedby": "INLINEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "AP inline bill item",
+      "objectname": "APBILLITEM",
+      "objectpath": "INLINEBILLITEM",
+      "relatedby": "INLINEENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APDISCOUNT",
+      "objectpath": "APDISCOUNT",
+      "relatedby": "DISCOUNTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PRENTRY",
+      "objectpath": "APDISCOUNTENTRY",
+      "relatedby": "DISCOUNTENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APADJUSTMENT",
+      "objectpath": "APADJUSTMENT",
+      "relatedby": "ADJUSTMENTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APADJUSTMENTITEM",
+      "objectpath": "APADJUSTMENTENTRY",
+      "relatedby": "ADJUSTMENTENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APPOSTEDADVANCE",
+      "objectpath": "APPOSTEDADVANCE",
+      "relatedby": "ADVANCEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APPOSTEDADVANCEENTRY",
+      "objectpath": "APPOSTEDADVANCEENTRY",
+      "relatedby": "ADVANCEENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

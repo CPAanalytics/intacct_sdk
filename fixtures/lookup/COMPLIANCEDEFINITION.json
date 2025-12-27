@@ -1,0 +1,245 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Compliance definition ID",
+      "id": "COMPLIANCEDEFINITIONID",
+      "iscustom": "false",
+      "label": "Compliance definition ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Compliance definition name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Compliance definition name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Compliance category",
+      "id": "CATEGORY",
+      "iscustom": "false",
+      "label": "Compliance category",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "",
+        "Insurance",
+        "Miscellaneous",
+        "Lien waiver"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Status",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Track by",
+      "id": "TRACKBY",
+      "iscustom": "false",
+      "label": "Track by",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Vendor",
+        "PrimaryDoc"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Generation rule",
+      "id": "GENERATERULE",
+      "iscustom": "false",
+      "label": "Generation rule",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Do not generate",
+        "Automatic by type"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Validate against",
+      "id": "VALIDATIONRULE",
+      "iscustom": "false",
+      "label": "Validate against",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Expiration date",
+        "Document received"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "When not compliant in AP payments",
+      "id": "PAYMENTNOTIFICATION",
+      "iscustom": "false",
+      "label": "When not compliant in AP payments",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Error",
+        "Warning",
+        "Ignore"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Generate for each",
+      "id": "GENERATEFOREACH",
+      "iscustom": "false",
+      "label": "Generate for each",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "APBill",
+        "APPayment"
+      ]
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Minimum lien waiver amount",
+      "id": "MINLIENWAIVERAMOUNT",
+      "iscustom": "false",
+      "label": "Minimum lien waiver amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Minimum primary document amount",
+      "id": "MINPRIMARYDOCAMOUNT",
+      "iscustom": "false",
+      "label": "Minimum primary document amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Allow lien waivers with negative amounts",
+      "id": "ALLOWNEGATIVELIENWAIVERS",
+      "iscustom": "false",
+      "label": "Allow lien waivers with negative amounts",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "COMPLIANCEDEFINITION",
+  "relationships": [
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

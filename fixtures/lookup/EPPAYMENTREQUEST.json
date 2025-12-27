@@ -1,0 +1,644 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PRBATCHKEY",
+      "iscustom": "false",
+      "label": "PRSummary key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document number",
+      "id": "RECORDTYPE",
+      "iscustom": "false",
+      "label": "Record type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALENTERED",
+      "iscustom": "false",
+      "label": "Amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALPAID",
+      "iscustom": "false",
+      "label": "Total applied",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALSELECTED",
+      "iscustom": "false",
+      "label": "Total selected",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALDUE",
+      "iscustom": "false",
+      "label": "Amount due",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State of payment",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "Payment status",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "Date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date fully paid",
+      "id": "WHENPAID",
+      "iscustom": "false",
+      "label": "Date fully paid",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TERMKEY",
+      "iscustom": "false",
+      "label": "Term key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TERMNAME",
+      "iscustom": "false",
+      "label": "Term name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Discount date",
+      "id": "WHENDISCOUNT",
+      "iscustom": "false",
+      "label": "Discount date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Bill number",
+      "id": "RECORDID",
+      "iscustom": "false",
+      "label": "Bill number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "USERKEY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Due date",
+      "id": "WHENDUE",
+      "iscustom": "false",
+      "label": "Due date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Reference number",
+      "id": "DOCNUMBER",
+      "iscustom": "false",
+      "label": "Reference number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "VENDENTITY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTENTITY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLEARED",
+      "iscustom": "false",
+      "label": "Cleared",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "CLRDATE",
+      "iscustom": "false",
+      "label": "Cleared date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MODULEKEY",
+      "iscustom": "false",
+      "label": "Module key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SYSTEMGENERATED",
+      "iscustom": "false",
+      "label": "System generated",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "GL posting date",
+      "id": "WHENPOSTED",
+      "iscustom": "false",
+      "label": "GL posting date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "On hold",
+      "id": "ONHOLD",
+      "iscustom": "false",
+      "label": "Place bill on hold",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Currency",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Payment currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_TOTALENTERED",
+      "iscustom": "false",
+      "label": "Transaction currency amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_TOTALPAID",
+      "iscustom": "false",
+      "label": "Transaction currency amount paid",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_TOTALSELECTED",
+      "iscustom": "false",
+      "label": "Txn amount selected",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_TOTALDUE",
+      "iscustom": "false",
+      "label": "Transaction currency amount due",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PRXBATCHKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROVIDERKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROVIDERPAYMETHODKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "SELECTEDPROVIDERPAYMETHODKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DELIVERYMETHOD",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BANKACKNOWLEDGED",
+      "iscustom": "false",
+      "label": "Bank acknowledged",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACKMESSAGEKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "WHENBANKCONFIRMED",
+      "iscustom": "false",
+      "label": "When confirmed by bank",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CONFMESSAGEKEY",
+      "iscustom": "false",
+      "label": "Bank confirmation message key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date",
+      "id": "RECON_DATE",
+      "iscustom": "false",
+      "label": "Reconciliation date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Base currency",
+      "id": "BASECURR",
+      "iscustom": "false",
+      "label": "Base currency",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location record number",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Audit timestamp when record was created.",
+      "id": "AUWHENCREATED",
+      "iscustom": "false",
+      "label": "Audit when created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "NR_TOTALENTERED",
+      "iscustom": "false",
+      "label": "Base non-reimb amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "NR_TRX_TOTALENTERED",
+      "iscustom": "false",
+      "label": "Non-reimb amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ENTITY",
+      "iscustom": "false",
+      "label": "Entity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment method",
+      "id": "PAYMENTTYPE",
+      "iscustom": "false",
+      "label": "Payment method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Printed Check",
+        "EFT",
+        "Cash",
+        "ACH"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Reimbursement date",
+      "id": "PAYMENTDATE",
+      "iscustom": "false",
+      "label": "Reimbursement date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Receipt date",
+      "id": "RECEIPTDATE",
+      "iscustom": "false",
+      "label": "Receipt date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Payment amount",
+      "id": "PAYMENTAMOUNT",
+      "iscustom": "false",
+      "label": "Payment amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document number",
+      "id": "DOCUMENTNUMBER",
+      "iscustom": "false",
+      "label": "Document or check no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Memo",
+      "id": "MEMO",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account",
+      "id": "FINANCIALACCOUNT",
+      "iscustom": "false",
+      "label": "Account",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": []
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Payment transaction amount",
+      "id": "PAYMENTTRXAMOUNT",
+      "iscustom": "false",
+      "label": "Payment transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROVIDERPAYMENTMETHOD.PAYMENTPROVIDER.NAME",
+      "iscustom": "false",
+      "label": "Payment provider",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique ID of employee",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name of employee",
+      "id": "CONTACTINFO.NAME",
+      "iscustom": "false",
+      "label": "Employee name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "EPPAYMENTREQUEST",
+  "relationships": [
+    {
+      "label": "Term",
+      "objectname": "TERM",
+      "objectpath": "TERM",
+      "relatedby": "TERMNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EXCHANGERATEINFO",
+      "objectpath": "EXCHANGERATEINFO",
+      "relatedby": "RECORDNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EMPLOYEE",
+      "relatedby": "EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

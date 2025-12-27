@@ -1,0 +1,269 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Schedule entry key",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Schedule entry key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Schedule key",
+      "id": "SCHEDULEKEY",
+      "iscustom": "false",
+      "label": "Schedule key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule type",
+      "id": "TYPE",
+      "iscustom": "false",
+      "label": "Schedule type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Billing"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Scheduled operation key",
+      "id": "SCHOPKEY",
+      "iscustom": "false",
+      "label": "Scheduled operation key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Amount",
+      "id": "AMOUNT",
+      "iscustom": "false",
+      "label": "Amount",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Base amount",
+      "id": "BASEAMOUNT",
+      "iscustom": "false",
+      "label": "Base amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Posted base amount",
+      "id": "POSTEDBASEAMOUNT",
+      "iscustom": "false",
+      "label": "Posted base amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXCHANGE_RATE",
+      "iscustom": "false",
+      "label": "Exchange rate",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "POSTEDEXCHANGE_RATE",
+      "iscustom": "false",
+      "label": "Posted exchange rate",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Billing date",
+      "id": "POSTINGDATE",
+      "iscustom": "false",
+      "label": "Scheduled billing date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Actual posting date",
+      "id": "ACTUALPOSTINGDATE",
+      "iscustom": "false",
+      "label": "Actual posting date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Billed",
+      "id": "POSTED",
+      "iscustom": "false",
+      "label": "Billed",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Possible to post",
+      "id": "POSTABLE",
+      "iscustom": "false",
+      "label": "Possible to post",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "HISTORICAL",
+      "iscustom": "false",
+      "label": "Historical",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Status",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Open",
+        "Terminated",
+        "Posted",
+        "On hold"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COMPUTATIONMEMO",
+      "iscustom": "false",
+      "label": "Computation memo",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Approved hours",
+      "id": "APPROVEDHOURS",
+      "iscustom": "false",
+      "label": "Approved hours",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "SRC qty",
+      "id": "SOURCEQTY",
+      "iscustom": "false",
+      "label": "Source hours",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "BILLSCHEDULEENTRYKEY",
+      "iscustom": "false",
+      "label": "Linked billing schedule entry key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Service period start date",
+      "id": "SERVICEPERIODSTARTDATE",
+      "iscustom": "false",
+      "label": "Service period start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Service period end date",
+      "id": "SERVICEPERIODENDDATE",
+      "iscustom": "false",
+      "label": "Service period end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTBILLINGSCHEDULEENTRY",
+  "relationships": [
+    {
+      "label": "Contract billing schedule",
+      "objectname": "CONTRACTBILLINGSCHEDULE",
+      "objectpath": "CONTRACTBILLINGSCHEDULE",
+      "relatedby": "SCHEDULEKEY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract detail key",
+      "id": "CONTRACTDETAILKEY",
+      "iscustom": "false",
+      "label": "Contract detail key",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "USAGEDATE",
+      "iscustom": "false",
+      "label": "Usage date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QUANTITY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Service period start date",
+      "id": "SERVICEPERIODSTARTDATE",
+      "iscustom": "false",
+      "label": "Service period start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Service period end date",
+      "id": "SERVICEPERIODENDDATE",
+      "iscustom": "false",
+      "label": "Service period end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "USAGETYPE",
+      "iscustom": "false",
+      "label": "Usage type",
+      "readonly": "true",
+      "required": "true",
+      "valid_values": [
+        "Billing \u2013 variable",
+        "Revenue",
+        "Cancelled",
+        "Tracked \u2013 revenue",
+        "Billing \u2013 committed",
+        "Tracked \u2013 variable",
+        "Billing \u2013 overage"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document ID",
+      "id": "DOCID",
+      "iscustom": "false",
+      "label": "Document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract revenue schedule entry key",
+      "id": "REVENUESCHEDULEENTRYKEY",
+      "iscustom": "false",
+      "label": "Contract revenue schedule entry key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract revenue 2 schedule entry key",
+      "id": "REVENUE2SCHEDULEENTRYKEY",
+      "iscustom": "false",
+      "label": "Contract revenue 2 schedule entry key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Billed date",
+      "id": "BILLEDDATE",
+      "iscustom": "false",
+      "label": "Billed date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "RECURUSAGEDATE",
+      "iscustom": "false",
+      "label": "Recur usage date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract name",
+      "id": "CONTRACTNAME",
+      "iscustom": "false",
+      "label": "Contract name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract line no.",
+      "id": "CONTRACTLINENO",
+      "iscustom": "false",
+      "label": "Contract line",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item name",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer name",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTUSAGE",
+  "relationships": [
+    {
+      "label": "Contract detail",
+      "objectname": "CONTRACTDETAIL",
+      "objectpath": "CONTRACTDETAIL",
+      "relatedby": "CONTRACTDETAILKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

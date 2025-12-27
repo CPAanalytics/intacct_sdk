@@ -1,0 +1,624 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Preview header key",
+      "id": "HEADERKEY",
+      "iscustom": "false",
+      "label": "Preview header key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Source",
+      "id": "TYPE",
+      "iscustom": "false",
+      "label": "Type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Contract",
+        "ContractUsage",
+        "Timesheet",
+        "AggregateTimesheet",
+        "Expense",
+        "APBill",
+        "PODocument"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Item key",
+      "id": "ITEMKEY",
+      "iscustom": "false",
+      "label": "Item key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item name",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Customer key",
+      "id": "CUSTOMERKEY",
+      "iscustom": "false",
+      "label": "Customer key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ID",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer name",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract key",
+      "id": "CONTRACTKEY",
+      "iscustom": "false",
+      "label": "Contract key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract ID",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract name",
+      "id": "CONTRACTNAME",
+      "iscustom": "false",
+      "label": "Contract name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Base amount",
+      "id": "AMOUNT",
+      "iscustom": "false",
+      "label": "Base amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Amount",
+      "id": "TRX_AMOUNT",
+      "iscustom": "false",
+      "label": "Amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity",
+      "id": "QUANTITY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "SELECTED",
+      "iscustom": "false",
+      "label": "Selected",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Failure"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Error message",
+      "id": "ERRMSG",
+      "iscustom": "false",
+      "label": "Error message",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract billing schedule entry key",
+      "id": "CNBILLINGSCHENTRYKEY",
+      "iscustom": "false",
+      "label": "Contract billing schedule entry key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PRICECALCMEMO",
+      "iscustom": "false",
+      "label": "Computation memo",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location ID",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location name",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Department key",
+      "id": "DEPTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department ID",
+      "id": "DEPTID",
+      "iscustom": "false",
+      "label": "Department ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department name",
+      "id": "DEPTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPLOYEEDIMKEY",
+      "iscustom": "false",
+      "label": "Employee key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TSENTRYKEY",
+      "iscustom": "false",
+      "label": "Timesheet entry",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PRENTRYKEY",
+      "iscustom": "false",
+      "label": "Expense entry",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DOCENTRYKEY",
+      "iscustom": "false",
+      "label": "Document entry",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PRICE",
+      "iscustom": "false",
+      "label": "Price",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PRICEMISSING",
+      "iscustom": "false",
+      "label": "Price was missing",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTFEE",
+      "iscustom": "false",
+      "label": "Fee percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CLASSKEY",
+      "iscustom": "false",
+      "label": "Class key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSID",
+      "iscustom": "false",
+      "label": "Class ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TRANSACTIONSTATE",
+      "iscustom": "false",
+      "label": "Transaction state",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DOCNO",
+      "iscustom": "false",
+      "label": "Doc no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ENTRYDATE",
+      "iscustom": "false",
+      "label": "Entry date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project key",
+      "id": "PROJECTKEY",
+      "iscustom": "false",
+      "label": "Project key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project ID",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "VENDORDIMKEY",
+      "iscustom": "false",
+      "label": "Vendor key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TASKDIMKEY",
+      "iscustom": "false",
+      "label": "Task key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "WAREHOUSEDIMKEY",
+      "iscustom": "false",
+      "label": "Warehouse key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SHIPTOCONTACTNAME",
+      "iscustom": "false",
+      "label": "Ship to",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "SERVICEPERIODSTARTDATE",
+      "iscustom": "false",
+      "label": "Service period start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "SERVICEPERIODENDDATE",
+      "iscustom": "false",
+      "label": "Service period end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GENINVOICEPREVIEWLINE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "GENINVOICEPREVIEWHEADER",
+      "objectpath": "GENINVOICEPREVIEWHEADER",
+      "relatedby": "HEADERKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "ITEMKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CUSTOMER",
+      "objectpath": "CUSTOMER",
+      "relatedby": "CUSTOMERKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTRACT",
+      "objectpath": "CONTRACT",
+      "relatedby": "CONTRACTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PROJECT",
+      "objectpath": "PROJECT",
+      "relatedby": "PROJECTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTRACTBILLINGSCHEDULEENTRY",
+      "objectpath": "CONTRACTBILLINGSCHEDULEENTRY",
+      "relatedby": "CNBILLINGSCHENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATION",
+      "objectpath": "LOCATION",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TIMESHEETENTRY",
+      "objectpath": "TIMESHEETENTRY",
+      "relatedby": "TSENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PRENTRY",
+      "objectpath": "PRENTRY",
+      "relatedby": "PRENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PODOCUMENTENTRY",
+      "objectpath": "DOCENTRY",
+      "relatedby": "DOCENTRYKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EMPLOYEE",
+      "relatedby": "EMPLOYEEDIMKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "FIXEDASSET",
+      "objectpath": "ASSET",
+      "relatedby": "ASSETDIMKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CLASS",
+      "objectpath": "CLASS",
+      "relatedby": "CLASSDIMKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "VENDOR",
+      "objectpath": "VENDOR",
+      "relatedby": "VENDORDIMKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TASK",
+      "objectpath": "TASK",
+      "relatedby": "TASKDIMKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "WAREHOUSE",
+      "objectpath": "WAREHOUSE",
+      "relatedby": "WAREHOUSEDIMKEY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

@@ -26,6 +26,7 @@ class IntacctClient:
             timeout_seconds=config.timeout_seconds,
             max_retries=config.max_retries,
             backoff_seconds=config.backoff_seconds,
+            debug_xml=config.debug_xml,
             logger=config.logger,
         )
 
@@ -190,9 +191,6 @@ class SessionClient:
     def operations(self) -> "OperationClient":
         return OperationClient(self)
 
-    @property
-    def ar(self) -> AccountsReceivable:
-        return AccountsReceivable(self)
 
 
 class OperationClient(OperationMixin):

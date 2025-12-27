@@ -1,0 +1,272 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Count ID",
+      "id": "CYCLECOUNTID",
+      "iscustom": "false",
+      "label": "Count ID",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Count description",
+      "id": "CYCLECOUNTDESC",
+      "iscustom": "false",
+      "label": "Count description",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Warehouse key",
+      "id": "WAREHOUSEKEY",
+      "iscustom": "false",
+      "label": "Warehouse key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "WAREHOUSEID",
+      "iscustom": "false",
+      "label": "Warehouse",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User key",
+      "id": "EMPUSERKEY",
+      "iscustom": "false",
+      "label": "User key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPUSERID",
+      "iscustom": "false",
+      "label": "Assigned to",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Count status",
+      "id": "COUNTSTATE",
+      "iscustom": "false",
+      "label": "Count status",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Not Started",
+        "In Progress",
+        "Counted",
+        "Reconciled",
+        "Voided"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Actual count start date",
+      "id": "COUNTSTARTDATE",
+      "iscustom": "false",
+      "label": "Actual count start date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Actual count end date",
+      "id": "COUNTENDDATE",
+      "iscustom": "false",
+      "label": "Actual count end date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Show quantity on hand after count is started",
+      "id": "SHOWQTYONHAND",
+      "iscustom": "false",
+      "label": "Show quantity on hand after count is started",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Adjustments",
+      "id": "ADJUSTMENTCOUNT",
+      "iscustom": "false",
+      "label": "Adjustments",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Damage adjustments",
+      "id": "DMGADJUSTMENTCOUNT",
+      "iscustom": "false",
+      "label": "Damage adjustments",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Adjustment date",
+      "id": "ADJUSTMENTDATE",
+      "iscustom": "false",
+      "label": "Adjustment date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Lines in count",
+      "id": "LINESINCOUNT",
+      "iscustom": "false",
+      "label": "Lines in count",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Lines skipped",
+      "id": "LINESKIPPED",
+      "iscustom": "false",
+      "label": "Lines skipped",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Adjustment posting date",
+      "id": "ADJUSTMENTPOSTDATE",
+      "iscustom": "false",
+      "label": "Adjustment posting date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Quantity on hand last updated",
+      "id": "QOHLASTUPDATEDDATE",
+      "iscustom": "false",
+      "label": "Quantity on hand last updated",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Exclude allocated quantity from QOH",
+      "id": "EXCLUDEALLOCATEDQTY",
+      "iscustom": "false",
+      "label": "Exclude allocated quantity from QOH",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ICCYCLECOUNT",
+  "relationships": [
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

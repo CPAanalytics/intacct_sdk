@@ -1,0 +1,300 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract key",
+      "id": "CONTRACTKEY",
+      "iscustom": "false",
+      "label": "Contract key",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract ID",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 1",
+      "id": "JOURNAL1",
+      "iscustom": "false",
+      "label": "Journal 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 2",
+      "id": "JOURNAL2",
+      "iscustom": "false",
+      "label": "Journal 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 1 status",
+      "id": "APPLYTOJ1",
+      "iscustom": "false",
+      "label": "Journal 1 status",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 2 status",
+      "id": "APPLYTOJ2",
+      "iscustom": "false",
+      "label": "Journal 2 status",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Logical bundle IDs",
+      "id": "BUNDLES",
+      "iscustom": "false",
+      "label": "Logical bundle IDs",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inactivated by",
+      "id": "CLEARDESCRIPTION",
+      "iscustom": "false",
+      "label": "Inactivated by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Line no. list",
+      "id": "LINESCSV",
+      "iscustom": "false",
+      "label": "Line no. list",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 1 effective date",
+      "id": "J1EFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Journal 1 effective date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 2 effective date",
+      "id": "J2EFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Journal 2 effective date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 1 through",
+      "id": "THROUGH1DATE",
+      "iscustom": "false",
+      "label": "Journal 1 through",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal 2 through",
+      "id": "THROUGH2DATE",
+      "iscustom": "false",
+      "label": "Journal 2 through",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Effective date",
+      "id": "EFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Effective date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Apply to journal 1",
+      "id": "APPLYTOJOURNAL1",
+      "iscustom": "false",
+      "label": "Apply to journal 1",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Apply to journal 2",
+      "id": "APPLYTOJOURNAL2",
+      "iscustom": "false",
+      "label": "Apply to journal 2",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Adjustment type",
+      "id": "ADJUSTMENTPROCESS",
+      "iscustom": "false",
+      "label": "Adjustment type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "One time",
+        "Distributed"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FVAMOUNTBASEDON",
+      "iscustom": "false",
+      "label": "Fair value price effective as of the",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "MEA allocation effective date",
+        "Contract line start date"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Comments",
+      "id": "COMMENTS",
+      "iscustom": "false",
+      "label": "Comments",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Type",
+      "id": "TYPE",
+      "iscustom": "false",
+      "label": "Type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Usage Aggregation",
+        "MEA Bundle",
+        "Kit Bundle"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTMEABUNDLE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "CONTRACT",
+      "objectpath": "CONTRACT",
+      "relatedby": "CONTRACTKEY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

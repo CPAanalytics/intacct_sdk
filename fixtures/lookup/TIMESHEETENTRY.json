@@ -1,0 +1,1086 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LINENO",
+      "iscustom": "false",
+      "label": "Line number",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TIMESHEETKEY",
+      "iscustom": "false",
+      "label": "Timesheet key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTKEY",
+      "iscustom": "false",
+      "label": "Project key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECT_CLASSID",
+      "iscustom": "false",
+      "label": "Project class ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TASKKEY",
+      "iscustom": "false",
+      "label": "Task key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TASKID",
+      "iscustom": "false",
+      "label": "Task",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TASKNAME",
+      "iscustom": "false",
+      "label": "Task name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TASK_CLASSID",
+      "iscustom": "false",
+      "label": "Task class ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "COSTTYPEKEY",
+      "iscustom": "false",
+      "label": "Cost type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COSTTYPEID",
+      "iscustom": "false",
+      "label": "Cost type ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COSTTYPENAME",
+      "iscustom": "false",
+      "label": "Cost type name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTOMERKEY",
+      "iscustom": "false",
+      "label": "Customer key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ITEMKEY",
+      "iscustom": "false",
+      "label": "Item key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ENTRYDATE",
+      "iscustom": "false",
+      "label": "Entry date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QTY",
+      "iscustom": "false",
+      "label": "Hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "NOTES",
+      "iscustom": "false",
+      "label": "Notes",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Submitted",
+        "Approved",
+        "Partially Approved",
+        "Declined",
+        "Draft",
+        "Saved"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DEPARTMENTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TIMETYPEKEY",
+      "iscustom": "false",
+      "label": "Time type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TIMETYPE",
+      "iscustom": "false",
+      "label": "Time type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TIMETYPE_EARNINGTYPEKEY",
+      "iscustom": "false",
+      "label": "Time type earning type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TIMETYPE_GLACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Time type GL account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TIMETYPE_GLOFFSETACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Time type GL offset account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "BILLABLE",
+      "iscustom": "false",
+      "label": "Billable",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BILLED",
+      "iscustom": "false",
+      "label": "Billed",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false",
+        "partial"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPLOYEEDIMKEY",
+      "iscustom": "false",
+      "label": "Employee key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEENAME",
+      "iscustom": "false",
+      "label": "Employee name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPLOYEE_EARNINGTYPEKEY",
+      "iscustom": "false",
+      "label": "Employee earning type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "TS_BEGINDATE",
+      "iscustom": "false",
+      "label": "Begin date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "TS_ENDDATE",
+      "iscustom": "false",
+      "label": "End date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "TS_GLPOSTDATE",
+      "iscustom": "false",
+      "label": "GL post date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TS_LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Timesheet location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TS_LOCATIONID",
+      "iscustom": "false",
+      "label": "Timesheet location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "STATJOURNALKEY",
+      "iscustom": "false",
+      "label": "Statistical journal key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "BILLUACCTKEY",
+      "iscustom": "false",
+      "label": "Billable utilized account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "NONBILLUACCTKEY",
+      "iscustom": "false",
+      "label": "Non-billable utilized account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "BILLNUACCTKEY",
+      "iscustom": "false",
+      "label": "Billable non-utilized account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "NONBILLNUACCTKEY",
+      "iscustom": "false",
+      "label": "Non-billable non-utilized account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "STATGLBATCHKEY",
+      "iscustom": "false",
+      "label": "Statistical GL batch key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "STATGLENTRYLINENO",
+      "iscustom": "false",
+      "label": "Statistical GL entry line number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LABORGLBATCHKEY",
+      "iscustom": "false",
+      "label": "Labor GL batch key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LABORGLENTRYLINENO",
+      "iscustom": "false",
+      "label": "Labor GL entry line number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LABORGLENTRYOFFSETLINENO",
+      "iscustom": "false",
+      "label": "Labor GL entry offset line number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "LABORGLENTRYAMOUNT",
+      "iscustom": "false",
+      "label": "Labor GL entry amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "LABORGLENTRYTRXAMOUNT",
+      "iscustom": "false",
+      "label": "Labor GL entry transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "LABORGLENTRYCOSTRATE",
+      "iscustom": "false",
+      "label": "Labor GL entry cost rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "STATGLENTRYAMOUNT",
+      "iscustom": "false",
+      "label": "Statistical GL entry amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "VARGLENTRYAMOUNT",
+      "iscustom": "false",
+      "label": "Variance GL entry amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "VARGLENTRYTRXAMOUNT",
+      "iscustom": "false",
+      "label": "Variance GL entry transaction amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "VARGLBATCHKEY",
+      "iscustom": "false",
+      "label": "Variance GL batch key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "VARGLENTRYLINENO",
+      "iscustom": "false",
+      "label": "Variance GL entry line number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "VARGLENTRYOFFSETLINENO",
+      "iscustom": "false",
+      "label": "Variance GL entry offset line number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "CLZNAMOUNT",
+      "iscustom": "false",
+      "label": "Clarizen amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "EXTCOSTRATE",
+      "iscustom": "false",
+      "label": "External cost rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "EXTBILLRATE",
+      "iscustom": "false",
+      "label": "External billing rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BILLABLE_QTY",
+      "iscustom": "false",
+      "label": "Billable hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "NON_BILLABLE_QTY",
+      "iscustom": "false",
+      "label": "Non-billable hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "APPROVED_QTY",
+      "iscustom": "false",
+      "label": "Approved hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "APPROVED_BILLABLE_QTY",
+      "iscustom": "false",
+      "label": "Approved billable hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "APPROVED_NON_BILLABLE_QTY",
+      "iscustom": "false",
+      "label": "Approved non-billable hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "UTILIZED_QTY",
+      "iscustom": "false",
+      "label": "Utilized hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "NON_UTILIZED_QTY",
+      "iscustom": "false",
+      "label": "Non-utilized hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "APPROVED_UTILIZED_QTY",
+      "iscustom": "false",
+      "label": "Approved utilized hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "APPROVED_NON_UTILIZED_QTY",
+      "iscustom": "false",
+      "label": "Approved non-utilized hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LABORCLASSKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LABORCLASSID",
+      "iscustom": "false",
+      "label": "Labor class ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LABORCLASSNAME",
+      "iscustom": "false",
+      "label": "Labor class name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LABORSHIFTKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LABORSHIFTID",
+      "iscustom": "false",
+      "label": "Labor shift ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LABORSHIFTNAME",
+      "iscustom": "false",
+      "label": "Labor shift name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LABORUNIONKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LABORUNIONID",
+      "iscustom": "false",
+      "label": "Labor union ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LABORUNIONNAME",
+      "iscustom": "false",
+      "label": "Labor union name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPPOSITIONKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPPOSITIONID",
+      "iscustom": "false",
+      "label": "Employee position ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPPOSITIONNAME",
+      "iscustom": "false",
+      "label": "Employee position name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXTAMOUNT",
+      "iscustom": "false",
+      "label": "Labor amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXTEMPLOYERTAXES",
+      "iscustom": "false",
+      "label": "Employer taxes",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXTFRINGES",
+      "iscustom": "false",
+      "label": "Fringes",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXTCASHFRINGES",
+      "iscustom": "false",
+      "label": "Cash fringes",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "WORKORDERKEY",
+      "iscustom": "false",
+      "label": "Work order key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "WORKORDERID",
+      "iscustom": "false",
+      "label": "Work order ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "WORKORDERNAME",
+      "iscustom": "false",
+      "label": "Work order name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "TIMESHEETENTRY",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "PROJECT",
+      "objectpath": "PROJECT",
+      "relatedby": "PROJECTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TASK",
+      "objectpath": "TASK",
+      "relatedby": "TASKKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "COSTTYPE",
+      "objectpath": "COSTTYPE",
+      "relatedby": "COSTTYPEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CUSTOMER",
+      "objectpath": "CUSTOMER",
+      "relatedby": "CUSTOMERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "ITEMID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPARTMENT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATION",
+      "objectpath": "LOCATION",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TIMETYPE",
+      "objectpath": "TIMETYPE",
+      "relatedby": "TIMETYPE",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EMPLOYEE",
+      "relatedby": "EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TIMESHEET",
+      "objectpath": "TIMESHEET",
+      "relatedby": "TIMESHEETKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Labor cost variance",
+      "objectname": "TSVARGLRESOLVE",
+      "objectpath": "TSVARGLRESOLVE",
+      "relatedby": "RECORDNO",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EMPLOYEEPOSITION",
+      "objectpath": "EMPLOYEEPOSITION",
+      "relatedby": "EMPPOSITIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LABORCLASS",
+      "objectpath": "LABORCLASS",
+      "relatedby": "LABORCLASSID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LABORSHIFT",
+      "objectpath": "LABORSHIFT",
+      "relatedby": "LABORSHIFTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LABORUNION",
+      "objectpath": "LABORUNION",
+      "relatedby": "LABORUNIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "WORKORDER",
+      "objectpath": "WORKORDER",
+      "relatedby": "WORKORDERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

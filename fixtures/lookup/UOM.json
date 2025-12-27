@@ -1,0 +1,136 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name for the unit group",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Unit of measure group name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Intacct UOM group",
+      "id": "ISSYSTEM",
+      "iscustom": "false",
+      "label": "Intacct UOM group",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default unit of measure key for inventory",
+      "id": "INVDEFUNITKEY",
+      "iscustom": "false",
+      "label": "Default UOM key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default unit of measure key for purchase order",
+      "id": "PODEFUNITKEY",
+      "iscustom": "false",
+      "label": "Default UOM key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default unit of measure key for Order Entry",
+      "id": "SODEFUNITKEY",
+      "iscustom": "false",
+      "label": "Default UOM key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inventory",
+      "id": "INVUOM",
+      "iscustom": "false",
+      "label": "Inventory",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Purchasing",
+      "id": "POUOM",
+      "iscustom": "false",
+      "label": "Purchasing",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Sales",
+      "id": "OEUOM",
+      "iscustom": "false",
+      "label": "Sales",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "UOM",
+  "relationships": []
+}

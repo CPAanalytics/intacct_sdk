@@ -104,6 +104,33 @@ ops = api.operations
 help(ops.update_apaccountlabel)  # Shows payload fields and operation attrs
 ```
 
+## Typed models from live lookup
+
+When `scripts/record_lookup_definitions.py` runs against Intacct, it records
+object definitions and generates typed models. These models make create/update
+payloads easier to construct and provide helpers for parsing responses.
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig, typed_models
+
+config = IntacctConfig.from_env()
+client = IntacctClient(config)
+api = client.session_client(client.get_api_session())
+
+dept = typed_models.DepartmentModel(
+    departmentid="ENG",
+    title="Engineering",
+    status="active",
+)
+api.objects.department.create(dept)
+
+dept_model = api.objects.department.read_model(keys=["ENG"], fields=["DEPARTMENTID", "TITLE", "STATUS"])
+print(dept_model)
+
+models = api.objects.department.read_by_query_models(fields=["DEPARTMENTID", "TITLE"])
+print(models[0].departmentid)
+```
+
 ## Generic operations and payloads
 
 For non-CRUD operations, use `api.operations.<operation>()` or `api.execute()`.
@@ -128,6 +155,23 @@ result = api.execute(
     payload=[("glaccountno", "6090", None)],
     operation_attrs={"accountlabel": "Travel Expenses"},
 )
+```
+
+## Lookup operation
+
+Use `lookup` to retrieve an object definition (field list, types) from Intacct.
+
+```python
+from intacct_sdk import IntacctClient, IntacctConfig
+
+config = IntacctConfig.from_env()
+client = IntacctClient(config)
+api = client.session_client(client.get_api_session())
+
+result = api.operations.lookup(
+    payload=[("object", "DEPARTMENT", None)],
+)
+print(result.raw_xml)
 ```
 
 ## Module helpers

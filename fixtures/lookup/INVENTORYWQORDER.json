@@ -1,0 +1,335 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "This uniquely identifies this row. Pass it in on any update request.",
+      "id": "ICWQORDERID",
+      "iscustom": "false",
+      "label": "Main key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Document record number",
+      "id": "DOCHDRKEY",
+      "iscustom": "false",
+      "label": "Document",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document ID",
+      "id": "DOCID",
+      "iscustom": "false",
+      "label": "Document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document number",
+      "id": "DOCNO",
+      "iscustom": "false",
+      "label": "Document number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Document template record number",
+      "id": "DOCPARKEY",
+      "iscustom": "false",
+      "label": "Document template key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document template ID",
+      "id": "DOCPARID",
+      "iscustom": "false",
+      "label": "Document template ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Originating document",
+      "id": "ORIGINALDOCID",
+      "iscustom": "false",
+      "label": "Originating document",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document type",
+      "id": "DOCUMENTTYPE",
+      "iscustom": "false",
+      "label": "Document type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "unknown",
+        "order",
+        "shipper",
+        "invoice",
+        "shipinvoice",
+        "draftshipper"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment terms",
+      "id": "TERMNAME",
+      "iscustom": "false",
+      "label": "Payment terms",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Shipping method",
+      "id": "SHIPVIA",
+      "iscustom": "false",
+      "label": "Shipping method",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ship to",
+      "id": "SHIPTOCONTACT",
+      "iscustom": "false",
+      "label": "Ship to",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Order date",
+      "id": "ORDERDATE",
+      "iscustom": "false",
+      "label": "Order date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Ship date",
+      "id": "WHENDUE",
+      "iscustom": "false",
+      "label": "Ship date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Ship date",
+      "id": "SHIPPEDDATE",
+      "iscustom": "false",
+      "label": "Shipped date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Ship by",
+      "id": "SHIPBYDATE",
+      "iscustom": "false",
+      "label": "Ship by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Need by date",
+      "id": "NEEDBYDATE",
+      "iscustom": "false",
+      "label": "Need by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Do not ship before date",
+      "id": "DONOTSHIPBEFOREDATE",
+      "iscustom": "false",
+      "label": "Do not ship before",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Do not ship after date",
+      "id": "DONOTSHIPAFTERDATE",
+      "iscustom": "false",
+      "label": "Do not ship after",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Cancel after date",
+      "id": "CANCELAFTERDATE",
+      "iscustom": "false",
+      "label": "Cancel after",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Number of line items included in this sales order group",
+      "id": "NUMBEROFLINES",
+      "iscustom": "false",
+      "label": "No. of lines",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Current status or state",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "open",
+        "ready to pick",
+        "picked",
+        "ready to pack",
+        "packed",
+        "ready to ship",
+        "shipped",
+        "ready to invoice",
+        "invoiced"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse",
+      "id": "WAREHOUSEID",
+      "iscustom": "false",
+      "label": "Warehouse",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "For all the line items, how fulfillable is this order?",
+      "id": "PCTFULFILLABLE",
+      "iscustom": "false",
+      "label": "Percent fulfillable",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Employee assigned (roll up)",
+      "id": "ORDERASSIGNED",
+      "iscustom": "false",
+      "label": "Assigned to",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pick containers",
+      "id": "PICKCONTAINER",
+      "iscustom": "false",
+      "label": "Pick containers",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pack containers",
+      "id": "PACKCONTAINER",
+      "iscustom": "false",
+      "label": "Pack containers",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Shipping tracking",
+      "id": "SHIPTRACKING",
+      "iscustom": "false",
+      "label": "Shipping tracking",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Header message from document",
+      "id": "ORDERNOTES",
+      "iscustom": "false",
+      "label": "Order header message",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Hold",
+      "id": "ORDERHOLDPROGRESS",
+      "iscustom": "false",
+      "label": "Hold",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pick list printed",
+      "id": "PICKLISTPRINTED",
+      "iscustom": "false",
+      "label": "Pick list printed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pack list printed",
+      "id": "PACKLISTPRINTED",
+      "iscustom": "false",
+      "label": "Pack list printed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Some items are allocated or partially allocated",
+      "id": "SOMEALLOCATED",
+      "iscustom": "false",
+      "label": "Some items allocated",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "MELOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "INVENTORYWQORDER",
+  "relationships": []
+}

@@ -1,0 +1,708 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "FILTERKEY",
+      "iscustom": "false",
+      "label": "Filter key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FILTERNAME",
+      "iscustom": "false",
+      "label": "Filter set",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "POLICYKEY",
+      "iscustom": "false",
+      "label": "Invoice policy key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "POLICYNAME",
+      "iscustom": "false",
+      "label": "Invoice policy",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ASOFDATE",
+      "iscustom": "false",
+      "label": "As of date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Name",
+      "id": "BILLSCHSTARTDATE",
+      "iscustom": "false",
+      "label": "From date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "INVOICEDATE",
+      "iscustom": "false",
+      "label": "Invoice and GL post date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "GLPOSTDATE",
+      "iscustom": "false",
+      "label": "GL post date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TYPE",
+      "iscustom": "false",
+      "label": "Type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Preview"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "DOCPARID",
+      "iscustom": "false",
+      "label": "Transaction definition",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": []
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "INVOICEMSG",
+      "iscustom": "false",
+      "label": "Invoice message",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "INVOICEBY",
+      "iscustom": "false",
+      "label": "Invoice by",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "BILLTO",
+        "CONTRACT",
+        "CUSTOMER",
+        "PROJECT"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTOMERKEY",
+      "iscustom": "false",
+      "label": "Customer key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CONTRACTKEY",
+      "iscustom": "false",
+      "label": "Contract key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CONTRACTGROUPKEY",
+      "iscustom": "false",
+      "label": "Contract group key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CONTRACTGROUPID",
+      "iscustom": "false",
+      "label": "Contract or contract group",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTKEY",
+      "iscustom": "false",
+      "label": "Project key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PRICELISTKEY",
+      "iscustom": "false",
+      "label": "Price list key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PRICELISTID",
+      "iscustom": "false",
+      "label": "Price list for project billing",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Contract currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTOMERTYPEKEY",
+      "iscustom": "false",
+      "label": "Customer type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERTYPEID",
+      "iscustom": "false",
+      "label": "Customer type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTTYPEKEY",
+      "iscustom": "false",
+      "label": "Project type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTTYPEID",
+      "iscustom": "false",
+      "label": "Project type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTMANAGERKEY",
+      "iscustom": "false",
+      "label": "Project manager key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTMANAGERID",
+      "iscustom": "false",
+      "label": "Project manager",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGROUPID",
+      "iscustom": "false",
+      "label": "Item group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DEPTFILTERKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "LOCFILTERKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSID",
+      "iscustom": "false",
+      "label": "Class ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSGROUPID",
+      "iscustom": "false",
+      "label": "Class group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERGROUPID",
+      "iscustom": "false",
+      "label": "Customer group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTGROUPID",
+      "iscustom": "false",
+      "label": "Project group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTGROUPID",
+      "iscustom": "false",
+      "label": "Department group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEGROUPID",
+      "iscustom": "false",
+      "label": "Employee group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONGROUPID",
+      "iscustom": "false",
+      "label": "Location group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUDECONTRACTS",
+      "iscustom": "false",
+      "label": "Contracts",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUDECONTRACTUSAGE",
+      "iscustom": "false",
+      "label": "Contract usage",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUDETIMESHEETS",
+      "iscustom": "false",
+      "label": "Timesheets",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUDEEXPENSES",
+      "iscustom": "false",
+      "label": "Expenses",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUDEAPBILLS",
+      "iscustom": "false",
+      "label": "Accounts Payable bills",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUDEPODOCUMENTS",
+      "iscustom": "false",
+      "label": "Purchasing transactions",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "APPROVALSTATUS",
+      "iscustom": "false",
+      "label": "Approval status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Approved",
+        "Unapproved",
+        "Both"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "BLANKPRICESONLY",
+      "iscustom": "false",
+      "label": "Only show items with blank prices",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "GENINVOICERUNKEY",
+      "iscustom": "false",
+      "label": "Invoice run key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MELOCATIONKEY",
+      "iscustom": "false",
+      "label": "Mega location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CONTRACTTYPEKEY",
+      "iscustom": "false",
+      "label": "Contract type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CONTRACTTYPEID",
+      "iscustom": "false",
+      "label": "Contract type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "SCHEDULED",
+      "iscustom": "false",
+      "label": "Scheduled",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "SERVICEPERIODSTARTDATE",
+      "iscustom": "false",
+      "label": "Service period start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "SERVICEPERIODENDDATE",
+      "iscustom": "false",
+      "label": "Service period end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "SERVICEPERIODOVERRIDEOPTION",
+      "iscustom": "false",
+      "label": "Override service period dates",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Do not override",
+        "Override empty dates only",
+        "Override all dates"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GENINVOICEPREVIEW",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "GENINVOICEPOLICY",
+      "objectpath": "FILTER",
+      "relatedby": "FILTERKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "INVOICERUN",
+      "objectpath": "INVOICERUN",
+      "relatedby": "PREVIEWKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EXCHANGERATEINFO",
+      "objectpath": "EXCHANGERATEINFO",
+      "relatedby": "EXCHRATETYPEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

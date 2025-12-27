@@ -1,0 +1,120 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Book key",
+      "id": "BOOKKEY",
+      "iscustom": "false",
+      "label": "Book key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Book ID",
+      "id": "BOOKID",
+      "iscustom": "false",
+      "label": "Book ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account",
+      "id": "GLACCOUNTNO",
+      "iscustom": "false",
+      "label": "GL account",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "GL account rate type",
+      "id": "GLACCTRATETYPES",
+      "iscustom": "false",
+      "label": "GL account rate type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Ending spot rate",
+        "Weighted average rate",
+        "Historical rate"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "OVERRIDERATE",
+      "iscustom": "false",
+      "label": "Rate type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Date",
+      "id": "OVERRIDEEXPIRYDATE",
+      "iscustom": "false",
+      "label": "User rate table until",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": []
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GCBOOKACCTRATETYPE",
+  "relationships": []
+}

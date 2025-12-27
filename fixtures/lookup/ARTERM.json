@@ -1,0 +1,289 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contains encoding of term properties",
+      "id": "VALUE",
+      "iscustom": "false",
+      "label": "Encoded term value",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Name",
+      "id": "DUEDATE",
+      "iscustom": "false",
+      "label": "Due date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Due from",
+      "id": "DUEFROM",
+      "iscustom": "false",
+      "label": "Due from",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "from invoice/bill date",
+        "of the month of invoice/bill date",
+        "of next month from invoice/bill date",
+        "of 2nd month from invoice/bill date",
+        "of 3rd month from invoice/bill date",
+        "of 4th month from invoice/bill date",
+        "of 5th month from invoice/bill date",
+        "of 6th month from invoice/bill date",
+        "after end of month of invoice/bill date",
+        "from invoice/bill date extending to eom"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Day",
+      "id": "DISCDATE",
+      "iscustom": "false",
+      "label": "Day",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Discount from",
+      "id": "DISCFROM",
+      "iscustom": "false",
+      "label": "Discount from",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "from invoice/bill date",
+        "of the month of invoice/bill date",
+        "of next month from invoice/bill date",
+        "of 2nd month from invoice/bill date",
+        "of 3rd month from invoice/bill date",
+        "of 4th month from invoice/bill date",
+        "of 5th month from invoice/bill date",
+        "of 6th month from invoice/bill date",
+        "after end of month of invoice/bill date",
+        "from invoice/bill date extending to eom"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Discount amount",
+      "id": "DISCAMOUNT",
+      "iscustom": "false",
+      "label": "Amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Discount from",
+      "id": "DISCPERCAMN",
+      "iscustom": "false",
+      "label": "Discount from",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "$",
+        "%"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Discount grace days",
+      "id": "DISCFUDGEDAYS",
+      "iscustom": "false",
+      "label": "Grace days",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Penalty options",
+      "id": "PEN_TYPES",
+      "iscustom": "false",
+      "label": "Penalty option",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No Penalty",
+        "Daily",
+        "Weekly",
+        "Biweekly",
+        "Monthly",
+        "Bimonthly",
+        "Quarterly",
+        "Half yearly",
+        "Annually"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Penalty amount",
+      "id": "PENAMOUNT",
+      "iscustom": "false",
+      "label": "Amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Penalty period",
+      "id": "PENPERCAMN",
+      "iscustom": "false",
+      "label": "Penalty period",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "$",
+        "%"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Penalty grace days",
+      "id": "PENFUDGEDAYS",
+      "iscustom": "false",
+      "label": "Grace days",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "DISCCALCON",
+      "iscustom": "false",
+      "label": "Calculate based on",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Line items total",
+        "VAT line items total",
+        "Invoice total"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ARTERM",
+  "relationships": [
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

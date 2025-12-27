@@ -1,0 +1,108 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Generated unique ID for this particular audited action",
+      "id": "ID",
+      "iscustom": "false",
+      "label": "ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Type of object being audited",
+      "id": "OBJECTTYPE",
+      "iscustom": "false",
+      "label": "Object",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name of object being audited",
+      "id": "OBJECTKEY",
+      "iscustom": "false",
+      "label": "Record",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "ID of the user who performed action",
+      "id": "USERID",
+      "iscustom": "false",
+      "label": "User",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Time audited action was performed",
+      "id": "ACCESSTIME",
+      "iscustom": "false",
+      "label": "Access date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "How audited object was audited",
+      "id": "ACCESSMODE",
+      "iscustom": "false",
+      "label": "Audit mode",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Personal data access",
+        "System audit"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "User action audited",
+      "id": "WORKFLOWACTION",
+      "iscustom": "false",
+      "label": "Action",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "IP address of user who performed audited action",
+      "id": "IPADDRESS",
+      "iscustom": "false",
+      "label": "IP address",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Part of system that performed audited action",
+      "id": "SOURCE",
+      "iscustom": "false",
+      "label": "Source",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "api",
+        "csv",
+        "system",
+        "ui",
+        "sev",
+        "flatf"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ADVAUDITHISTORY",
+  "relationships": []
+}

@@ -1,0 +1,344 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Timecard ID",
+      "id": "TIMECARDID",
+      "iscustom": "false",
+      "label": "Timecard ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Timecard key",
+      "id": "TIMECARDKEY",
+      "iscustom": "false",
+      "label": "Timecard key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Employee ID",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Employee key",
+      "id": "EMPLOYEEKEY",
+      "iscustom": "false",
+      "label": "Employee key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Check ID",
+      "id": "CHECKID",
+      "iscustom": "false",
+      "label": "Check ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Check key",
+      "id": "CHECKKEY",
+      "iscustom": "false",
+      "label": "Check key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Check type",
+      "id": "CHECKTYPE",
+      "iscustom": "false",
+      "label": "Check type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Payroll report tax setup key",
+      "id": "PAYROLLREPORTTAXSETUPKEY",
+      "iscustom": "false",
+      "label": "Payroll report tax setup key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax ID",
+      "id": "TAXID",
+      "iscustom": "false",
+      "label": "Tax ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Classification code",
+      "id": "CLASSIFICATIONCODE",
+      "iscustom": "false",
+      "label": "Classification code",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax category ID",
+      "id": "TAXCATEGORYID",
+      "iscustom": "false",
+      "label": "Tax category ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Taxable earnings",
+      "id": "TAXABLEEARNINGS",
+      "iscustom": "false",
+      "label": "Taxable earnings",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Taxed earnings",
+      "id": "TAXEDEARNINGS",
+      "iscustom": "false",
+      "label": "Taxed earnings",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Employee taxed earnings",
+      "id": "EMPLOYEETAXEDEARNINGS",
+      "iscustom": "false",
+      "label": "Employee taxed earnings",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Employer taxed earnings",
+      "id": "EMPLOYERTAXEDEARNINGS",
+      "iscustom": "false",
+      "label": "Employer taxed earnings",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Surtax earnings",
+      "id": "SURTAXEARNINGS",
+      "iscustom": "false",
+      "label": "Surtax earnings",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Deduction taken",
+      "id": "DEDUCTIONTAKEN",
+      "iscustom": "false",
+      "label": "Deduction taken",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Taxable hours",
+      "id": "TAXABLEHOURS",
+      "iscustom": "false",
+      "label": "Taxable hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Taxed hours",
+      "id": "TAXEDHOURS",
+      "iscustom": "false",
+      "label": "Taxed hours",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Employee tax amount",
+      "id": "EMPLOYEETAXAMOUNT",
+      "iscustom": "false",
+      "label": "Employee tax amount",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Employer tax amount",
+      "id": "EMPLOYERTAXAMOUNT",
+      "iscustom": "false",
+      "label": "Employer tax amount",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Employee surtax amount",
+      "id": "EMPLOYEESURTAXAMOUNT",
+      "iscustom": "false",
+      "label": "Employee surtax amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PAYROLLREPORTTAX",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EMPLOYEE",
+      "relatedby": "EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PAYROLLREPORTTIMECARD",
+      "objectpath": "PAYROLLREPORTTIMECARD",
+      "relatedby": "TIMECARDID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PAYROLLREPORTCHECK",
+      "objectpath": "PAYROLLREPORTCHECK",
+      "relatedby": "CHECKID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PAYROLLREPORTTIMECARDREPORT",
+      "objectpath": "PAYROLLREPORTTIMECARDREPORT",
+      "relatedby": "CHECKKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Earning type name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Earning type name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Calculation method",
+      "id": "METHOD",
+      "iscustom": "false",
+      "label": "Calculation method",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Hourly",
+        "Salary"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account billable time key",
+      "id": "BILLABLEACCTKEY",
+      "iscustom": "false",
+      "label": "GL account billable time key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account non-billable time key",
+      "id": "NONBILLABLEACCTKEY",
+      "iscustom": "false",
+      "label": "GL account non-billable time key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account billable time",
+      "id": "BILLABLEACCTNO",
+      "iscustom": "false",
+      "label": "GL account billable time",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account non-billable time",
+      "id": "NONBILLABLEACCTNO",
+      "iscustom": "false",
+      "label": "GL account non-billable time",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Rate multiplier",
+      "id": "RATEMULTIPLIER",
+      "iscustom": "false",
+      "label": "Rate multiplier",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "EARNINGTYPE",
+  "relationships": [
+    {
+      "label": "GL account billable time",
+      "objectname": "GLACCOUNT",
+      "objectpath": "BILLABLEACCT",
+      "relatedby": "BILLABLEACCTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "GL account non-billable time",
+      "objectname": "GLACCOUNT",
+      "objectpath": "NONBILLABLEACCT",
+      "relatedby": "NONBILLABLEACCTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Book ID",
+      "id": "BOOKID",
+      "iscustom": "false",
+      "label": "Book ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Book type",
+      "id": "BOOKTYPE",
+      "iscustom": "false",
+      "label": "Book type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Consolidation",
+        "GAAPADJ",
+        "TAXADJ",
+        "USERADJ"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal",
+      "id": "JOURNALKEY",
+      "iscustom": "false",
+      "label": "Journal",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Symbol",
+      "id": "SYMBOL",
+      "iscustom": "false",
+      "label": "Symbol",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Title",
+      "id": "TITLE",
+      "iscustom": "false",
+      "label": "Title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "User-defined book",
+      "id": "USERADJBOOKID",
+      "iscustom": "false",
+      "label": "User-defined book",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GCBOOKADJJOURNAL",
+  "relationships": []
+}

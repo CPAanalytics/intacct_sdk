@@ -1,0 +1,188 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution name",
+      "id": "SOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The description of the tax solution",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The underlying tax mechanism",
+      "id": "TAXMETHOD",
+      "iscustom": "false",
+      "label": "Tax engine",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Advanced tax",
+        "VAT or GST",
+        "Avalara",
+        "None",
+        "Simple tax"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active/inactive/not configured",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Active",
+        "Inactive",
+        "Not configured"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "The type of tax solution",
+      "id": "TYPE",
+      "iscustom": "false",
+      "label": "Type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Standard",
+        "Custom"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Start date of first tax submission period",
+      "id": "STARTDATE",
+      "iscustom": "false",
+      "label": "Start date of first tax submission period",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable multiple taxes per line",
+      "id": "SHOWMULTILINETAX",
+      "iscustom": "false",
+      "label": "Enable multiple taxes per line. Turning this option on is permanent.",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The offset General Ledger account for output taxes on advance",
+      "id": "ARADVANCEOFFSETACCT",
+      "iscustom": "false",
+      "label": "GL account for taxes on advance",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account for input taxes",
+      "id": "GLACCOUNTPURCHASE",
+      "iscustom": "false",
+      "label": "GL account for input taxes",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account for output taxes",
+      "id": "GLACCOUNTSALE",
+      "iscustom": "false",
+      "label": "GL account for output taxes",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Alternative setup",
+      "id": "ALTSETUP",
+      "iscustom": "false",
+      "label": "Alternative setup",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "The last date you updated all the tax objects for this tax solution",
+      "id": "LASTUPDATE",
+      "iscustom": "false",
+      "label": "Last updated",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The type of submission process",
+      "id": "SUBMISSIONPROCESS",
+      "iscustom": "false",
+      "label": "Submission process",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Sage Regulatory Reporting",
+        "User Submitted",
+        "None"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "TAXSOLUTION",
+  "relationships": []
+}

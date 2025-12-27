@@ -1,0 +1,351 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Employee ID",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Employee key",
+      "id": "EMPLOYEEKEY",
+      "iscustom": "false",
+      "label": "Employee key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Effective date",
+      "id": "EFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Effective date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Expiration date",
+      "id": "EXPIRATIONDATE",
+      "iscustom": "false",
+      "label": "Expiration date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Active record",
+      "id": "ACTIVERECORD",
+      "iscustom": "false",
+      "label": "Active record",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pay group ID",
+      "id": "PAYGROUPID",
+      "iscustom": "false",
+      "label": "Pay group ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Is disabled",
+      "id": "ISDISABLED",
+      "iscustom": "false",
+      "label": "Is disabled",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Is full time",
+      "id": "ISFULLTIME",
+      "iscustom": "false",
+      "label": "Is full time",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Is seasonal",
+      "id": "ISSEASONAL",
+      "iscustom": "false",
+      "label": "Is seasonal",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Is statutory",
+      "id": "ISSTATUTORY",
+      "iscustom": "false",
+      "label": "Is statutory",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Exclude from certified payroll",
+      "id": "EXCLUDEFROMCERTIFIEDPAYROLL",
+      "iscustom": "false",
+      "label": "Exclude from certified payroll",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Accepts electronic W2",
+      "id": "ACCEPTSELECTRONICW2",
+      "iscustom": "false",
+      "label": "Accepts electronic W2",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ethnicity",
+      "id": "ETHNICITY",
+      "iscustom": "false",
+      "label": "Ethnicity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "EEO job category",
+      "id": "EEOJOBCATEGORY",
+      "iscustom": "false",
+      "label": "EEO job category",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "EEO ethnicity",
+      "id": "EEOETHNICITY",
+      "iscustom": "false",
+      "label": "EEO ethnicity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "CA EEO ethnicity",
+      "id": "CAEEOETHNICITY",
+      "iscustom": "false",
+      "label": "CA EEO ethnicity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Standard occupational classification code",
+      "id": "STANDARDOCCUPATIONALCLASSIFICATIONCODE",
+      "iscustom": "false",
+      "label": "Standard occupational classification code",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Alaska geographic code",
+      "id": "ALASKAGEOGRAPHICCODE",
+      "iscustom": "false",
+      "label": "Alaska geographic code",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default trade ID",
+      "id": "DEFAULTTRADEID",
+      "iscustom": "false",
+      "label": "Default trade ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "PTO accrual basis date",
+      "id": "PTOACCRUALBASISDATE",
+      "iscustom": "false",
+      "label": "PTO accrual basis date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "PTO accrual schedules",
+      "id": "PTOACCRUALSCHEDULES",
+      "iscustom": "false",
+      "label": "PTO accrual schedules",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Revision number",
+      "id": "REVISIONNUMBER",
+      "iscustom": "false",
+      "label": "Revision number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PAYROLLREPORTEMPLOYEE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EMPLOYEE",
+      "relatedby": "EMPLOYEEID",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

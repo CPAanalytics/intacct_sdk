@@ -1,0 +1,201 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Time type",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Time type GL account key",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Time type GL account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Time type GL account",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "Time type GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Time type GL account title",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Time type GL account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Offset account key",
+      "id": "OFFSETACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Offset account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Offset account",
+      "id": "OFFSETACCOUNTNO",
+      "iscustom": "false",
+      "label": "Offset account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Offset account title",
+      "id": "OFFSETACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Offset account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contra account key",
+      "id": "CONTRAACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Contra account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contra account",
+      "id": "CONTRAACCOUNTNO",
+      "iscustom": "false",
+      "label": "Contra account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contra account title",
+      "id": "CONTRAACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Contra account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Earning type key",
+      "id": "EARNINGTYPEKEY",
+      "iscustom": "false",
+      "label": "Earning type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Earning type",
+      "id": "EARNINGTYPENAME",
+      "iscustom": "false",
+      "label": "Earning type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "TIMETYPE",
+  "relationships": [
+    {
+      "label": "Time Type GL Account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "GLACCOUNT",
+      "relatedby": "ACCOUNTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Offset Account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "OFFSETACCOUNT",
+      "relatedby": "OFFSETACCTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Earning Type",
+      "objectname": "EARNINGTYPE",
+      "objectpath": "EARNINGTYPE",
+      "relatedby": "EARNINGTYPEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

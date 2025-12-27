@@ -1,0 +1,296 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DOCNO",
+      "iscustom": "false",
+      "label": "Document number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Transaction date",
+      "id": "TRANSACTIONDATE",
+      "iscustom": "false",
+      "label": "Date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Transfer out date",
+      "id": "OUTDATE",
+      "iscustom": "false",
+      "label": "Estimated transfer out date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Transfer in date",
+      "id": "INDATE",
+      "iscustom": "false",
+      "label": "Estimated transfer in date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REFERENCENO",
+      "iscustom": "false",
+      "label": "Reference number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "OUTDOCHDRKEY",
+      "iscustom": "false",
+      "label": "Out document record no.",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "INDOCHDRKEY",
+      "iscustom": "false",
+      "label": "In document record no.",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "INTRANSITDOCHDRKEY",
+      "iscustom": "false",
+      "label": "In transit document record no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Out document ID",
+      "id": "OUT_DOCID",
+      "iscustom": "false",
+      "label": "Out document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "In document ID",
+      "id": "IN_DOCID",
+      "iscustom": "false",
+      "label": "In document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "In transit document ID",
+      "id": "INTRANSIT_DOCID",
+      "iscustom": "false",
+      "label": "In transit document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "EXCH_RATE_DATE",
+      "iscustom": "false",
+      "label": "Exchange rate date of the to warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXCH_RATE_TYPE_ID",
+      "iscustom": "false",
+      "label": "Exchange rate type of the to warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXCHANGE_RATE",
+      "iscustom": "false",
+      "label": "Exchange rate of the to warehouse",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "OUT_CURRENCY",
+      "iscustom": "false",
+      "label": "From base currency",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "IN_CURRENCY",
+      "iscustom": "false",
+      "label": "To base currency",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Transfer state",
+      "id": "TRANSFERSTATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Draft",
+        "In transit",
+        "Posted"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Transfer type",
+      "id": "TRANSFERTYPE",
+      "iscustom": "false",
+      "label": "Transfer type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Immediate",
+        "In transit"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ICTRANSFER",
+  "relationships": [
+    {
+      "label": "Transfer out document",
+      "objectname": "INVDOCUMENT",
+      "objectpath": "OUTDOCUMENT",
+      "relatedby": "OUTDOCHDRKEY",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "Transfer in document",
+      "objectname": "INVDOCUMENT",
+      "objectpath": "INDOCUMENT",
+      "relatedby": "INDOCHDRKEY",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "In transit document",
+      "objectname": "INVDOCUMENT",
+      "objectpath": "INTRANSITDOCUMENT",
+      "relatedby": "INTRANSITDOCHDRKEY",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Schedule entry key",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Schedule entry key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Template key",
+      "id": "TEMPLATEKEY",
+      "iscustom": "false",
+      "label": "Template key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No. of months offset",
+      "id": "PERIODOFFSET",
+      "iscustom": "false",
+      "label": "No. of months offset",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Percent to bill",
+      "id": "PERCENTBILLED",
+      "iscustom": "false",
+      "label": "Percent to bill",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Threshold percent",
+      "id": "STEPPERCENT",
+      "iscustom": "false",
+      "label": "Threshold percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTBILLINGTEMPLATEENTRY",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "CONTRACTBILLINGTEMPLATE",
+      "objectpath": "CONTRACTBILLINGTEMPLATE",
+      "relatedby": "TEMPLATEKEY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

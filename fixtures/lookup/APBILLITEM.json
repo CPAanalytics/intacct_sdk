@@ -1,0 +1,1138 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RECORDKEY",
+      "iscustom": "false",
+      "label": "Parent key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "Account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "OFFSETACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Offset account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "OFFSETGLACCOUNTNO",
+      "iscustom": "false",
+      "label": "AP account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "OFFSETGLACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "AP account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ACCOUNTLABELKEY",
+      "iscustom": "false",
+      "label": "Account label key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ACCOUNTLABEL",
+      "iscustom": "false",
+      "label": "Account label",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PRENTRYOFFSETACCOUNTNO",
+      "iscustom": "false",
+      "label": "Offset account",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "ENTRY_DATE",
+      "iscustom": "false",
+      "label": "Entry date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "AMOUNT",
+      "iscustom": "false",
+      "label": "Base amount",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_AMOUNT",
+      "iscustom": "false",
+      "label": "Transaction amount",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ENTRYDESCRIPTION",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "EXCH_RATE_DATE",
+      "iscustom": "false",
+      "label": "Exchange rate date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXCH_RATE_TYPE_ID",
+      "iscustom": "false",
+      "label": "Exchange rate type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXCHANGE_RATE",
+      "iscustom": "false",
+      "label": "Exchange rate",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ALLOCATION",
+      "iscustom": "false",
+      "label": "Allocation",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ALLOCATIONKEY",
+      "iscustom": "false",
+      "label": "Allocation key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "FORM1099",
+      "iscustom": "false",
+      "label": "1099",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LINEITEM",
+      "iscustom": "false",
+      "label": "Line item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "T",
+        "F"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LINE_NO",
+      "iscustom": "false",
+      "label": "Line no.",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Transaction currency",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BASECURR",
+      "iscustom": "false",
+      "label": "Base currency",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALPAID",
+      "iscustom": "false",
+      "label": "Total paid",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_TOTALPAID",
+      "iscustom": "false",
+      "label": "Total transaction paid",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALSELECTED",
+      "iscustom": "false",
+      "label": "Total selected",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_TOTALSELECTED",
+      "iscustom": "false",
+      "label": "Total transaction selected",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "BILLABLE",
+      "iscustom": "false",
+      "label": "Billable",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "BILLED",
+      "iscustom": "false",
+      "label": "Billed",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "RELEASETOPAY",
+      "iscustom": "false",
+      "label": "Release to pay",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PARENTENTRY",
+      "iscustom": "false",
+      "label": "Parent entry key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "BASELOCATION",
+      "iscustom": "false",
+      "label": "Base location key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RECORDTYPE",
+      "iscustom": "false",
+      "label": "Record type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Form 1099 type",
+      "id": "FORM1099TYPE",
+      "iscustom": "false",
+      "label": "Form 1099 type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Form 1099 box",
+      "id": "FORM1099BOX",
+      "iscustom": "false",
+      "label": "Form 1099 box",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DETAILKEY",
+      "iscustom": "false",
+      "label": "Tax detail key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "PERCENT",
+      "description": "No description specified",
+      "id": "RETAINAGEPERCENTAGE",
+      "iscustom": "false",
+      "label": "Retainage percentage",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_AMOUNTRETAINED",
+      "iscustom": "false",
+      "label": "Txn amount retained",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "AMOUNTRETAINED",
+      "iscustom": "false",
+      "label": "Base amount retained",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TRX_AMOUNTRELEASED",
+      "iscustom": "false",
+      "label": "Txn amount released",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SUBTOTAL",
+      "iscustom": "false",
+      "label": "Is subtotal",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "S",
+        "T"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PARENTTAXENTRY",
+      "iscustom": "false",
+      "label": "Parent tax entry key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PARTIALEXEMPT",
+      "iscustom": "false",
+      "label": "ITC",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PAYMENTTAXCAPTURE",
+      "iscustom": "false",
+      "label": "Capture payment tax",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Primary doc key",
+      "id": "PRIMARYDOCKEY",
+      "iscustom": "false",
+      "label": "Primary doc key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Primary doc line key",
+      "id": "PRIMARYDOCLINEKEY",
+      "iscustom": "false",
+      "label": "Primary doc line key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Asset ID",
+      "id": "ASSETID",
+      "iscustom": "false",
+      "label": "Asset ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Originating doc key",
+      "id": "ORIGDOCKEY",
+      "iscustom": "false",
+      "label": "Originating doc key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Originating doc line key",
+      "id": "ORIGDOCLINEKEY",
+      "iscustom": "false",
+      "label": "Originating doc line key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ORIGDOCID",
+      "iscustom": "false",
+      "label": "Originating document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ORIGDOCLINEID",
+      "iscustom": "false",
+      "label": "Originating document line ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Record ID",
+      "id": "RECORDID",
+      "iscustom": "false",
+      "label": "Record ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "NAMEOFACQUIREDASSET",
+      "iscustom": "false",
+      "label": "Name of acquired asset",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUDETAXINASSETCOST",
+      "iscustom": "false",
+      "label": "Include tax in asset cost",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "AMORTIZATIONTEMPLATEID",
+      "iscustom": "false",
+      "label": "Deferred adjustments template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "AMORTIZATIONSTARTDATE",
+      "iscustom": "false",
+      "label": "Deferred adjustments start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "AMORTIZATIONENDDATE",
+      "iscustom": "false",
+      "label": "Deferred adjustments end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Deferred adjustments type",
+      "id": "AMORTIZATIONTEMPLATEINFO.TEMPLATETYPE",
+      "iscustom": "false",
+      "label": "Deferred adjustments type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Charges constat\u00e9es d\u2019avance"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule period",
+      "id": "AMORTIZATIONTEMPLATEINFO.TERM",
+      "iscustom": "false",
+      "label": "Schedule period",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Monthly",
+        "Quarterly",
+        "Annually"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "SELECTEDASSETMODE",
+      "iscustom": "false",
+      "label": "Asset creation",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "S",
+        "M",
+        "N"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ASSETQUANTITY",
+      "iscustom": "false",
+      "label": "Number of assets",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CF_APBILLITEM_TEXT_PESNAME",
+      "iscustom": "true",
+      "label": "Prepaid Expense Schedule Name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "CF_APBILLITEM_DATE_EXPAMTSTARTDATE",
+      "iscustom": "true",
+      "label": "Expense Amortization Start Date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXPENSIFY_RECEIPT_URL_VB",
+      "iscustom": "true",
+      "label": "Receipt URL",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Provide the benefit type",
+      "id": "CARRIER_PRODUCTBENEFIT_TYPE",
+      "iscustom": "true",
+      "label": "CARRIER PRODUCT/BENEFIT TYPE",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "EE Full name",
+      "id": "INSURED_NAME",
+      "iscustom": "true",
+      "label": "INSURED NAME",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Carrier Group #",
+      "id": "CARRIER_GROUP_NUMBER",
+      "iscustom": "true",
+      "label": "CARRIER GROUP #",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GROUP Policy #",
+      "id": "GROUP_POLICY_NUMBER",
+      "iscustom": "true",
+      "label": "POLICY #",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Type of Carrier Coverage",
+      "id": "COVERAGE_TYPE",
+      "iscustom": "true",
+      "label": "COVERAGE TYPE",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Any additions to Comms",
+      "id": "ADDITIONS",
+      "iscustom": "true",
+      "label": "ADDITIONS",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RATE_",
+      "iscustom": "true",
+      "label": "Rate %",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COMM_TYPE",
+      "iscustom": "true",
+      "label": "COMM TYPE",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Comms Basis",
+      "id": "BASIS",
+      "iscustom": "true",
+      "label": "BASIS",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "TESTING_TYPE",
+      "iscustom": "true",
+      "label": "TESTING_TYPE",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "BACKGROUND",
+        "COVID",
+        "DRUG"
+      ]
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "No description specified",
+      "id": "RATE_FLAT",
+      "iscustom": "true",
+      "label": "RATE FLAT",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTOMERDIMKEY",
+      "iscustom": "false",
+      "label": "Customerdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "VENDORDIMKEY",
+      "iscustom": "false",
+      "label": "Vendordimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "VENDORID",
+      "iscustom": "false",
+      "label": "Vendor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "VENDORNAME",
+      "iscustom": "false",
+      "label": "Vendor name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPLOYEEDIMKEY",
+      "iscustom": "false",
+      "label": "Employeedimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEENAME",
+      "iscustom": "false",
+      "label": "Employee name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "ITEMDIMKEY",
+      "iscustom": "false",
+      "label": "Itemdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTDIMKEY",
+      "iscustom": "false",
+      "label": "Projectdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CLASSDIMKEY",
+      "iscustom": "false",
+      "label": "Classdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSID",
+      "iscustom": "false",
+      "label": "Class",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSNAME",
+      "iscustom": "false",
+      "label": "Class name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RPEC",
+      "iscustom": "false",
+      "label": "Prepaid Expense Class",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RPES",
+      "iscustom": "false",
+      "label": "Prepaid Expense Schedule",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "APBILLITEM",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "GLACCOUNT",
+      "objectpath": "GLACCOUNT",
+      "relatedby": "ACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "AP account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "OFFSETGLACCOUNTNO",
+      "relatedby": "OFFSETGLACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPARTMENT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATIONENTITY",
+      "objectpath": "LOCATIONENTITY",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "APACCOUNTLABEL",
+      "objectpath": "ACCOUNTLABEL",
+      "relatedby": "ACCOUNTLABEL",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ALLOCATION",
+      "objectpath": "ALLOCATION",
+      "relatedby": "ALLOCATION",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "GLACCOUNT",
+      "objectpath": "RETAINAGE_OFFSETGLACCOUNT",
+      "relatedby": "RETAINAGE_OFFSETGLACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Primary document transaction detail",
+      "objectname": "PODOCUMENTENTRY",
+      "objectpath": "PRIMARYDOCLINE",
+      "relatedby": "PRIMARYDOCLINEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Originating document transaction detail",
+      "objectname": "PODOCUMENTENTRY",
+      "objectpath": "ORIGDOCLINE",
+      "relatedby": "ORIGDOCLINEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Prepaid Expense Class",
+      "objectname": "PEC",
+      "objectpath": "RPECAPBILLITEM",
+      "relatedby": "RPEC",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Prepaid Expense Schedule",
+      "objectname": "PES",
+      "objectpath": "RPESAPBILLDETAIL",
+      "relatedby": "RPES",
+      "relationshiptype": "ONE2ONE"
+    }
+  ]
+}

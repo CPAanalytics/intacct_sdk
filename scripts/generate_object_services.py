@@ -5,8 +5,8 @@ import re
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
-DOCS_DIR = Path('Docs')
-OUTPUT = Path('src/intacct_sdk/object_services_generated.py')
+DOCS_DIR = Path("Docs")
+OUTPUT = Path("src/intacct_sdk/object_services_generated.py")
 
 
 def to_pascal(name: str) -> str:
@@ -159,27 +159,30 @@ def build_delete_docstring(object_name: str, fields: set[str]) -> str:
 
 
 lines = [
-    'from __future__ import annotations',
-    '',
-    'from typing import Dict, Iterable, Optional',
-    '',
-    'from .models import QueryResult, ResultData',
-    'from .object_services_base import ObjectService',
-    '',
-    '',
-    'class ObjectServices:',
-    '    def __init__(self, session_client) -> None:',
-    '        self._session_client = session_client',
-    '',
-    '    def __getattr__(self, name: str) -> ObjectService:',
-    '        return ObjectService(self._session_client, name)',
-    '',
+    "from __future__ import annotations",
+    "",
+    "from typing import ClassVar, Dict, Iterable, List, Optional, Type, Union",
+    "",
+    "from .models import QueryResult, Record, ResultData",
+    "from .object_services_base import ObjectService",
+    "from .typed_models_base import BaseModel",
+    "from . import typed_models_generated as typed_models",
+    "",
+    "",
+    "class ObjectServices:",
+    "    def __init__(self, session_client) -> None:",
+    "        self._session_client = session_client",
+    "",
+    "    def __getattr__(self, name: str) -> ObjectService:",
+    "        return ObjectService(self._session_client, name)",
+    "",
 ]
 
 sorted_objects = sorted(object_fields.keys())
 
 for object_name in sorted_objects:
-    class_name = f'{to_pascal(object_name)}Service'
+    class_name = f"{to_pascal(object_name)}Service"
+    model_name = f"{to_pascal(object_name)}Model"
     create_fields = object_fields.get(object_name, {}).get('create', set())
     update_fields = object_fields.get(object_name, {}).get('update', set())
     delete_fields = object_fields.get(object_name, {}).get('delete', set())
@@ -187,67 +190,96 @@ for object_name in sorted_objects:
     read_by_query_fields = object_fields.get(object_name, {}).get('readByQuery', set())
 
     lines.append('')
-    lines.append(f'class {class_name}(ObjectService):')
-    lines.append(f'    """Service for {object_name}."""')
-    lines.append('    def __init__(self, session_client) -> None:')
-    lines.append(f'        super().__init__(session_client, "{object_name}")')
+    lines.append(f"class {class_name}(ObjectService):")
+    lines.append(f"    \"\"\"Service for {object_name}.\"\"\"")
+    lines.append(f"    model_cls: ClassVar[Type[BaseModel]] = typed_models.{model_name}")
+    lines.append("    def __init__(self, session_client) -> None:")
+    lines.append(f"        super().__init__(session_client, \"{object_name}\")")
     lines.append('')
-    lines.append('    def read_by_query(')
-    lines.append('        self,')
-    lines.append('        fields: Iterable[str],')
-    lines.append('        query: str = "",')
-    lines.append('        page_size: int = 100,')
-    lines.append('        offset: Optional[int] = None,')
-    lines.append('        control_id: Optional[str] = None,')
-    lines.append('    ) -> QueryResult:')
+    lines.append("    def read_by_query(")
+    lines.append("        self,")
+    lines.append("        fields: Iterable[str],")
+    lines.append("        query: str = \"\",")
+    lines.append("        page_size: int = 100,")
+    lines.append("        offset: Optional[int] = None,")
+    lines.append("        control_id: Optional[str] = None,")
+    lines.append("    ) -> QueryResult:")
     doc = build_read_by_query_docstring(object_name, read_by_query_fields)
-    lines.append(f'        """{doc}"""')
-    lines.append('        return super().read_by_query(')
-    lines.append('            fields,')
-    lines.append('            query=query,')
-    lines.append('            page_size=page_size,')
-    lines.append('            offset=offset,')
-    lines.append('            control_id=control_id,')
-    lines.append('        )')
+    lines.append(f"        \"\"\"{doc}\"\"\"")
+    lines.append("        return super().read_by_query(")
+    lines.append("            fields,")
+    lines.append("            query=query,")
+    lines.append("            page_size=page_size,")
+    lines.append("            offset=offset,")
+    lines.append("            control_id=control_id,")
+    lines.append("        )")
     lines.append('')
-    lines.append('    def read(self, keys: Iterable[str], fields: Iterable[str], control_id: Optional[str] = None) -> ResultData:')
+    lines.append("    def read(self, keys: Iterable[str], fields: Iterable[str], control_id: Optional[str] = None) -> ResultData:")
     doc = build_read_docstring(object_name, read_fields)
-    lines.append(f'        """{doc}"""')
-    lines.append('        return super().read(keys, fields, control_id=control_id)')
+    lines.append(f"        \"\"\"{doc}\"\"\"")
+    lines.append("        return super().read(keys, fields, control_id=control_id)")
     lines.append('')
-    lines.append('    def create(self, fields: Dict[str, str], control_id: Optional[str] = None) -> ResultData:')
+    lines.append("    def create(self, fields: Union[Dict[str, str], BaseModel], control_id: Optional[str] = None) -> ResultData:")
     doc = build_docstring('Create', object_name, create_fields)
-    lines.append(f'        """{doc}"""')
-    lines.append('        return super().create(fields, control_id=control_id)')
+    lines.append(f"        \"\"\"{doc}\"\"\"")
+    lines.append("        return super().create(fields, control_id=control_id)")
     lines.append('')
-    lines.append('    def update(self, fields: Dict[str, str], control_id: Optional[str] = None) -> ResultData:')
+    lines.append("    def update(self, fields: Union[Dict[str, str], BaseModel], control_id: Optional[str] = None) -> ResultData:")
     doc = build_docstring('Update', object_name, update_fields)
-    lines.append(f'        """{doc}"""')
-    lines.append('        return super().update(fields, control_id=control_id)')
+    lines.append(f"        \"\"\"{doc}\"\"\"")
+    lines.append("        return super().update(fields, control_id=control_id)")
     lines.append('')
-    lines.append('    def delete(self, key_field: str, key_value: str, control_id: Optional[str] = None) -> ResultData:')
+    lines.append("    def delete(self, key_field: str, key_value: str, control_id: Optional[str] = None) -> ResultData:")
     doc = build_delete_docstring(object_name, delete_fields)
-    lines.append(f'        """{doc}"""')
-    lines.append('        return super().delete(key_field, key_value, control_id=control_id)')
+    lines.append(f"        \"\"\"{doc}\"\"\"")
+    lines.append("        return super().delete(key_field, key_value, control_id=control_id)")
+    lines.append("")
+    lines.append(f"    def to_model(self, value: Union[Record, ResultData]) -> typed_models.{model_name}:")
+    lines.append(f"        \"\"\"Convert a record/result to {model_name}.\"\"\"")
+    lines.append(f"        if isinstance(value, ResultData):")
+    lines.append(f"            return typed_models.{model_name}.from_result(value)")
+    lines.append(f"        return typed_models.{model_name}.from_record(value)")
+    lines.append("")
+    lines.append(f"    def read_model(")
+    lines.append(f"        self,")
+    lines.append(f"        keys: Iterable[str],")
+    lines.append(f"        fields: Iterable[str],")
+    lines.append(f"        control_id: Optional[str] = None,")
+    lines.append(f"    ) -> typed_models.{model_name}:")
+    lines.append(f"        \"\"\"Read a {object_name} record and return a typed model.\"\"\"")
+    lines.append(f"        result = self.read(keys, fields, control_id=control_id)")
+    lines.append(f"        return typed_models.{model_name}.from_result(result)")
+    lines.append("")
+    lines.append(f"    def read_by_query_models(")
+    lines.append(f"        self,")
+    lines.append(f"        fields: Iterable[str],")
+    lines.append(f"        query: str = \"\",")
+    lines.append(f"        page_size: int = 100,")
+    lines.append(f"        offset: Optional[int] = None,")
+    lines.append(f"        control_id: Optional[str] = None,")
+    lines.append(f"    ) -> List[typed_models.{model_name}]:")
+    lines.append(f"        \"\"\"Read {object_name} records and return typed models.\"\"\"")
+    lines.append(f"        result = self.read_by_query(fields, query=query, page_size=page_size, offset=offset, control_id=control_id)")
+    lines.append(f"        return [typed_models.{model_name}.from_record(record) for record in result.records]")
     lines.append('')
 
-lines.append('')
-lines.append('def _build_factory():')
-lines.append('    class Factory(ObjectServices):')
-lines.append('        pass')
-lines.append('')
+lines.append("")
+lines.append("def _build_factory():")
+lines.append("    class Factory(ObjectServices):")
+lines.append("        pass")
+lines.append("")
 
 for object_name in sorted_objects:
     class_name = f'{to_pascal(object_name)}Service'
     prop_name = object_name.lower()
-    lines.append('        @property')
-    lines.append(f'        def {prop_name}(self) -> {class_name}:')
-    lines.append(f'            """Service accessor for {object_name}."""')
-    lines.append(f'            return {class_name}(self._session_client)')
-    lines.append('')
+    lines.append("        @property")
+    lines.append(f"        def {prop_name}(self) -> {class_name}:")
+    lines.append(f"            \"\"\"Service accessor for {object_name}.\"\"\"")
+    lines.append(f"            return {class_name}(self._session_client)")
+    lines.append("")
 
-lines.append('    return Factory')
-lines.append('')
-lines.append('ObjectServices = _build_factory()')
+lines.append("    return Factory")
+lines.append("")
+lines.append("ObjectServices = _build_factory()")
 
 OUTPUT.write_text('\n'.join(lines).rstrip() + '\n', encoding='utf-8')

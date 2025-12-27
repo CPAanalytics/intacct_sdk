@@ -1,0 +1,177 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Provider key",
+      "id": "PROVIDERKEY",
+      "iscustom": "false",
+      "label": "Provider key",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROVIDERID",
+      "iscustom": "false",
+      "label": "Provider ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Bank account key",
+      "id": "BANKACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Bank account key",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BANKACCOUNTID",
+      "iscustom": "false",
+      "label": "Bank account ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Request initiated",
+        "In progress",
+        "Request received",
+        "Request failed",
+        "Awaiting authorization",
+        "Subscribed",
+        "Cancelled",
+        "Suspended"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Is this a rebate account",
+      "id": "ISREBATEACCOUNT",
+      "iscustom": "false",
+      "label": "Rebate account",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Message",
+      "id": "MESSAGE",
+      "iscustom": "false",
+      "label": "Message",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Authentication URL",
+      "id": "AUTHURL",
+      "iscustom": "false",
+      "label": "Authentication URL",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Check start number for provider",
+      "id": "CHECKSTARTNO",
+      "iscustom": "false",
+      "label": "Check start no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Email address for remittances",
+      "id": "REMITTANCEEMAIL",
+      "iscustom": "false",
+      "label": "Email address for remittances",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PROVIDERBANKACCOUNT",
+  "relationships": []
+}

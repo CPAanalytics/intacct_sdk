@@ -1,0 +1,452 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Book ID",
+      "id": "BOOKID",
+      "iscustom": "false",
+      "label": "Book ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Consolidation currency",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Net assets account key",
+      "id": "CTANETASSETACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Net assets account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Net assets",
+      "id": "CTANETASSETACCOUNTNO",
+      "iscustom": "false",
+      "label": "Net assets",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Net assets account title",
+      "id": "CTANETASSETACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Net assets account title",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Net income account key",
+      "id": "CTANETINCOMEACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Net income account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Net income",
+      "id": "CTANETINCOMEACCOUNTNO",
+      "iscustom": "false",
+      "label": "Net income",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Net income account title",
+      "id": "CTANETINCOMEACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Net income account title",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default statistical journal",
+      "id": "BOOKSTATJOURNALSYMBOL",
+      "iscustom": "false",
+      "label": "Default statistical journal",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Statistical journal title",
+      "id": "BOOKSTATJOURNALTITLE",
+      "iscustom": "false",
+      "label": "Statistical journal title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Budget key",
+      "id": "BUDGETKEY",
+      "iscustom": "false",
+      "label": "Budget key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Consolidation budget header",
+      "id": "BUDGETID",
+      "iscustom": "false",
+      "label": "Consolidation budget header",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department key",
+      "id": "DEPARTMENTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Consolidation default department",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Consolidation default department",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department name",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXCHRATETYPE",
+      "iscustom": "false",
+      "label": "Exchange rate table",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Intacct Daily Rate"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BSTRANMETHOD",
+      "iscustom": "false",
+      "label": "Balance sheet accounts",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Ending spot rate",
+        "Weighted average rate"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ISTRANMETHOD",
+      "iscustom": "false",
+      "label": "Income statement accounts",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Weighted average rate",
+        "Ending spot rate"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Elimination entity name",
+      "id": "EENAME",
+      "iscustom": "false",
+      "label": "Elimination entity name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Is auto-elimination",
+      "id": "AUTOELIMINATION",
+      "iscustom": "false",
+      "label": "Is auto-elimination",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Book type",
+      "id": "TYPE",
+      "iscustom": "false",
+      "label": "Type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Standard",
+        "Consolidation",
+        "User Defined",
+        "Gaap",
+        "Tax",
+        "Gaap Consolidation",
+        "Tax Consolidation",
+        "Adj Consolidation",
+        "Tier Consolidation"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Source book",
+      "id": "SOURCEBOOKID",
+      "iscustom": "false",
+      "label": "Source book",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "ACCRUAL",
+        "CASH"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Single currency budget",
+      "id": "BUDGETHEADER.ISCONSOLIDATED",
+      "iscustom": "false",
+      "label": "Single currency budget",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Journal",
+      "id": "JOURNALKEY",
+      "iscustom": "false",
+      "label": "Journal",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Book journal symbol",
+      "id": "BOOKJOURNALSYMBOL",
+      "iscustom": "false",
+      "label": "Book journal symbol",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Book journal title",
+      "id": "BOOKJOURNALTITLE",
+      "iscustom": "false",
+      "label": "Book journal title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LEGACY",
+      "iscustom": "false",
+      "label": "Legacy",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "T",
+        "F"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "HISTORICALRATEDATETYPE",
+      "iscustom": "false",
+      "label": "Select historical rate date",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "LINELEVELDATE",
+        "TRANSACTIONDATE"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Dimensions",
+      "id": "DIMENSIONS",
+      "iscustom": "false",
+      "label": "Dimensions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Elimination adjustment account key",
+      "id": "ELIMINATIONADJACCTKEY",
+      "iscustom": "false",
+      "label": "Elimination adjustment account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Elimination adjustment account",
+      "id": "ELIMINATIONADJACCT",
+      "iscustom": "false",
+      "label": "Elimination adjustment account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Elimination adjustment account title",
+      "id": "ELIMINATIONADJACCTTITLE",
+      "iscustom": "false",
+      "label": "Elimination adjustment account title",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ownership structure key",
+      "id": "OWNERSHIPSTRUCTUREKEY",
+      "iscustom": "false",
+      "label": "Ownership structure key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ownership structure name",
+      "id": "OWNERSHIPSTRUCTURENAME",
+      "iscustom": "false",
+      "label": "Ownership structure name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ownership structure description",
+      "id": "OWNERSHIPSTRUCTUREDESC",
+      "iscustom": "false",
+      "label": "Ownership structure description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Eliminate by affiliate entity",
+      "id": "ELIMINATEBYAFFILIATEENTITY",
+      "iscustom": "false",
+      "label": "Eliminate by affiliate entity",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GCBOOK",
+  "relationships": []
+}

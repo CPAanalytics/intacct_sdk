@@ -1,0 +1,114 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Job ID",
+      "id": "JOBID",
+      "iscustom": "false",
+      "label": "Job ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Time when the package was queued",
+      "id": "TIMEQUEUED",
+      "iscustom": "false",
+      "label": "Time queued",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Job type",
+      "id": "JOBTYPE",
+      "iscustom": "false",
+      "label": "Job type",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Package details action",
+      "id": "ACTION",
+      "iscustom": "false",
+      "label": "Action",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Package details",
+      "id": "DETAILS",
+      "iscustom": "false",
+      "label": "Details",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "User login ID",
+      "id": "USERS",
+      "iscustom": "false",
+      "label": "Users",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "State",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Failed",
+        "Parked",
+        "Queued",
+        "In progress",
+        "Delivered",
+        "Deferred",
+        "Canceled"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Current time minus time started",
+      "id": "ACTIVETIME",
+      "iscustom": "false",
+      "label": "Active time",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Current time minus time queued",
+      "id": "WAITINQUEUE",
+      "iscustom": "false",
+      "label": "Job wait time",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Time when the package was started",
+      "id": "TIMESTARTED",
+      "iscustom": "false",
+      "label": "Job started",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Execution request time",
+      "id": "EXEC_REQ_TIME",
+      "iscustom": "false",
+      "label": "Execution request time",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "JOBQUEUERECORD",
+  "relationships": []
+}

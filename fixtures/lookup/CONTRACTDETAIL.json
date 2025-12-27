@@ -1,0 +1,1780 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract key",
+      "id": "CONTRACTKEY",
+      "iscustom": "false",
+      "label": "Contract key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State",
+      "id": "CONTRACTSTATE",
+      "iscustom": "false",
+      "label": "Contract state",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "In progress",
+        "Renewed",
+        "Cancelled",
+        "Not renewed",
+        "Draft"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract name",
+      "id": "CONTRACTNAME",
+      "iscustom": "false",
+      "label": "Contract name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Parent key",
+      "id": "PARENTKEY",
+      "iscustom": "false",
+      "label": "Parent key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Parent item type",
+      "id": "PARENTITEMTYPE",
+      "iscustom": "false",
+      "label": "Parent item type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Inventory",
+        "Non-Inventory",
+        "Non-Inventory (Purchase only)",
+        "Non-Inventory (Sales only)",
+        "Kit",
+        "Stockable Kit"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Kit line number",
+      "id": "KITLINENO",
+      "iscustom": "false",
+      "label": "Kit line number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "true",
+      "required": "true",
+      "valid_values": [
+        "Draft",
+        "In progress",
+        "Renewal only",
+        "Cancelled",
+        "Not renewed",
+        "Completed",
+        "Revalued",
+        "Closed",
+        "Renewal forecast"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change control type",
+      "id": "CDCHANGECONTROL",
+      "iscustom": "false",
+      "label": "Change control type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Line number",
+      "id": "LINENO",
+      "iscustom": "false",
+      "label": "Line number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Service period",
+      "id": "PERIOD",
+      "iscustom": "false",
+      "label": "Period",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Line start",
+      "id": "BEGINDATE",
+      "iscustom": "false",
+      "label": "Line start",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Line end",
+      "id": "ENDDATE",
+      "iscustom": "false",
+      "label": "Line end",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Cancel date",
+      "id": "CANCELDATE",
+      "iscustom": "false",
+      "label": "Cancel date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Item key",
+      "id": "ITEMKEY",
+      "iscustom": "false",
+      "label": "Item key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item name",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMDESC",
+      "iscustom": "false",
+      "label": "Item description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item type",
+      "id": "ITEMTYPE",
+      "iscustom": "false",
+      "label": "Item type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Inventory",
+        "Non-Inventory",
+        "Non-Inventory (Purchase only)",
+        "Non-Inventory (Sales only)",
+        "Kit",
+        "Stockable Kit"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue recognition deferral status",
+      "id": "DEFERRALSTATUS",
+      "iscustom": "false",
+      "label": "Revenue recognition deferral status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Defer revenue until item is delivered",
+        "Defer revenue until all items are delivered"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity",
+      "id": "QUANTITY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Rate",
+      "id": "PRICE",
+      "iscustom": "false",
+      "label": "Rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Exchange rate type",
+      "id": "EXCHRATETYPE",
+      "iscustom": "false",
+      "label": "Exchange rate type",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Exchange rate date",
+      "id": "EXCH_RATE_DATE",
+      "iscustom": "false",
+      "label": "Exchange rate date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Exchange rate",
+      "id": "EXCHANGE_RATE",
+      "iscustom": "false",
+      "label": "Exchange rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Multiplier",
+      "id": "MULTIPLIER",
+      "iscustom": "false",
+      "label": "Multiplier",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Discount",
+      "id": "DISCOUNTPERCENT",
+      "iscustom": "false",
+      "label": "Discount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Bill-to contact key",
+      "id": "BILLTOKEY",
+      "iscustom": "false",
+      "label": "Bill-to contact key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Bill to",
+      "id": "BILLTOCONTACTNAME",
+      "iscustom": "false",
+      "label": "Bill to",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Bill-to source",
+      "id": "BILLTOSOURCE",
+      "iscustom": "false",
+      "label": "Bill-to source",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Contract value",
+        "User-specified value"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Ship-to contact key",
+      "id": "SHIPTOKEY",
+      "iscustom": "false",
+      "label": "Ship-to contact key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ship to",
+      "id": "SHIPTOCONTACTNAME",
+      "iscustom": "false",
+      "label": "Ship to",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ship-to source",
+      "id": "SHIPTOSOURCE",
+      "iscustom": "false",
+      "label": "Ship-to source",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Contract value",
+        "User-specified value"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Renew",
+      "id": "RENEWAL",
+      "iscustom": "false",
+      "label": "Renew",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Recurring",
+      "id": "RECURRING",
+      "iscustom": "false",
+      "label": "Recurring",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Billing template key",
+      "id": "BILLINGTEMPLATEKEY",
+      "iscustom": "false",
+      "label": "Billing template key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Billing schedule key",
+      "id": "BILLINGSCHEDULEKEY",
+      "iscustom": "false",
+      "label": "Billing schedule key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BILLINGSCHEDULESTATUS",
+      "iscustom": "false",
+      "label": "Billing status",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Draft",
+        "In progress",
+        "On hold",
+        "Completed",
+        "Terminated",
+        "Estimate revalued",
+        "Renewal forecast"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "If this field is not given in CSV upload file or in API request, by default the value is taken from the item",
+      "id": "BILLINGTEMPLATENAME",
+      "iscustom": "false",
+      "label": "Billing template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Billing method",
+      "id": "BILLINGTEMPLATEMETHOD",
+      "iscustom": "false",
+      "label": "Billing template method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Predefined percentages",
+        "Project percent complete",
+        "Task percent complete"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Billing start",
+      "id": "BILLINGSTARTDATE",
+      "iscustom": "false",
+      "label": "Billing start",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Billing end",
+      "id": "BILLINGENDDATE",
+      "iscustom": "false",
+      "label": "Billing end",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Billing method",
+      "id": "BILLINGMETHOD",
+      "iscustom": "false",
+      "label": "Billing method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Fixed price",
+        "Quantity based",
+        "Project T&M",
+        "Project time",
+        "Project materials"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Flat/fixed amount frequency",
+      "id": "BILLINGOPTIONS",
+      "iscustom": "false",
+      "label": "Flat/fixed amount frequency",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "One-time",
+        "Use billing template",
+        "Include with every invoice"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Billing frequency",
+      "id": "BILLINGFREQUENCY",
+      "iscustom": "false",
+      "label": "Billing frequency",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Monthly",
+        "Quarterly",
+        "Annually"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Flat/fixed amount",
+      "id": "FLATAMOUNT",
+      "iscustom": "false",
+      "label": "Flat/fixed amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Base flat/fixed amount",
+      "id": "BASEFLATAMOUNT",
+      "iscustom": "false",
+      "label": "Base flat/fixed amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Total flat/fixed amount",
+      "id": "TOTALFLATAMOUNT",
+      "iscustom": "false",
+      "label": "Total flat/fixed amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Total base flat/fixed amount",
+      "id": "TOTALBASEFLATAMOUNT",
+      "iscustom": "false",
+      "label": "Total base flat/fixed amount",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Line type",
+      "id": "LINETYPE",
+      "iscustom": "false",
+      "label": "Line type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Sale",
+        "Discount",
+        "Debook"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Revenue template #1",
+      "id": "REVENUETEMPLATEKEY",
+      "iscustom": "false",
+      "label": "Revenue template #1",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "This template is associated with journal 1. If this field is not given in the CSV upload file or in the API request, the default value is taken from the item (if a default exists).\n\nIf the billing_method = project time, the revenue_template must = project time.  \n\nThis field is not applicable when the flat amount = 0.",
+      "id": "REVENUETEMPLATENAME",
+      "iscustom": "false",
+      "label": "Revenue template 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Recognition method",
+      "id": "REVENUETEMPLATEMETHOD",
+      "iscustom": "false",
+      "label": "Recognition method",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Straight line",
+        "Daily rate",
+        "Quantity based",
+        "Predefined percentages",
+        "Project percent complete",
+        "Task percent complete",
+        "Revenue Recognition on Invoice"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "REVENUESTEPTEMPLATE",
+      "iscustom": "false",
+      "label": "Revenue template step template",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Revenue template #2",
+      "id": "REVENUE2TEMPLATEKEY",
+      "iscustom": "false",
+      "label": "Revenue template #2",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "This template is associated with journal 2.\n\nIf this field is not specified in the CSV upload file or in the API request, the default value is taken from the item (if a default exists).\n\nIf the billing_method = project time, the revenue_two_template must = project time.\n\nThis field is not applicable when the flat amount = 0.",
+      "id": "REVENUE2TEMPLATENAME",
+      "iscustom": "false",
+      "label": "Revenue template 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Recognition method",
+      "id": "REVENUE2TEMPLATEMETHOD",
+      "iscustom": "false",
+      "label": "Recognition method",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Straight line",
+        "Daily rate",
+        "Quantity based",
+        "Predefined percentages",
+        "Project percent complete",
+        "Task percent complete",
+        "Revenue Recognition on Invoice"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "REVENUE2STEPTEMPLATE",
+      "iscustom": "false",
+      "label": "Revenue 2 template step template",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Not applicable when the revenue template has Recognition method = quantity-based, project time, project percent complete, or task percent complete.",
+      "id": "REVENUESTARTDATE",
+      "iscustom": "false",
+      "label": "Revenue 1 start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Not applicable when the revenue template has Recognition method = quantity-based, project time, project percent complete, or task percent complete.",
+      "id": "REVENUEENDDATE",
+      "iscustom": "false",
+      "label": "Revenue 1 end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Total revenue quantity",
+      "id": "REVENUETOTALQUANTITY",
+      "iscustom": "false",
+      "label": "Total revenue quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Not applicable when revenue template 2 has Recognition method = quantity-based, project time, project percent complete, or task percent complete.",
+      "id": "REVENUE2STARTDATE",
+      "iscustom": "false",
+      "label": "Revenue 2 start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Not applicable when revenue template 2 has Recognition method = quantity-based, project time, project percent complete, or task percent complete.",
+      "id": "REVENUE2ENDDATE",
+      "iscustom": "false",
+      "label": "Revenue 2 end date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Revenue schedule 1 key",
+      "id": "REVENUESCHEDULEKEY",
+      "iscustom": "false",
+      "label": "Revenue schedule 1 key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Revenue schedule 2 key",
+      "id": "REVENUE2SCHEDULEKEY",
+      "iscustom": "false",
+      "label": "Revenue schedule 2 key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REVENUESCHEDULESTATUS",
+      "iscustom": "false",
+      "label": "Schedule 1 status",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Draft",
+        "In progress",
+        "On hold",
+        "Completed",
+        "Terminated",
+        "Pending delivery",
+        "Pending delivery of all items",
+        "Estimate revalued",
+        "Renewal forecast"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REVENUE2SCHEDULESTATUS",
+      "iscustom": "false",
+      "label": "Schedule 2 status",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Draft",
+        "In progress",
+        "On hold",
+        "Completed",
+        "Terminated",
+        "Pending delivery",
+        "Pending delivery of all items",
+        "Estimate revalued",
+        "Renewal forecast"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Revenue journal 1 key",
+      "id": "REVENUEJOURNALKEY",
+      "iscustom": "false",
+      "label": "Revenue journal 1 key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Revenue journal 2 key",
+      "id": "REVENUE2JOURNALKEY",
+      "iscustom": "false",
+      "label": "Revenue journal 2 key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "AR unbilled account key",
+      "id": "ARUNBILLEDACCTKEY",
+      "iscustom": "false",
+      "label": "AR unbilled account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "AR billed",
+      "id": "ARBILLEDACCTKEY",
+      "iscustom": "false",
+      "label": "AR billed account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "DR unbilled account key",
+      "id": "DRUNBILLEDACCTKEY",
+      "iscustom": "false",
+      "label": "DR unbilled account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "DR billed",
+      "id": "DRBILLEDACCTKEY",
+      "iscustom": "false",
+      "label": "DR billed account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "DR paid",
+      "id": "DRPAIDACCTKEY",
+      "iscustom": "false",
+      "label": "DR paid account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Sales unbilled account key",
+      "id": "SALESUNBILLEDACCTKEY",
+      "iscustom": "false",
+      "label": "Sales unbilled account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Sales billed",
+      "id": "SALESBILLEDACCTKEY",
+      "iscustom": "false",
+      "label": "Sales billed account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Sales paid account key",
+      "id": "SALESPAIDACCTKEY",
+      "iscustom": "false",
+      "label": "Sales paid account key",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Reset usage quantity",
+      "id": "USAGEQTYRESETPERIOD",
+      "iscustom": "false",
+      "label": "Reset usage quantity",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "After each renewal",
+        "After each invoice"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Usage quantity recurs",
+      "id": "USAGEQTYRECUR",
+      "iscustom": "false",
+      "label": "Usage quantity recurs",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change type",
+      "id": "DBBCATEGORY",
+      "iscustom": "false",
+      "label": "Change type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "New MRR",
+        "Add on MRR",
+        "Renewal upgrade",
+        "Renewal downgrade",
+        "Churn MRR",
+        "Downgrade"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "MRR",
+      "id": "MRR",
+      "iscustom": "false",
+      "label": "MRR",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PRICECALCMEMO",
+      "iscustom": "false",
+      "label": "Price calculation memo",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TASKDIMKEY",
+      "iscustom": "false",
+      "label": "Task key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TASKNAME",
+      "iscustom": "false",
+      "label": "Task name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "TASKID",
+      "iscustom": "false",
+      "label": "Task",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Delivery status",
+      "id": "DELIVERYSTATUS",
+      "iscustom": "false",
+      "label": "Delivery status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Delivered",
+        "Undelivered"
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Delivery date",
+      "id": "DELIVERYDATE",
+      "iscustom": "false",
+      "label": "Delivery date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "GL posting",
+      "id": "GLPOSTINGDATE",
+      "iscustom": "false",
+      "label": "GL posting",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Renewal billing template key",
+      "id": "RENEWALBILLINGTEMPLATEKEY",
+      "iscustom": "false",
+      "label": "Renewal billing template key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "If this field is not given in the CSV upload file or in the API request, by default the value is taken from the line's billing template or from the item",
+      "id": "RENEWALBILLINGTEMPLATENAME",
+      "iscustom": "false",
+      "label": "Renewal billing template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Hold date",
+      "id": "REVENUEHOLDDATE",
+      "iscustom": "false",
+      "label": "Hold date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Hold date",
+      "id": "EXPENSEHOLDDATE",
+      "iscustom": "false",
+      "label": "Hold date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Hold date",
+      "id": "BILLINGHOLDDATE",
+      "iscustom": "false",
+      "label": "Hold date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Resume date",
+      "id": "REVENUERESUMEDATE",
+      "iscustom": "false",
+      "label": "Resume date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Resume date",
+      "id": "EXPENSERESUMEDATE",
+      "iscustom": "false",
+      "label": "Resume date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Resume date",
+      "id": "BILLINGRESUMEDATE",
+      "iscustom": "false",
+      "label": "Resume date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REVENUEMEMO",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXPENSEMEMO",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BILLINGMEMO",
+      "iscustom": "false",
+      "label": "Memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "POSTMEMO",
+      "iscustom": "false",
+      "label": "Post memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Flat amount multiplier",
+      "id": "FLATAMOUNT_MULTIPLIER",
+      "iscustom": "false",
+      "label": "Duration (in periods)",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Prorate billing period",
+      "id": "PRORATEBILLINGPERIOD",
+      "iscustom": "false",
+      "label": "Prorate partial periods",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Quantity type",
+      "id": "USAGELINETYPE",
+      "iscustom": "false",
+      "label": "Quantity type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Variable",
+        "Committed"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "On contract line end date",
+      "id": "COMMITTEDUSAGEENDACTION",
+      "iscustom": "false",
+      "label": "On contract line end date",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Bill unused quantity",
+        "Cancel unused quantity",
+        "Do nothing"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "If usage exceeds the committed quantity",
+      "id": "COMMITTEDUSAGEEXCESS",
+      "iscustom": "false",
+      "label": "If usage exceeds the committed quantity",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Bill overage",
+        "Don't allow overage",
+        "Do nothing"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "MRR type",
+      "id": "SAASCHANGETYPEID",
+      "iscustom": "false",
+      "label": "MRR type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue journal 1",
+      "id": "REVENUEJOURNAL",
+      "iscustom": "false",
+      "label": "Revenue journal 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue journal 2",
+      "id": "REVENUE2JOURNAL",
+      "iscustom": "false",
+      "label": "Revenue journal 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Trigger date",
+      "id": "RENEWAL_TRIGGER_DATE",
+      "iscustom": "false",
+      "label": "Trigger date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "CN_LINE_RENEWAL_DATE",
+      "iscustom": "false",
+      "label": "Renewal date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Recognize revenue on invoice",
+      "id": "REV_REC_ON_INVOICE",
+      "iscustom": "false",
+      "label": "Recognize revenue on invoice",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue journal 1 title",
+      "id": "REVENUEJOURNALTITLE",
+      "iscustom": "false",
+      "label": "Revenue journal 1 title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue journal 2 title",
+      "id": "REVENUE2JOURNALTITLE",
+      "iscustom": "false",
+      "label": "Revenue journal 2 title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Historical",
+      "id": "HISTORICALLINE",
+      "iscustom": "false",
+      "label": "Historical",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Historical billed",
+      "id": "HISTORICALBILLEDAMT",
+      "iscustom": "false",
+      "label": "Historical billed",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Historical recognized",
+      "id": "HISTORICALRECOGNIZEDAMT",
+      "iscustom": "false",
+      "label": "Historical recognized",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Historical as of date",
+      "id": "HISTORICALASOFDATE",
+      "iscustom": "false",
+      "label": "Historical as of date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Historical offset GL account key",
+      "id": "HISTORICALOFFSETGLACCTKEY",
+      "iscustom": "false",
+      "label": "Historical offset GL account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Historical offset GL account",
+      "id": "HISTORICALOFFSETGLACCTNO",
+      "iscustom": "false",
+      "label": "Historical offset GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CUSTOMERDIMKEY",
+      "iscustom": "false",
+      "label": "Customerdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "VENDORDIMKEY",
+      "iscustom": "false",
+      "label": "Vendordimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "VENDORID",
+      "iscustom": "false",
+      "label": "Vendor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "VENDORNAME",
+      "iscustom": "false",
+      "label": "Vendor name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPLOYEEDIMKEY",
+      "iscustom": "false",
+      "label": "Employeedimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPLOYEENAME",
+      "iscustom": "false",
+      "label": "Employee name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTDIMKEY",
+      "iscustom": "false",
+      "label": "Projectdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CLASSDIMKEY",
+      "iscustom": "false",
+      "label": "Classdimkey",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSID",
+      "iscustom": "false",
+      "label": "Class",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CLASSNAME",
+      "iscustom": "false",
+      "label": "Class name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTDETAIL",
+  "relationships": [
+    {
+      "label": "Item",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "ITEMID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Contract",
+      "objectname": "CONTRACT",
+      "objectpath": "CONTRACT",
+      "relatedby": "CONTRACTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTRACTBILLINGTEMPLATE",
+      "objectpath": "BILLINGTEMPLATE",
+      "relatedby": "BILLINGTEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTRACTBILLINGTEMPLATE",
+      "objectpath": "RENEWALBILLINGTEMPLATE",
+      "relatedby": "RENEWALBILLINGTEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Contract revenue template 1",
+      "objectname": "CONTRACTREVENUETEMPLATE",
+      "objectpath": "REVENUETEMPLATE",
+      "relatedby": "REVENUETEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Contract revenue template 2",
+      "objectname": "CONTRACTREVENUETEMPLATE",
+      "objectpath": "REVENUE2TEMPLATE",
+      "relatedby": "REVENUE2TEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTRACTBILLINGSCHEDULE",
+      "objectpath": "BILLINGSCHEDULE",
+      "relatedby": "BILLINGSCHEDULEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Contract revenue schedule 1",
+      "objectname": "CONTRACTREVENUESCHEDULE",
+      "objectpath": "REVENUESCHEDULE",
+      "relatedby": "REVENUESCHEDULEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Contract revenue schedule 2",
+      "objectname": "CONTRACTREVENUE2SCHEDULE",
+      "objectpath": "REVENUE2SCHEDULE",
+      "relatedby": "REVENUE2SCHEDULEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Contract revenue journal 1",
+      "objectname": "GLJOURNAL",
+      "objectpath": "REVENUEJOURNAL",
+      "relatedby": "REVENUEJOURNALKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Contract revenue journal 2",
+      "objectname": "GLJOURNAL",
+      "objectpath": "REVENUE2JOURNAL",
+      "relatedby": "REVENUE2JOURNALKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "MRR journal",
+      "objectname": "GLJOURNAL",
+      "objectpath": "MRRJOURNAL",
+      "relatedby": "MRRJOURNALKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Customer count journal",
+      "objectname": "STATJOURNAL",
+      "objectpath": "CUSTCNTJOURNAL",
+      "relatedby": "CUSTCNTJOURNALKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "AR unbilled GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "ARUNBILLEDACCT",
+      "relatedby": "ARUNBILLEDACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "AR billed GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "ARBILLEDACCT",
+      "relatedby": "ARBILLED",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Deferred unbilled GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "DRUNBILLEDACCT",
+      "relatedby": "DRUNBILLEDACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Deferred billed GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "DRBILLEDACCT",
+      "relatedby": "DRBILLEDACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Deferred paid GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "DRPAIDACCT",
+      "relatedby": "DRPAIDACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Sales unbilled GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "SALESUNBILLEDACCT",
+      "relatedby": "SALESUNBILLEDACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Sales billed GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "SALESBILLEDACCT",
+      "relatedby": "SALESBILLEDACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Sales paid GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "SALESPAIDACCT",
+      "relatedby": "SALESPAIDACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "New MRR GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "NEWMRRACCT",
+      "relatedby": "NEWMRRACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Add on MRR GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "ADDONMRRACCT",
+      "relatedby": "ADDONMRRACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Renewal upgrade GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "RENEWALUPGRADEACCT",
+      "relatedby": "RENEWALUPGRADEACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Renewal downgrade GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "RENEWALDOWNGRADEACCT",
+      "relatedby": "RENEWALDOWNGRADEACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Churn MRR GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "CHURNMRRACCT",
+      "relatedby": "CHURNMRRACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Downgrade GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "PARTIALDOWNGRADEACCT",
+      "relatedby": "PARTIALDOWNGRADEACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "MRR offset GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "MRROFFSETACCT",
+      "relatedby": "MRROFFSETACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Customer count statistical account",
+      "objectname": "STATACCOUNT",
+      "objectpath": "CUSTCNTACCT",
+      "relatedby": "CUSTCNTACCTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATION",
+      "objectpath": "LOC",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TASK",
+      "objectpath": "TASK",
+      "relatedby": "TASKDIMKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "SaaS change type",
+      "objectname": "SAASCHANGETYPE",
+      "objectpath": "CHANGETYPE",
+      "relatedby": "SAASCHANGETYPEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Historical offset GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "HISTORICALOFFSETGLACCT",
+      "relatedby": "HISTORICALOFFSETGLACCTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

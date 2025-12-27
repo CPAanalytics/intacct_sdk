@@ -1,0 +1,134 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "ID",
+      "id": "ID",
+      "iscustom": "false",
+      "label": "ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse",
+      "id": "WAREHOUSEKEY",
+      "iscustom": "false",
+      "label": "Warehouse",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DOCUMENTID",
+      "iscustom": "false",
+      "label": "Document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Total key",
+      "id": "TOTALKEY",
+      "iscustom": "false",
+      "label": "Total key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inventory total type",
+      "id": "TOTALNAME",
+      "iscustom": "false",
+      "label": "Inventory total type",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unit of measure",
+      "id": "UNIT",
+      "iscustom": "false",
+      "label": "Unit of measure",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QUANTITY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Department key",
+      "id": "DEPTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Document date",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "Document date",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Effect on inventory",
+      "id": "EFFECTONINVENTORY",
+      "iscustom": "false",
+      "label": "Effect on inventory",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Quantity",
+        "Value",
+        "Quantity & Value"
+      ]
+    }
+  ],
+  "object_name": "INVENTORYTOTALDETAIL",
+  "relationships": [
+    {
+      "label": "Item",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "ITEMID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Location",
+      "objectname": "LOCATION",
+      "objectpath": "LOCATION",
+      "relatedby": "RECORDNO",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Company record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "CNY number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "INTERENTITYSETUP",
+  "relationships": []
+}

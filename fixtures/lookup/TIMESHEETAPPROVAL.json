@@ -1,0 +1,189 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "APPROVAL_STAGE",
+      "iscustom": "false",
+      "label": "Approval stage",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "APPROVAL_TYPE",
+      "iscustom": "false",
+      "label": "Approval type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "APPROVAL_LEVEL",
+      "iscustom": "false",
+      "label": "Approval level",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "APPROVERID",
+      "iscustom": "false",
+      "label": "Submitted to",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "APPROVERKEY",
+      "iscustom": "false",
+      "label": "Approver key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "APPROVEDBY",
+      "iscustom": "false",
+      "label": "Approved or declined by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "APPROVEDBYKEY",
+      "iscustom": "false",
+      "label": "Approved by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "EVENTDATE",
+      "iscustom": "false",
+      "label": "Event date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COMMENTS",
+      "iscustom": "false",
+      "label": "Comments",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Submitted",
+        "Pending Approval",
+        "Approved",
+        "Declined"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Requestor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TIMESHEETKEY",
+      "iscustom": "false",
+      "label": "Timesheet key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TSENTRYLINENO",
+      "iscustom": "false",
+      "label": "Timesheet entry line number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TIMESHEETENTRYKEY",
+      "iscustom": "false",
+      "label": "Timesheet entry key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COMPLETEDBY",
+      "iscustom": "false",
+      "label": "Approve or decline action completed by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "COMPLETEDBYKEY",
+      "iscustom": "false",
+      "label": "Completed by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "TIMESHEETAPPROVAL",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EMPLOYEE",
+      "relatedby": "EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TIMESHEETENTRY",
+      "objectpath": "TIMESHEETENTRY",
+      "relatedby": "TSENTRY#",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

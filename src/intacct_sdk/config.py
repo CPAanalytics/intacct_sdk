@@ -18,6 +18,7 @@ class IntacctConfig:
     timeout_seconds: float = 30.0
     max_retries: int = 2
     backoff_seconds: float = 0.5
+    debug_xml: bool = False
     logger: logging.Logger = field(default_factory=lambda: logging.getLogger("intacct_sdk"))
 
     @staticmethod
@@ -31,6 +32,7 @@ class IntacctConfig:
             user_password=_require_env("INTACCT_USER_PASSWORD"),
             client_id=os.getenv("INTACCT_CLIENT_ID", ""),
             entity_id=os.getenv("INTACCT_ENTITY_ID", ""),
+            debug_xml=os.getenv("INTACCT_DEBUG_XML", "0") == "1",
         )
 
     def company_with_slide_in(self) -> str:

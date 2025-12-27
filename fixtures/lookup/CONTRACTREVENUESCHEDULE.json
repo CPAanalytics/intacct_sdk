@@ -1,0 +1,225 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule type",
+      "id": "TYPE",
+      "iscustom": "false",
+      "label": "Schedule type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Revenue",
+        "Revenue2"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract key",
+      "id": "CONTRACTKEY",
+      "iscustom": "false",
+      "label": "Contract key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract detail key",
+      "id": "CONTRACTDETAILKEY",
+      "iscustom": "false",
+      "label": "Contract detail key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule status",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "Schedule status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Draft",
+        "In progress",
+        "On hold",
+        "Completed",
+        "Terminated",
+        "Pending delivery",
+        "Pending delivery of all items",
+        "Estimate revalued",
+        "Renewal forecast"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue template",
+      "id": "CONTRACTDETAIL.TEMPLATENAME",
+      "iscustom": "false",
+      "label": "Revenue template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Contract line no.",
+      "id": "LINENO",
+      "iscustom": "false",
+      "label": "Contract line no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Start date",
+      "id": "STARTDATE",
+      "iscustom": "false",
+      "label": "Start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "End date",
+      "id": "ENDDATE",
+      "iscustom": "false",
+      "label": "End date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Cancellation date",
+      "id": "CANCELDATE",
+      "iscustom": "false",
+      "label": "Cancellation date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "CNDETAILGLPOSTINGDATE",
+      "iscustom": "false",
+      "label": "Contract line GL posting date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Delivery date",
+      "id": "DELIVERYDATE",
+      "iscustom": "false",
+      "label": "Delivery date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Hold date",
+      "id": "REVENUEHOLDDATE",
+      "iscustom": "false",
+      "label": "Hold date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Resume date",
+      "id": "REVENUERESUMEDATE",
+      "iscustom": "false",
+      "label": "Resume date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Estimate revaluation date",
+      "id": "COMPLETEDATE",
+      "iscustom": "false",
+      "label": "Estimate revaluation date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTREVENUESCHEDULE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "CONTRACT",
+      "objectpath": "CONTRACT",
+      "relatedby": "CONTRACTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTRACTDETAIL",
+      "objectpath": "CONTRACTDETAIL",
+      "relatedby": "CONTRACTDETAILKEY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

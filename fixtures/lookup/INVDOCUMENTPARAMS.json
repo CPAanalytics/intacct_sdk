@@ -1,0 +1,504 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Template name",
+      "id": "DOCID",
+      "iscustom": "false",
+      "label": "Template name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Template type",
+      "id": "DOCCLASS",
+      "iscustom": "false",
+      "label": "Template type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Quote",
+        "Order",
+        "List",
+        "Invoice",
+        "Adjustment",
+        "Other"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Workflow category",
+      "id": "CATEGORY",
+      "iscustom": "false",
+      "label": "Workflow category",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Receipt",
+        "Transfer",
+        "Adjustment",
+        "Shipping"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable permissions for specific users or groups",
+      "id": "USERPERM",
+      "iscustom": "false",
+      "label": "Enable permissions for specific users or groups",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Edit policy",
+      "id": "EDITTYPE",
+      "iscustom": "false",
+      "label": "Edit policy",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No Edit",
+        "Before Printing",
+        "Edit in Draft Only",
+        "All"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Delete policy",
+      "id": "DELTYPE",
+      "iscustom": "false",
+      "label": "Delete policy",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No Delete",
+        "Before Printing",
+        "Delete in Draft Only",
+        "All"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable numbering scheme",
+      "id": "ENABLE_SEQNUM",
+      "iscustom": "false",
+      "label": "Enable numbering scheme",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Numbering sequence",
+      "id": "SEQUENCE",
+      "iscustom": "false",
+      "label": "",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Preserve sequence numbers",
+      "id": "PRESERVE_SEQNUM",
+      "iscustom": "false",
+      "label": "Preserve sequence numbers",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Inherit source document number",
+      "id": "INHERIT_SOURCE_DOCNO",
+      "iscustom": "false",
+      "label": "Inherit source document number",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Affects inventory",
+      "id": "UPDATES_INV",
+      "iscustom": "false",
+      "label": "Affects inventory",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No",
+        "Quantity",
+        "Value",
+        "Quantity and Value"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Transaction posting",
+      "id": "UPDATES_GL",
+      "iscustom": "false",
+      "label": "Transaction posting",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "G",
+        "N"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Increases or decreases inventory",
+      "id": "IN_OUT",
+      "iscustom": "false",
+      "label": "Increases or decreases inventory",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Increase",
+        "Decrease"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Partial conversion handling",
+      "id": "CONVTYPE",
+      "iscustom": "false",
+      "label": "Partial conversion handling",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Leave Transaction Open",
+        "Close Transaction"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Affects cost",
+      "id": "UPDATES_COST",
+      "iscustom": "false",
+      "label": "Affects cost",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Initial price list",
+      "id": "PRICELISTID",
+      "iscustom": "false",
+      "label": "Initial price list",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Special price list",
+      "id": "SPECIAL_PRICELISTID",
+      "iscustom": "false",
+      "label": "Special price list",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable subtotals",
+      "id": "SHOW_TOTALS",
+      "iscustom": "false",
+      "label": "Enable subtotals",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Location",
+      "id": "LOCOVERRIDE",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Department",
+      "id": "DEPTOVERRIDE",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Printed document template",
+      "id": "XSLTEMPLATE",
+      "iscustom": "false",
+      "label": "Printed document template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Optional default text",
+      "id": "FIXED_MESG",
+      "iscustom": "false",
+      "label": "Optional default text",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Warn user if item onhand quantity falls below 0",
+      "id": "WARNONLOWQTY",
+      "iscustom": "false",
+      "label": "Warn user if item on hand quantity falls below 0",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Warehouse selection method",
+      "id": "WAREHOUSESELMETHOD",
+      "iscustom": "false",
+      "label": "Warehouse selection method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Sort by ID",
+        "Sort by Name",
+        "Warehouse with Available Inventory",
+        "Use the default warehouse"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default warehouse",
+      "id": "DEFAULT_WAREHOUSE",
+      "iscustom": "false",
+      "label": "Default warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Sale/purchase/internal",
+      "id": "SALE_PUR_TRANS",
+      "iscustom": "false",
+      "label": "Sale/purchase/internal",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Sale",
+        "Purchase",
+        "Internal",
+        "TimeBill"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Customer, vendor, or warehouse",
+      "id": "CUST_VEND",
+      "iscustom": "false",
+      "label": "Customer, vendor, or warehouse",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Customer",
+        "Vendor",
+        "Warehouse"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "No description specified",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Create policy",
+      "id": "CREATETYPE",
+      "iscustom": "false",
+      "label": "Create policy",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "New document or Convert",
+        "Convert only"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Create transactions in",
+      "id": "TD_CREATION_RULE",
+      "iscustom": "false",
+      "label": "Create transactions in",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Top level or Entity",
+        "Top level only",
+        "Entity only"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Reporting category",
+      "id": "REPORTINGCATEGORY",
+      "iscustom": "false",
+      "label": "Reporting category",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Inventory Adjustment",
+        "Build Kits",
+        "Disassemble Kits",
+        "Inventory Damaged Goods",
+        "Inventory Receipt",
+        "Inventory Scrap or Spoilage",
+        "Inventory Shipper",
+        "Warehouse Transfer"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "INVDOCUMENTPARAMS",
+  "relationships": [
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

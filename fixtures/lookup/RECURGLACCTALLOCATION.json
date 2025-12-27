@@ -1,0 +1,401 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Plan name",
+      "id": "PLANNAME",
+      "iscustom": "false",
+      "label": "Plan name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Module key",
+      "id": "MODULEKEY",
+      "iscustom": "false",
+      "label": "Module key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Account allocation key",
+      "id": "GLACCTALLOCATIONKEY",
+      "iscustom": "false",
+      "label": "Account allocation key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account allocation ID",
+      "id": "GLACCTALLOCATION",
+      "iscustom": "false",
+      "label": "Account allocation ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Account allocation group key",
+      "id": "GLACCTALLOCATIONGRPKEY",
+      "iscustom": "false",
+      "label": "Account allocation group key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Allocation group ID",
+      "id": "GLACCTALLOCATIONGRP",
+      "iscustom": "false",
+      "label": "Allocation group ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Journal entry start date",
+      "id": "STARTDATE",
+      "iscustom": "false",
+      "label": "Journal entry start date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "End date",
+      "id": "ENDDATE",
+      "iscustom": "false",
+      "label": "End date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Repeat every",
+      "id": "REPEATINTERVAL",
+      "iscustom": "false",
+      "label": "Repeat every",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ends",
+      "id": "ENDINGON",
+      "iscustom": "false",
+      "label": "Ends",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Never",
+        "Number of Occurrences",
+        "End Date"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "After a number of occurrences",
+      "id": "OCCURRENCES",
+      "iscustom": "false",
+      "label": "After a number of occurrences",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Next posting date",
+      "id": "NEXTEXECDATE",
+      "iscustom": "false",
+      "label": "Next posting date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Last posted date",
+      "id": "LASTPOSTED",
+      "iscustom": "false",
+      "label": "Last posted date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LASTEXECUTIONSTATUS",
+      "iscustom": "false",
+      "label": "Last posted status",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "In Transit",
+        "Schedule error",
+        "Failed",
+        "Success"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RUNCOUNT",
+      "iscustom": "false",
+      "label": "No. posted",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Execution count",
+      "id": "EXECCOUNT",
+      "iscustom": "false",
+      "label": "Execution count",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Repeat by period",
+      "id": "REPEATBY",
+      "iscustom": "false",
+      "label": "Repeat by period",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "None",
+        "Day",
+        "Week",
+        "Month",
+        "Year"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Allocate through period end",
+      "id": "ISPERIODEND",
+      "iscustom": "false",
+      "label": "Allocate through period end",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Schedule operation key",
+      "id": "SCHOPKEY",
+      "iscustom": "false",
+      "label": "Schedule operation key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule operation name",
+      "id": "SCHOPNAME",
+      "iscustom": "false",
+      "label": "Schedule operation name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Schedule key",
+      "id": "SCHEDULEKEY",
+      "iscustom": "false",
+      "label": "Schedule key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule name",
+      "id": "SCHEDULENAME",
+      "iscustom": "false",
+      "label": "Schedule name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Operation key",
+      "id": "OPERATIONKEY",
+      "iscustom": "false",
+      "label": "Operation key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Operation name",
+      "id": "OPERATIONNAME",
+      "iscustom": "false",
+      "label": "Operation name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Email address",
+      "id": "EMAIL",
+      "iscustom": "false",
+      "label": "Email address",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Mega location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location at",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Mega department key",
+      "id": "DEPTKEY",
+      "iscustom": "false",
+      "label": "Dept at",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "NAMEORID",
+      "iscustom": "false",
+      "label": "Allocation group or ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "RECURGLACCTALLOCATION",
+  "relationships": [
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

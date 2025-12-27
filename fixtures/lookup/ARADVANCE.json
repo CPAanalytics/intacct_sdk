@@ -1,0 +1,587 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment ID",
+      "id": "RECORDID",
+      "iscustom": "false",
+      "label": "Payment ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Summary key",
+      "id": "PRBATCHKEY",
+      "iscustom": "false",
+      "label": "Summary key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment summary",
+      "id": "PRBATCH",
+      "iscustom": "false",
+      "label": "Payment summary",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Financial entity",
+      "id": "FINANCIALENTITY",
+      "iscustom": "false",
+      "label": "Financial entity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Undeposited funds account",
+      "id": "UNDEPOSITEDACCOUNTNO",
+      "iscustom": "false",
+      "label": "Undeposited funds account no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment method",
+      "id": "PAYMENTMETHOD",
+      "iscustom": "false",
+      "label": "Payment method",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Printed Check",
+        "Credit Card",
+        "EFT",
+        "Cash"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Payment method key",
+      "id": "PAYMENTMETHODKEY",
+      "iscustom": "false",
+      "label": "Payment method key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ID",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer name",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document or check no.",
+      "id": "DOCNUMBER",
+      "iscustom": "false",
+      "label": "Document or check no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment memo",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Payment memo",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Base currency",
+      "id": "BASECURR",
+      "iscustom": "false",
+      "label": "Base currency",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Transaction currency",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Currency",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Receipt date",
+      "id": "RECEIPTDATE",
+      "iscustom": "false",
+      "label": "Receipt date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Payment date",
+      "id": "PAYMENTDATE",
+      "iscustom": "false",
+      "label": "Payment date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Exchange rate date",
+      "id": "EXCH_RATE_DATE",
+      "iscustom": "false",
+      "label": "Exchange rate date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Exchange rate type",
+      "id": "EXCH_RATE_TYPE_ID",
+      "iscustom": "false",
+      "label": "Exchange rate type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Exchange rate",
+      "id": "EXCHANGE_RATE",
+      "iscustom": "false",
+      "label": "Exchange rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Record type",
+      "id": "RECORDTYPE",
+      "iscustom": "false",
+      "label": "Record type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State",
+      "id": "STATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Reversed",
+        "Reversal",
+        "Draft",
+        "Reconciled",
+        "Fully applied",
+        "Partially applied",
+        "Posted",
+        "Selected"
+      ]
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Total payment amount",
+      "id": "TOTALENTERED",
+      "iscustom": "false",
+      "label": "Payment amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Transaction payment amount",
+      "id": "TRX_TOTALENTERED",
+      "iscustom": "false",
+      "label": "Txn payment amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Total selected amount",
+      "id": "TOTALSELECTED",
+      "iscustom": "false",
+      "label": "Total selected",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Total transaction amount selected",
+      "id": "TRX_TOTALSELECTED",
+      "iscustom": "false",
+      "label": "Total transaction amount selected",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Total applied amount",
+      "id": "TOTALPAID",
+      "iscustom": "false",
+      "label": "Total applied",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Total transaction amount paid",
+      "id": "TRX_TOTALPAID",
+      "iscustom": "false",
+      "label": "Total transaction amount paid",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Total due amount",
+      "id": "TOTALDUE",
+      "iscustom": "false",
+      "label": "Total due",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Total transaction amount due",
+      "id": "TRX_TOTALDUE",
+      "iscustom": "false",
+      "label": "Total transaction amount due",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Audit timestamp when record was created.",
+      "id": "AUWHENCREATED",
+      "iscustom": "false",
+      "label": "Audit when created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Raw state",
+      "id": "RAWSTATE",
+      "iscustom": "false",
+      "label": "Raw state",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Created date",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "Created date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Paid date",
+      "id": "WHENPAID",
+      "iscustom": "false",
+      "label": "When paid",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Reconciliation status",
+      "id": "CLEARED",
+      "iscustom": "false",
+      "label": "Reconciliation status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "T",
+        "F",
+        ""
+      ]
+    },
+    {
+      "datatype": "DATE",
+      "description": "Reconciliation date",
+      "id": "CLRDATE",
+      "iscustom": "false",
+      "label": "Reconciliation date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "System generated",
+      "id": "SYSTEMGENERATED",
+      "iscustom": "false",
+      "label": "System generated",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "T",
+        "F"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Attachment",
+      "id": "SUPDOCID",
+      "iscustom": "false",
+      "label": "Attachment",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PARENTPAYMENT",
+      "iscustom": "false",
+      "label": "Parent payment key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "SHIPTORETURNTOKEY",
+      "iscustom": "false",
+      "label": "Return-to contact key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The customer ship-to contact tax group",
+      "id": "CONTACTTAXGROUP",
+      "iscustom": "false",
+      "label": "Contact tax group",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "SHIPTO.TAXGROUP.NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "SHIPTO.TAXGROUP.RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax identification number",
+      "id": "SHIPTO.TAXID",
+      "iscustom": "false",
+      "label": "Tax ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "INCLUSIVETAX",
+      "iscustom": "false",
+      "label": "Inclusive taxes",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Linked document",
+      "id": "LINKEDDOCID",
+      "iscustom": "false",
+      "label": "Linked document",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ARADVANCE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "CUSTOMER",
+      "objectpath": "CUSTOMER",
+      "relatedby": "CUSTOMERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EXCHANGERATEINFO",
+      "objectpath": "EXCHANGERATEINFO",
+      "relatedby": "RECORDNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Ship-to contact",
+      "objectname": "CONTACTVERSION",
+      "objectpath": "SHIPTO",
+      "relatedby": "SHIPTORETURNTOKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "TAXSOLUTION",
+      "objectpath": "TAXSOLUTION",
+      "relatedby": "TAXSOLUTIONKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "SODOCUMENT",
+      "objectpath": "LINKEDDOC",
+      "relatedby": "LINKEDDOCKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

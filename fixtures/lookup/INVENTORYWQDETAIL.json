@@ -1,0 +1,561 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The order bundle this belongs to",
+      "id": "ICWQORDERID",
+      "iscustom": "false",
+      "label": "Orders key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Document record number",
+      "id": "DOCHDRKEY",
+      "iscustom": "false",
+      "label": "Document",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Line no. of document line",
+      "id": "LINENO",
+      "iscustom": "false",
+      "label": "Line no.",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Warehouse record number",
+      "id": "WAREHOUSEKEY",
+      "iscustom": "false",
+      "label": "Warehouse",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse ID",
+      "id": "WAREHOUSEID",
+      "iscustom": "false",
+      "label": "Warehouse",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document ID",
+      "id": "DOCID",
+      "iscustom": "false",
+      "label": "Document ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document number",
+      "id": "DOCNO",
+      "iscustom": "false",
+      "label": "Document number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document type",
+      "id": "DOCPARID",
+      "iscustom": "false",
+      "label": "Document type",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Originating document",
+      "id": "ORIGINALDOCID",
+      "iscustom": "false",
+      "label": "Originating document",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document type",
+      "id": "DOCUMENTTYPE",
+      "iscustom": "false",
+      "label": "Document type",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment terms",
+      "id": "TERMNAME",
+      "iscustom": "false",
+      "label": "Payment terms",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Shipping method",
+      "id": "SHIPVIA",
+      "iscustom": "false",
+      "label": "Shipping method",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contact name",
+      "id": "SHIPTOCONTACT",
+      "iscustom": "false",
+      "label": "Contact name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Order date",
+      "id": "ORDERDATE",
+      "iscustom": "false",
+      "label": "Order date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date due",
+      "id": "WHENDUE",
+      "iscustom": "false",
+      "label": "Due date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Shipped",
+      "id": "SHIPPEDDATE",
+      "iscustom": "false",
+      "label": "Shipped",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Ship by",
+      "id": "SHIPBYDATE",
+      "iscustom": "false",
+      "label": "Ship by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Need by date",
+      "id": "NEEDBYDATE",
+      "iscustom": "false",
+      "label": "Need by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Do not ship before date",
+      "id": "DONOTSHIPBEFOREDATE",
+      "iscustom": "false",
+      "label": "Do not ship before",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Do not ship after date",
+      "id": "DONOTSHIPAFTERDATE",
+      "iscustom": "false",
+      "label": "Do not ship after",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Cancel after date",
+      "id": "CANCELAFTERDATE",
+      "iscustom": "false",
+      "label": "Cancel after",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Hold progress",
+      "id": "HOLDPROGRESS",
+      "iscustom": "false",
+      "label": "Hold progress",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unit of measure",
+      "id": "UOM",
+      "iscustom": "false",
+      "label": "Unit of measure",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "UOM factor",
+      "id": "CONVFACTOR",
+      "iscustom": "false",
+      "label": "UOM factor",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity ordered",
+      "id": "QUANTITYORDERED",
+      "iscustom": "false",
+      "label": "Qty ordered",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity",
+      "id": "QUANTITY",
+      "iscustom": "false",
+      "label": "Quantity",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity on order",
+      "id": "QUANTITYONORDER",
+      "iscustom": "false",
+      "label": "Quantity on order",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity in transit",
+      "id": "QUANTITYINTRANSIT",
+      "iscustom": "false",
+      "label": "Quantity in transit",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity on hand",
+      "id": "QUANTITYONHAND",
+      "iscustom": "false",
+      "label": "Quantity on hand",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity on hold",
+      "id": "QUANTITYONHOLD",
+      "iscustom": "false",
+      "label": "Quantity on hold",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity available",
+      "id": "QUANTITYAVAILABLE",
+      "iscustom": "false",
+      "label": "Quantity available",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity reserved",
+      "id": "QUANTITYRESERVED",
+      "iscustom": "false",
+      "label": "Quantity reserved",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity allocated",
+      "id": "QUANTITYALLOCATED",
+      "iscustom": "false",
+      "label": "Quantity allocated",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity uncommitted",
+      "id": "QUANTITYUNCOMMITTED",
+      "iscustom": "false",
+      "label": "Quantity uncommitted",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity prev picked",
+      "id": "QUANTITYPREVPICKED",
+      "iscustom": "false",
+      "label": "Quantity prev picked",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity to pick",
+      "id": "QUANTITYTOPICK",
+      "iscustom": "false",
+      "label": "Quantity to pick",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity picked",
+      "id": "QUANTITYPICKED",
+      "iscustom": "false",
+      "label": "Quantity picked",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity prev packed",
+      "id": "QUANTITYPREVPACKED",
+      "iscustom": "false",
+      "label": "Quantity prev packed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity to pack",
+      "id": "QUANTITYTOPACK",
+      "iscustom": "false",
+      "label": "Quantity to pack",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity packed",
+      "id": "QUANTITYPACKED",
+      "iscustom": "false",
+      "label": "Quantity packed",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity in this bundle in reserve",
+      "id": "QUANTITYINRESERVE",
+      "iscustom": "false",
+      "label": "Quantity in reserve",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity in this bundle in allocation",
+      "id": "QUANTITYINALLOCATION",
+      "iscustom": "false",
+      "label": "Quantity in allocation",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Date pick list printed",
+      "id": "PICKLISTPRINTED",
+      "iscustom": "false",
+      "label": "Pick sheet printed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Date pack list printed",
+      "id": "PACKLISTPRINTED",
+      "iscustom": "false",
+      "label": "Pack list printed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "How fulfillable is this line?",
+      "id": "PCTFULFILLABLE",
+      "iscustom": "false",
+      "label": "Percent fulfillable",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Employee this is assigned to",
+      "id": "ASSIGNED",
+      "iscustom": "false",
+      "label": "Assigned to",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name of employee this is assigned to",
+      "id": "ASSIGNEDNAME",
+      "iscustom": "false",
+      "label": "Assigned name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pick containers",
+      "id": "PICKCONTAINER",
+      "iscustom": "false",
+      "label": "Pick containers",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pack containers",
+      "id": "PACKCONTAINER",
+      "iscustom": "false",
+      "label": "Pack containers",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Shipping tracking",
+      "id": "SHIPTRACKING",
+      "iscustom": "false",
+      "label": "Shipping tracking",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Notes kept within fulfillment",
+      "id": "NOTES",
+      "iscustom": "false",
+      "label": "Fulfillment line notes",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Memo from document line",
+      "id": "MEMO",
+      "iscustom": "false",
+      "label": "Order line memo",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Current status or state",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "open",
+        "ready to pick",
+        "picked",
+        "ready to pack",
+        "packed",
+        "ready to ship",
+        "shipped",
+        "ready to invoice",
+        "invoiced"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CREATEDBY_USERID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MODIFIEDBY_USERID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "INVENTORYWQDETAIL",
+  "relationships": []
+}

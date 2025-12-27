@@ -1,0 +1,1208 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project contract key",
+      "id": "PROJECTCONTRACTKEY",
+      "iscustom": "false",
+      "label": "Contract key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract ID",
+      "id": "PROJECTCONTRACTID",
+      "iscustom": "false",
+      "label": "Contract ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract name",
+      "id": "PROJECTCONTRACTNAME",
+      "iscustom": "false",
+      "label": "Contract name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract line ID",
+      "id": "PROJECTCONTRACTLINEID",
+      "iscustom": "false",
+      "label": "Line ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract line name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Line name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Parent key",
+      "id": "PARENTKEY",
+      "iscustom": "false",
+      "label": "Parent key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Parent project contract line",
+      "id": "PARENTID",
+      "iscustom": "false",
+      "label": "Parent line",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Parent contract line name",
+      "id": "PARENTNAME",
+      "iscustom": "false",
+      "label": "Parent - Name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Contract line date",
+      "id": "CONTRACTLINEDATE",
+      "iscustom": "false",
+      "label": "Line date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "GL account key",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "GL account key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "GL account",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account title",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "GL account title",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "PERCENT",
+      "description": "Retainage percentage",
+      "id": "RETAINAGEPERCENTAGE",
+      "iscustom": "false",
+      "label": "Retainage percentage",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Billable",
+      "id": "BILLABLE",
+      "iscustom": "false",
+      "label": "Billable",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Billing type",
+      "id": "BILLINGTYPE",
+      "iscustom": "false",
+      "label": "Billing type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Progress",
+        "TM"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Maximum billing",
+      "id": "MAXIMUMBILLING",
+      "iscustom": "false",
+      "label": "Maximum billing",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Total revised price",
+        "Specified amount",
+        "No maximum"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Maximum billing amount",
+      "id": "MAXIMUMBILLINGAMOUNT",
+      "iscustom": "false",
+      "label": "Maximum billing amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Summarize to a single entry",
+      "id": "SUMMARIZEBILL",
+      "iscustom": "false",
+      "label": "Summarize to a single entry",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Original price",
+      "id": "ORIGINALPRICE",
+      "iscustom": "false",
+      "label": "Original price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Revision price",
+      "id": "REVISIONPRICE",
+      "iscustom": "false",
+      "label": "Revision price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Forecast price",
+      "id": "FORECASTPRICE",
+      "iscustom": "false",
+      "label": "Forecast price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Approved change price",
+      "id": "APPROVEDCHANGEPRICE",
+      "iscustom": "false",
+      "label": "Approved change price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Pending change price",
+      "id": "PENDINGCHANGEPRICE",
+      "iscustom": "false",
+      "label": "Pending change price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Other price",
+      "id": "OTHERPRICE",
+      "iscustom": "false",
+      "label": "Other price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Total revised price",
+      "id": "TOTALREVISEDPRICE",
+      "iscustom": "false",
+      "label": "Total revised price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location",
+      "id": "PROJECTLOCATIONID",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ID",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department name",
+      "id": "DEPARTMENTNAME",
+      "iscustom": "false",
+      "label": "Department name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Scope",
+      "id": "SCOPE",
+      "iscustom": "false",
+      "label": "Scope",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inclusions",
+      "id": "INCLUSIONS",
+      "iscustom": "false",
+      "label": "Inclusions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Exclusions",
+      "id": "EXCLUSIONS",
+      "iscustom": "false",
+      "label": "Exclusions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Terms",
+      "id": "TERMS",
+      "iscustom": "false",
+      "label": "Terms",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Scheduled start date",
+      "id": "SCHEDULEDSTARTDATE",
+      "iscustom": "false",
+      "label": "Scheduled start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Actual start date",
+      "id": "ACTUALSTARTDATE",
+      "iscustom": "false",
+      "label": "Actual start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Scheduled completion date",
+      "id": "SCHEDULEDCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Scheduled completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Revised completion date",
+      "id": "REVISEDCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Revised completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Substantial completion date",
+      "id": "SUBSTANTIALCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Substantial completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Actual completion date",
+      "id": "ACTUALCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Actual completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Notice to proceed",
+      "id": "NOTICETOPROCEED",
+      "iscustom": "false",
+      "label": "Notice to proceed",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Response due",
+      "id": "RESPONSEDUE",
+      "iscustom": "false",
+      "label": "Response due",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Executed on",
+      "id": "EXECUTEDON",
+      "iscustom": "false",
+      "label": "Executed on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule impact",
+      "id": "SCHEDULEIMPACT",
+      "iscustom": "false",
+      "label": "Schedule impact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal reference no.",
+      "id": "INTERNALREFNO",
+      "iscustom": "false",
+      "label": "Internal reference no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal initiated by key",
+      "id": "INTERNALINITIATEDBYKEY",
+      "iscustom": "false",
+      "label": "Internal initiated by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal initiated by",
+      "id": "INTERNALINITIATEDBY",
+      "iscustom": "false",
+      "label": "Internal initiated by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal initiated by name",
+      "id": "INTERNALINITIATEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal initiated by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal verbal by key",
+      "id": "INTERNALVERBALBYKEY",
+      "iscustom": "false",
+      "label": "Internal verbal by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal verbal by",
+      "id": "INTERNALVERBALBY",
+      "iscustom": "false",
+      "label": "Internal verbal by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal verbal by name",
+      "id": "INTERNALVERBALBYNAME",
+      "iscustom": "false",
+      "label": "Internal verbal by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal issued by key",
+      "id": "INTERNALISSUEDBYKEY",
+      "iscustom": "false",
+      "label": "Internal issued by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal issued by",
+      "id": "INTERNALISSUEDBY",
+      "iscustom": "false",
+      "label": "Internal issued by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal issued by name",
+      "id": "INTERNALISSUEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal issued by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Internal issued on",
+      "id": "INTERNALISSUEDON",
+      "iscustom": "false",
+      "label": "Internal issued on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal approved by key",
+      "id": "INTERNALAPPROVEDBYKEY",
+      "iscustom": "false",
+      "label": "Internal approved by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal approved by",
+      "id": "INTERNALAPPROVEDBY",
+      "iscustom": "false",
+      "label": "Internal approved by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal approved by name",
+      "id": "INTERNALAPPROVEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal approved by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Internal approved on",
+      "id": "INTERNALAPPROVEDON",
+      "iscustom": "false",
+      "label": "Internal approved on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal signed by key",
+      "id": "INTERNALSIGNEDBYKEY",
+      "iscustom": "false",
+      "label": "Internal signed by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal signed by",
+      "id": "INTERNALSIGNEDBY",
+      "iscustom": "false",
+      "label": "Internal signed by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal signed by name",
+      "id": "INTERNALSIGNEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal signed by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Internal signed on",
+      "id": "INTERNALSIGNEDON",
+      "iscustom": "false",
+      "label": "Internal signed on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal source",
+      "id": "INTERNALSOURCE",
+      "iscustom": "false",
+      "label": "Internal source",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal source reference no.",
+      "id": "INTERNALSOURCEREFNO",
+      "iscustom": "false",
+      "label": "Internal source reference no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External reference no.",
+      "id": "EXTERNALREFNO",
+      "iscustom": "false",
+      "label": "External reference no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External verbal by key",
+      "id": "EXTERNALVERBALBYKEY",
+      "iscustom": "false",
+      "label": "External verbal by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External verbal by",
+      "id": "EXTERNALVERBALBY",
+      "iscustom": "false",
+      "label": "External verbal by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External approved by key",
+      "id": "EXTERNALAPPROVEDBYKEY",
+      "iscustom": "false",
+      "label": "External approved by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External approved by",
+      "id": "EXTERNALAPPROVEDBY",
+      "iscustom": "false",
+      "label": "External approved by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "External approved on",
+      "id": "EXTERNALAPPROVEDON",
+      "iscustom": "false",
+      "label": "External approved on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External signed by key",
+      "id": "EXTERNALSIGNEDBYKEY",
+      "iscustom": "false",
+      "label": "External signed by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External signed by",
+      "id": "EXTERNALSIGNEDBY",
+      "iscustom": "false",
+      "label": "External signed by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "External signed on",
+      "id": "EXTERNALSIGNEDON",
+      "iscustom": "false",
+      "label": "External signed on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SUPDOCID",
+      "iscustom": "false",
+      "label": "Attachment",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BILLEDPRICE",
+      "iscustom": "false",
+      "label": "Total billed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BILLEDNETRETAINAGE",
+      "iscustom": "false",
+      "label": "Billed net retainage",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "PERCENTAGEBILLED",
+      "iscustom": "false",
+      "label": "Percent billed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "PERCENTAGEBILLEDNETRETAINAGE",
+      "iscustom": "false",
+      "label": "Percent billed net retainage",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "RETAINAGEHELD",
+      "iscustom": "false",
+      "label": "Retainage held",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "RETAINAGERELEASED",
+      "iscustom": "false",
+      "label": "Retainage released",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "RETAINAGEBALANCE",
+      "iscustom": "false",
+      "label": "Retainage balance",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "PAYMENTSRECEIVED",
+      "iscustom": "false",
+      "label": "Payments received",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "BALANCETOBILL",
+      "iscustom": "false",
+      "label": "Balance to bill",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Previously applied to date",
+      "id": "APPLIEDTODATE",
+      "iscustom": "false",
+      "label": "Previously applied to date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Retainage amount from work",
+      "id": "RETAINAGEAMOUNTFROMWORK",
+      "iscustom": "false",
+      "label": "Retainage amount from work",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "RETAINAGEAMOUNTFROMSTORED",
+      "iscustom": "false",
+      "label": "Retainage amount from stored materials",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "LASTAMOUNTAPPLIED",
+      "iscustom": "false",
+      "label": "Last amount applied",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "PERCENT",
+      "description": "No description specified",
+      "id": "PERCENTCOMPLETED",
+      "iscustom": "false",
+      "label": "Percent completed",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "STOREDMATERIALS",
+      "iscustom": "false",
+      "label": "Stored materials",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Default rate table key",
+      "id": "DEFAULTRATETABLEKEY",
+      "iscustom": "false",
+      "label": "Default rate table key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default rate table ID",
+      "id": "DEFAULTRATETABLEID",
+      "iscustom": "false",
+      "label": "Default rate table",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Timesheets rate table key",
+      "id": "TSRATETABLEKEY",
+      "iscustom": "false",
+      "label": "Timesheets rate table key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Timesheets rate table ID",
+      "id": "TSRATETABLEID",
+      "iscustom": "false",
+      "label": "Timesheets rate table",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "PO rate table key",
+      "id": "PORATETABLEKEY",
+      "iscustom": "false",
+      "label": "PO rate table key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "PO rate table ID",
+      "id": "PORATETABLEID",
+      "iscustom": "false",
+      "label": "PO rate table",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "AP rate table key",
+      "id": "APRATETABLEKEY",
+      "iscustom": "false",
+      "label": "AP rate table key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "AP rate table ID",
+      "id": "APRATETABLEID",
+      "iscustom": "false",
+      "label": "AP rate table",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "GL rate table key",
+      "id": "GLRATETABLEKEY",
+      "iscustom": "false",
+      "label": "GL rate table key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL rate table ID",
+      "id": "GLRATETABLEID",
+      "iscustom": "false",
+      "label": "GL rate table",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Credit card rate table key",
+      "id": "CCRATETABLEKEY",
+      "iscustom": "false",
+      "label": "Credit card rate table key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Credit card rate table ID",
+      "id": "CCRATETABLEID",
+      "iscustom": "false",
+      "label": "Credit card rate table",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Employee expense rate table key",
+      "id": "EERATETABLEKEY",
+      "iscustom": "false",
+      "label": "Employee expense rate table key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Employee expense rate table ID",
+      "id": "EERATETABLEID",
+      "iscustom": "false",
+      "label": "Employee expense rate table",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Exclude from GL budget posting",
+      "id": "GLEXCLUDE",
+      "iscustom": "false",
+      "label": "Exclude from GL budget posting",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Billing tax schedule",
+      "id": "PCLTAXSCHEDULEID",
+      "iscustom": "false",
+      "label": "Billing tax schedule",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PROJECTCONTRACTLINE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "PROJECTCONTRACT",
+      "objectpath": "PROJECTCONTRACT",
+      "relatedby": "PROJECTCONTRACTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Parent project contract line",
+      "objectname": "PROJECTCONTRACTLINE",
+      "objectpath": "PARENT",
+      "relatedby": "PROJECTCONTRACTLINEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "GLACCOUNT",
+      "objectpath": "GLACCOUNT",
+      "relatedby": "ACCOUNTNO",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPARTMENT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Internal initiated by employee",
+      "objectname": "EMPLOYEE",
+      "objectpath": "INTERNALINITIATED",
+      "relatedby": "INTERNALINITIATED.EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Internal verbal by employee",
+      "objectname": "EMPLOYEE",
+      "objectpath": "INTERNALVERBAL",
+      "relatedby": "INTERNALVERBAL.EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Internal issued by employee",
+      "objectname": "EMPLOYEE",
+      "objectpath": "INTERNALISSUED",
+      "relatedby": "INTERNALISSUED.EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Internal approved by employee",
+      "objectname": "EMPLOYEE",
+      "objectpath": "INTERNALAPPROVED",
+      "relatedby": "INTERNALAPPROVED.EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Internal signed by employee",
+      "objectname": "EMPLOYEE",
+      "objectpath": "INTERNALSIGNED",
+      "relatedby": "INTERNALSIGNED.EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "External verbal by contact",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EXTERNALVERBAL",
+      "relatedby": "EXTERNALVERBAL.NAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "External approved by contact",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EXTERNALAPPROVED",
+      "relatedby": "EXTERNALAPPROVED.NAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "External signed by contact",
+      "objectname": "EMPLOYEE",
+      "objectpath": "EXTERNALSIGNED",
+      "relatedby": "EXTERNALSIGNED.NAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

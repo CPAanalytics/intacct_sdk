@@ -1,0 +1,1016 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Template name",
+      "id": "DOCID",
+      "iscustom": "false",
+      "label": "Template name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Template type",
+      "id": "DOCCLASS",
+      "iscustom": "false",
+      "label": "Template type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Quote",
+        "Order",
+        "List",
+        "Invoice",
+        "Adjustment",
+        "Other"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Workflow category",
+      "id": "CATEGORY",
+      "iscustom": "false",
+      "label": "Workflow category",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Quote",
+        "Order",
+        "Shipping",
+        "Invoice",
+        "Return"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable permissions for specific users or groups",
+      "id": "USERPERM",
+      "iscustom": "false",
+      "label": "Enable permissions for specific users or groups",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Edit policy",
+      "id": "EDITTYPE",
+      "iscustom": "false",
+      "label": "Edit policy",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No Edit",
+        "Before Printing",
+        "Edit in Draft Only",
+        "All"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Delete policy",
+      "id": "DELTYPE",
+      "iscustom": "false",
+      "label": "Delete policy",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No Delete",
+        "Before Printing",
+        "All"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable numbering scheme",
+      "id": "ENABLE_SEQNUM",
+      "iscustom": "false",
+      "label": "Enable numbering scheme",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Numbering sequence",
+      "id": "SEQUENCE",
+      "iscustom": "false",
+      "label": "",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Preserve sequence numbers",
+      "id": "PRESERVE_SEQNUM",
+      "iscustom": "false",
+      "label": "Preserve sequence numbers",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Inherit source document number",
+      "id": "INHERIT_SOURCE_DOCNO",
+      "iscustom": "false",
+      "label": "Inherit source document number",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Affects inventory",
+      "id": "UPDATES_INV",
+      "iscustom": "false",
+      "label": "Affects inventory",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No",
+        "Quantity",
+        "Value",
+        "Quantity and Value"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Increase or decrease inventory and billings",
+      "id": "IN_OUT",
+      "iscustom": "false",
+      "label": "Increase or decrease inventory and billings",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Increase",
+        "Decrease"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Transaction posting",
+      "id": "UPDATES_GL",
+      "iscustom": "false",
+      "label": "Transaction posting",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "A",
+        "G",
+        "N"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Don't capture VAT/GST in tax records for reporting purposes.",
+      "id": "DISABLEVAT",
+      "iscustom": "false",
+      "label": "Do not capture tax",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Partial conversion handling",
+      "id": "CONVTYPE",
+      "iscustom": "false",
+      "label": "Partial conversion handling",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Leave Transaction Open",
+        "Close Original and Create Back Order",
+        "Close Transaction"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Affects cost",
+      "id": "UPDATES_COST",
+      "iscustom": "false",
+      "label": "Affects cost",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXCHRATETYPES.NAME",
+      "iscustom": "false",
+      "label": "Exchange rate type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Exchange rate and exchange rate type",
+      "id": "OVERRIDE_EXCH_RATE_TYPE",
+      "iscustom": "false",
+      "label": "Exchange rate and exchange rate type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Display base currency",
+      "id": "DISPLAY_BASECURRENCY",
+      "iscustom": "false",
+      "label": "Display base currency",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Price list to update",
+      "id": "UPDATES_PRICELISTID",
+      "iscustom": "false",
+      "label": "Price list to update",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default AP term",
+      "id": "TERM_NAME",
+      "iscustom": "false",
+      "label": "Default AP term",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Initial price list",
+      "id": "PRICELISTID",
+      "iscustom": "false",
+      "label": "Initial price list",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Special price list",
+      "id": "SPECIAL_PRICELISTID",
+      "iscustom": "false",
+      "label": "Special price list",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Override suggested price",
+      "id": "OVERRIDE_PRICE",
+      "iscustom": "false",
+      "label": "Override suggested price",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Freeze recalled values",
+      "id": "RECALLONLY",
+      "iscustom": "false",
+      "label": "Freeze recalled values",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Editable price",
+      "id": "EDITABLE_PRICE",
+      "iscustom": "false",
+      "label": "Editable price",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable subtotals",
+      "id": "SHOW_TOTALS",
+      "iscustom": "false",
+      "label": "Enable subtotals",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Show expanded tax details",
+      "id": "SHOWEXPANDEDTOTALS",
+      "iscustom": "false",
+      "label": "Show expanded tax details",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Line-item tax",
+      "id": "ENABLEOVERRIDETAX",
+      "iscustom": "false",
+      "label": "Line-item tax",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Location",
+      "id": "LOCOVERRIDE",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Department",
+      "id": "DEPTOVERRIDE",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Printed document template",
+      "id": "XSLTEMPLATE",
+      "iscustom": "false",
+      "label": "Printed document template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SUBTOTALTEMPLATE",
+      "iscustom": "false",
+      "label": "Subtotal template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "SUBTOTALTEMPLATEKEY",
+      "iscustom": "false",
+      "label": "Subtotal key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Optional default text",
+      "id": "FIXED_MESG",
+      "iscustom": "false",
+      "label": "Optional default text",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Title of contact 1",
+      "id": "CONTACTTITLE1",
+      "iscustom": "false",
+      "label": "Title of contact 1",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Pay to show on print",
+      "id": "SHOWTITLE1",
+      "iscustom": "false",
+      "label": "Pay to show on print",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Pay to allow editing",
+      "id": "ALLOWEDITBILLTO",
+      "iscustom": "false",
+      "label": "Pay to allow editing",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Title of contact 2",
+      "id": "CONTACTTITLE2",
+      "iscustom": "false",
+      "label": "Title of contact 2",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Return to show on print",
+      "id": "SHOWTITLE2",
+      "iscustom": "false",
+      "label": "Return to show on print",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Return to allow editing",
+      "id": "ALLOWEDITSHIPTO",
+      "iscustom": "false",
+      "label": "Return to allow editing",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Title of contact 3",
+      "id": "CONTACTTITLE3",
+      "iscustom": "false",
+      "label": "Title of contact 3",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Deliver to show on print",
+      "id": "SHOWTITLE3",
+      "iscustom": "false",
+      "label": "Deliver to show on print",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Deliver to allow editing",
+      "id": "ALLOWEDITDELIVERTO",
+      "iscustom": "false",
+      "label": "Deliver to allow editing",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Convert units to standard on save",
+      "id": "CONVERT_UNITS",
+      "iscustom": "false",
+      "label": "Convert units to standard on save",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Warn user if item onhand quantity falls below 0",
+      "id": "WARNONLOWQTY",
+      "iscustom": "false",
+      "label": "Warn user if item on hand quantity falls below 0",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enforce credit limit",
+      "id": "CREDITLIMITCHECK",
+      "iscustom": "false",
+      "label": "Enforce credit limit",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Warehouse selection method",
+      "id": "WAREHOUSESELMETHOD",
+      "iscustom": "false",
+      "label": "Warehouse selection method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Sort by ID",
+        "Sort by Name",
+        "Warehouse with Available Inventory",
+        "Use the default warehouse"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default warehouse",
+      "id": "DEFAULT_WAREHOUSE",
+      "iscustom": "false",
+      "label": "Default warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable additional posting",
+      "id": "POSTTOGL",
+      "iscustom": "false",
+      "label": "Enable additional posting",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable allocations",
+      "id": "ALLOW_ALLOCATIONS",
+      "iscustom": "false",
+      "label": "Enable allocations",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Customer, vendor, or warehouse",
+      "id": "CUST_VEND",
+      "iscustom": "false",
+      "label": "Customer, vendor, or warehouse",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Customer",
+        "Vendor",
+        "Warehouse"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Sale/purchase/internal",
+      "id": "SALE_PUR_TRANS",
+      "iscustom": "false",
+      "label": "Sale/purchase/internal",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Sale",
+        "Purchase",
+        "Internal",
+        "TimeBill"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Price must be supplied",
+      "id": "FORCE_PRICES",
+      "iscustom": "false",
+      "label": "Price must be supplied",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "No description specified",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Create policy",
+      "id": "CREATETYPE",
+      "iscustom": "false",
+      "label": "Create policy",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "New document only",
+        "New document or Convert",
+        "Convert only"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Create transactions in",
+      "id": "TD_CREATION_RULE",
+      "iscustom": "false",
+      "label": "Create transactions in",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Top level or Entity",
+        "Top level only",
+        "Entity only"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable line-level Simple Tax",
+      "id": "LINELEVELSIMPLETAX",
+      "iscustom": "false",
+      "label": "Enable line-level Simple Tax",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Allow edit of vendor",
+      "id": "ALLOWEDITCUSTVEND",
+      "iscustom": "false",
+      "label": "Allow edit of vendor",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Always",
+        "Except converted documents",
+        "Never"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable retainage",
+      "id": "ENABLE_RETAINAGE",
+      "iscustom": "false",
+      "label": "Enable retainage",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable scope",
+      "id": "ENABLEADDINFOSCOPE",
+      "iscustom": "false",
+      "label": "Enable scope",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable schedule",
+      "id": "ENABLEADDINFOSCHEDULE",
+      "iscustom": "false",
+      "label": "Enable schedule",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable internal reference",
+      "id": "ENABLEADDINFOINTERNALREF",
+      "iscustom": "false",
+      "label": "Enable internal reference",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable external reference",
+      "id": "ENABLEADDINFOEXTERNALREF",
+      "iscustom": "false",
+      "label": "Enable external reference",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable bond",
+      "id": "ENABLEADDINFOBOND",
+      "iscustom": "false",
+      "label": "Enable bond",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Change document values",
+      "id": "ENABLEDOCCHANGE",
+      "iscustom": "false",
+      "label": "Change document values",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "No Change",
+        "Enable Change",
+        "Change Order"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Reporting category",
+      "id": "REPORTINGCATEGORY",
+      "iscustom": "false",
+      "label": "Reporting category",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Bids and Quotes",
+        "Purchase Orders",
+        "Purchase Order Change Orders",
+        "Purchase Receivers",
+        "Purchase Order Invoices",
+        "Purchase Returns",
+        "Purchase Credits",
+        "Purchase Debits",
+        "Purchase Clearing Receivers",
+        "Subcontract Bids",
+        "Subcontracts",
+        "Subcontract Change Orders",
+        "Subcontract Invoices",
+        "Internal Supply Requisitions",
+        "Purchase Requisitions",
+        "Blanket POs or Vendor Contracts",
+        "Grant Requests",
+        "Grant Awards"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable primary document workflow",
+      "id": "PRIMARYDOC",
+      "iscustom": "false",
+      "label": "Enable primary document workflow",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Custom supplies requisition",
+      "id": "ISSUPPLIESREQUISITION",
+      "iscustom": "false",
+      "label": "Custom supplies requisition",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Hide price",
+      "id": "HIDEPRICE",
+      "iscustom": "false",
+      "label": "Hide price",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Source document",
+      "id": "SOURCEDOCUMENTFORSUBTOTAL",
+      "iscustom": "false",
+      "label": "Source document",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Change document options",
+      "id": "CHANGEDOCUMENTOPTIONS",
+      "iscustom": "false",
+      "label": "Change document options",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Change multiple source documents",
+        "Change single source document"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "PODOCUMENTPARAMS",
+  "relationships": [
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

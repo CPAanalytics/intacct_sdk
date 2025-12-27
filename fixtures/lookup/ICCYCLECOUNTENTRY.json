@@ -1,0 +1,434 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Cycle counts number",
+      "id": "CYCLECOUNTKEY",
+      "iscustom": "false",
+      "label": "Cycle counts number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Item key",
+      "id": "ITEMKEY",
+      "iscustom": "false",
+      "label": "Item key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Bin key",
+      "id": "BINKEY",
+      "iscustom": "false",
+      "label": "Bin key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BINID",
+      "iscustom": "false",
+      "label": "Bin",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Aisle key",
+      "id": "AISLEKEY",
+      "iscustom": "false",
+      "label": "Aisle key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "AISLEID",
+      "iscustom": "false",
+      "label": "Aisle",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Aisle key",
+      "id": "ZONEKEY",
+      "iscustom": "false",
+      "label": "Zone key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ZONEID",
+      "iscustom": "false",
+      "label": "Zone",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Row key",
+      "id": "ROWKEY",
+      "iscustom": "false",
+      "label": "Row key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ICROWID",
+      "iscustom": "false",
+      "label": "Row",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMUNIT",
+      "iscustom": "false",
+      "label": "Units",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QUANTITYCOUNTED",
+      "iscustom": "false",
+      "label": "Qty counted",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QUANTITYDAMAGED",
+      "iscustom": "false",
+      "label": "Qty damaged",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QUANTITYONHAND",
+      "iscustom": "false",
+      "label": "Qty on hand",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ADJUSTMENTREASON",
+      "iscustom": "false",
+      "label": "Adjustment reason",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User key",
+      "id": "COUNTEDBYKEY",
+      "iscustom": "false",
+      "label": "Counted key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COUNTEDBYID",
+      "iscustom": "false",
+      "label": "Counted by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Count status",
+      "id": "LINECOUNTSTATE",
+      "iscustom": "false",
+      "label": "Count status",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Not Counted",
+        "In Progress",
+        "Skipped",
+        "Counted"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMCYCLE",
+      "iscustom": "false",
+      "label": "Cycle",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SERIALNO",
+      "iscustom": "false",
+      "label": "Serial no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "LOTNO",
+      "iscustom": "false",
+      "label": "Lot no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PRODUCTLINE",
+      "iscustom": "false",
+      "label": "Product line",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique property on row",
+      "id": "UNIQUEPROPONROW",
+      "iscustom": "false",
+      "label": "Unique property on row",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "TOTALQTYCOUNTED",
+      "iscustom": "false",
+      "label": "Total counted",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "SUGGESTEDADJ",
+      "iscustom": "false",
+      "label": "Suggested QOH adj",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "SUGGESTEDDMGADJ",
+      "iscustom": "false",
+      "label": "Sug damage qty adj",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "ACTUALADJ",
+      "iscustom": "false",
+      "label": "QOH adjustment",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "ACTUALDMGADJ",
+      "iscustom": "false",
+      "label": "Damage qty adj",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "UNITCOST",
+      "iscustom": "false",
+      "label": "Unit cost",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "ADJVALUE",
+      "iscustom": "false",
+      "label": "QOH adj value",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "REVIEWCOMMENT",
+      "iscustom": "false",
+      "label": "Review comments",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QUANTITYONHANDEND",
+      "iscustom": "false",
+      "label": "End qty on hand",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "COST_METHOD",
+      "iscustom": "false",
+      "label": "Cost method",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Expiration date",
+      "id": "EXPIRATIONDATE",
+      "iscustom": "false",
+      "label": "Expiration date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "DOCHDRKEY",
+      "iscustom": "false",
+      "label": "Document header key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "DOCENTRYKEY",
+      "iscustom": "false",
+      "label": "Document entry key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "QOHLASTUPDATED",
+      "iscustom": "false",
+      "label": "QOH as of last update",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ICCYCLECOUNTENTRY",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "INVDOCUMENTENTRY",
+      "objectpath": "DOCENTRY",
+      "relatedby": "DOCENTRYKEY",
+      "relationshiptype": "ONE2ONE"
+    }
+  ]
+}

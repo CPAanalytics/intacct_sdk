@@ -1,0 +1,239 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Deferred revenue GL account",
+      "id": "DEFERREDREVACCTKEY",
+      "iscustom": "false",
+      "label": "Deferred revenue GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Deferred revenue GL account number",
+      "id": "DEFERREDREVACCTNO",
+      "iscustom": "false",
+      "label": "Deferred revenue GL account number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Default revenue recognition template",
+      "id": "DEFAULTREVRECTEMPLKEY",
+      "iscustom": "false",
+      "label": "Default revenue recognition template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue recognition template ID",
+      "id": "REVRECTEMPLID",
+      "iscustom": "false",
+      "label": "Revenue recognition template ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Income account",
+      "id": "INCOMEACCTKEY",
+      "iscustom": "false",
+      "label": "Income account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Expense account",
+      "id": "EXPENSEACCTKEY",
+      "iscustom": "false",
+      "label": "Expense account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Inventory account",
+      "id": "INVACCTKEY",
+      "iscustom": "false",
+      "label": "Inventory account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Cost of goods account",
+      "id": "COGSACCTKEY",
+      "iscustom": "false",
+      "label": "Cost of goods account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Select the Accounts Payable GL account",
+      "id": "OFFSETPOGLACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Accounts Payable GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Select the Accounts Receivable GL account",
+      "id": "OFFSETOEGLACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Accounts Receivable GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Intacct UOM group",
+      "id": "ISSYSTEM",
+      "iscustom": "false",
+      "label": "Intacct UOM group",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Deferred revenue account key",
+      "id": "DEFERREDREVACCTDIMKEY",
+      "iscustom": "false",
+      "label": "Deferred revenue account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default rev rec template key",
+      "id": "DEFAULTREVRECTEMPLDIMKEY",
+      "iscustom": "false",
+      "label": "Default rev rec template key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ITEMGLGROUP",
+  "relationships": [
+    {
+      "label": "Deferred revenue GL account",
+      "objectname": "GLACCOUNT",
+      "objectpath": "DEFERREDREVACCT",
+      "relatedby": "DEFERREDREVACCTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Default revenue recognition template",
+      "objectname": "REVRECTEMPLATE",
+      "objectpath": "REVRECTEMPLATE",
+      "relatedby": "DEFAULTREVRECTEMPLKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

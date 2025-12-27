@@ -1,0 +1,297 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The unique ID of this tax detail",
+      "id": "DETAILID",
+      "iscustom": "false",
+      "label": "Detail ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A tax code or unique ID for VAT or GST compliance",
+      "id": "TAXUID",
+      "iscustom": "false",
+      "label": "Tax UID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The description of the detail that will show-up in the transaction subtotal",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Tax type can be purchase or sale",
+      "id": "TAXTYPE",
+      "iscustom": "false",
+      "label": "Tax type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Sale",
+        "Purchase"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Tax rate percent",
+      "id": "VALUE",
+      "iscustom": "false",
+      "label": "Percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Minimum taxable amount",
+      "id": "MINTAXABLE",
+      "iscustom": "false",
+      "label": "Minimum taxable amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Maximum taxable amount",
+      "id": "MAXTAXABLE",
+      "iscustom": "false",
+      "label": "Maximum taxable amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Include in taxable amount",
+      "id": "INCLUDE",
+      "iscustom": "false",
+      "label": "Include in taxable amount",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Full Amount",
+        "Amount Within Range"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Minimum tax",
+      "id": "MINTAX",
+      "iscustom": "false",
+      "label": "Minimum tax",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Maximum tax",
+      "id": "MAXTAX",
+      "iscustom": "false",
+      "label": "Maximum tax",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL account that will be used to post the tax lines",
+      "id": "GLACCOUNT",
+      "iscustom": "false",
+      "label": "GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "The legal tax authority that can be used to separate tax reports by jurisdictions",
+      "id": "TAXAUTHORITY",
+      "iscustom": "false",
+      "label": "Tax authority",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "System generated field",
+      "id": "SYSGENERATED",
+      "iscustom": "false",
+      "label": "System generated field",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Reverse charge flag",
+      "id": "REVERSECHARGE",
+      "iscustom": "false",
+      "label": "Is reverse charge",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Tax rate",
+      "id": "TAXRATE",
+      "iscustom": "false",
+      "label": "Tax rate",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Standard",
+        "Reduced",
+        "Exempt",
+        "Zero",
+        "Federal",
+        "Provincial",
+        "Reverse charge VAT",
+        "Exemption due to intra-Community delivery",
+        "VAT exemption for export outside the EU",
+        "Outside the scope of VAT"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Tax filing can be Reporting or Not reporting. Transaction lines using tax details configured as Not reporting will be omitted from tax submissions.",
+      "id": "TAXFILING",
+      "iscustom": "false",
+      "label": "Tax filing",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Reporting",
+        "Not reporting"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Assign taxes to expense account",
+      "id": "USEEXPENSEACCT",
+      "iscustom": "false",
+      "label": "Assign taxes to expense account",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "PERCENT",
+      "description": "Tax exemption percent",
+      "id": "DEFAULTPARTIALEXEMPTVALUE",
+      "iscustom": "false",
+      "label": "Default input tax credit percent value",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "TAXDETAIL",
+  "relationships": [
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

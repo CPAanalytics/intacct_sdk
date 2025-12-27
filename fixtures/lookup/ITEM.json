@@ -1,0 +1,1716 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item unique identifier",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "MRR",
+      "id": "MRR",
+      "iscustom": "false",
+      "label": "MRR",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Extended description",
+      "id": "EXTENDED_DESCRIPTION",
+      "iscustom": "false",
+      "label": "Extended description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Extended description",
+      "id": "PODESCRIPTION",
+      "iscustom": "false",
+      "label": "Description on purchase transactions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Extended description",
+      "id": "SODESCRIPTION",
+      "iscustom": "false",
+      "label": "Description on sales transactions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Supplies item",
+      "id": "ISSUPPLYITEM",
+      "iscustom": "false",
+      "label": "Supplies item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Product line ID",
+      "id": "PRODUCTLINEID",
+      "iscustom": "false",
+      "label": "Product line ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Product line key",
+      "id": "PRODUCTLINERECORDNO",
+      "iscustom": "false",
+      "label": "Product line key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inventory cycle",
+      "id": "CYCLE",
+      "iscustom": "false",
+      "label": "Inventory cycle",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Billing template",
+      "id": "CNBILLINGTEMPLATENAME",
+      "iscustom": "false",
+      "label": "Billing template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue template 1",
+      "id": "CNREVENUETEMPLATENAME",
+      "iscustom": "false",
+      "label": "Revenue template 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue template 2",
+      "id": "CNREVENUE2TEMPLATENAME",
+      "iscustom": "false",
+      "label": "Revenue template 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Expense template 1",
+      "id": "CNEXPENSETEMPLATENAME",
+      "iscustom": "false",
+      "label": "Expense template 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Expense template 2",
+      "id": "CNEXPENSE2TEMPLATENAME",
+      "iscustom": "false",
+      "label": "Expense template 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "CNDEFAULTBUNDLE",
+      "iscustom": "false",
+      "label": "Contract default bundle",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CNMEACATEGORYNAME",
+      "iscustom": "false",
+      "label": "Contract fair value category",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Product type",
+      "id": "PRODUCTTYPE",
+      "iscustom": "false",
+      "label": "Product type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Item for Resale",
+        "Item not for Resale",
+        "Discontinued",
+        "Service",
+        "Misc Charge"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Substitute item ID",
+      "id": "SUBSTITUTEID",
+      "iscustom": "false",
+      "label": "Substitute item",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Shipping weight",
+      "id": "SHIP_WEIGHT",
+      "iscustom": "false",
+      "label": "Shipping weight",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date last sold",
+      "id": "WHENLASTSOLD",
+      "iscustom": "false",
+      "label": "Date last sold",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date last received",
+      "id": "WHENLASTRECEIVED",
+      "iscustom": "false",
+      "label": "Date last received",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Revenue account",
+      "id": "INCOMEACCTKEY",
+      "iscustom": "false",
+      "label": "Revenue account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Expense account",
+      "id": "EXPENSEACCTKEY",
+      "iscustom": "false",
+      "label": "Expense account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inventory account",
+      "id": "INVACCTKEY",
+      "iscustom": "false",
+      "label": "Inventory account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "COGS account",
+      "id": "COGSACCTKEY",
+      "iscustom": "false",
+      "label": "COGS account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Select the Accounts Receivable GL account",
+      "id": "OFFSETOEGLACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Accounts Receivable GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Select the Accounts Payable GL account",
+      "id": "OFFSETPOGLACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Accounts Payable GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Deferred revenue account",
+      "id": "DEFERREDREVACCTKEY",
+      "iscustom": "false",
+      "label": "Deferred revenue account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default revenue recognition template",
+      "id": "DEFAULTREVRECTEMPLKEY",
+      "iscustom": "false",
+      "label": "Default revenue recognition template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Allow back order",
+      "id": "ALLOW_BACKORDER",
+      "iscustom": "false",
+      "label": "Allow back order",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Taxable",
+      "id": "TAXABLE",
+      "iscustom": "false",
+      "label": "Taxable",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax group",
+      "id": "TAXGROUP.NAME",
+      "iscustom": "false",
+      "label": "Item tax group",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax code",
+      "id": "TAXCODE",
+      "iscustom": "false",
+      "label": "Tax code",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Cost method",
+      "id": "COST_METHOD",
+      "iscustom": "false",
+      "label": "Cost method",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Standard",
+        "Average",
+        "FIFO",
+        "LIFO"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Default conversion type",
+      "id": "DEFAULT_CONVERSIONTYPE",
+      "iscustom": "false",
+      "label": "Default conversion type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Quantity",
+        "Price"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Standard cost",
+      "id": "STANDARD_COST",
+      "iscustom": "false",
+      "label": "Standard cost",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name for the unit group",
+      "id": "UOMGRP",
+      "iscustom": "false",
+      "label": "Unit of measure",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Base unit",
+      "id": "BASEUOM",
+      "iscustom": "false",
+      "label": "Base unit",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name for the unit",
+      "id": "UOM.INVUOMDETAIL.UNIT",
+      "iscustom": "false",
+      "label": "Inventory unit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name for the unit",
+      "id": "UOM.POUOMDETAIL.UNIT",
+      "iscustom": "false",
+      "label": "Purchasing unit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Unit factor",
+      "id": "UOM.POUOMDETAIL.CONVFACTOR",
+      "iscustom": "false",
+      "label": "Purchasing unit conversion factor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique name for the unit",
+      "id": "UOM.SOUOMDETAIL.UNIT",
+      "iscustom": "false",
+      "label": "Sales unit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Unit factor",
+      "id": "UOM.SOUOMDETAIL.CONVFACTOR",
+      "iscustom": "false",
+      "label": "Sales unit conversion factor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default warehouse",
+      "id": "DEFAULT_WAREHOUSE",
+      "iscustom": "false",
+      "label": "Default warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "GL group",
+      "id": "GLGROUP",
+      "iscustom": "false",
+      "label": "GL group",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Note",
+      "id": "NOTE",
+      "iscustom": "false",
+      "label": "Note",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inventory",
+      "id": "INV_PRECISION",
+      "iscustom": "false",
+      "label": "Inventory",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Purchasing",
+      "id": "PO_PRECISION",
+      "iscustom": "false",
+      "label": "Purchasing",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Sales",
+      "id": "SO_PRECISION",
+      "iscustom": "false",
+      "label": "Sales",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item type",
+      "id": "ITEMTYPE",
+      "iscustom": "false",
+      "label": "Item type",
+      "readonly": "false",
+      "required": "true",
+      "valid_values": [
+        "Inventory",
+        "Non-Inventory",
+        "Non-Inventory (Purchase only)",
+        "Non-Inventory (Sales only)",
+        "Kit",
+        "Stockable Kit"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Enable serial tracking",
+      "id": "ENABLE_SERIALNO",
+      "iscustom": "false",
+      "label": "Enable serial tracking",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Serial number mask",
+      "id": "SERIAL_MASKKEY",
+      "iscustom": "false",
+      "label": "Serial number mask",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Enable lot tracking",
+      "id": "ENABLE_LOT_CATEGORY",
+      "iscustom": "false",
+      "label": "Enable lot tracking",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Lot category",
+      "id": "LOT_CATEGORYKEY",
+      "iscustom": "false",
+      "label": "Lot category",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Enable bin tracking",
+      "id": "ENABLE_BINS",
+      "iscustom": "false",
+      "label": "Enable bin tracking",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Enable expiration tracking",
+      "id": "ENABLE_EXPIRATION",
+      "iscustom": "false",
+      "label": "Enable expiration tracking",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UPC",
+      "id": "UPC",
+      "iscustom": "false",
+      "label": "UPC",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "",
+      "id": "REVPOSTING",
+      "iscustom": "false",
+      "label": "Revenue posting",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Component Level",
+        "Kit Level"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "",
+      "id": "REVPRINTING",
+      "iscustom": "false",
+      "label": "Print format",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Individual Components",
+        "Kit"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Fair value category",
+      "id": "VSOECATEGORY",
+      "iscustom": "false",
+      "label": "Fair value category",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Product - Specified",
+        "Software",
+        "Product - Unspecified",
+        "Upgrade - Unspecified",
+        "Upgrade - Specified",
+        "Services",
+        "Post Contract Support(PCS)"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default delivery status",
+      "id": "VSOEDLVRSTATUS",
+      "iscustom": "false",
+      "label": "Default delivery status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Delivered",
+        "Undelivered"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default deferral status",
+      "id": "VSOEREVDEFSTATUS",
+      "iscustom": "false",
+      "label": "Default deferral status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Defer until item is delivered",
+        "Defer bundle until item is delivered"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable start and end dates",
+      "id": "HASSTARTENDDATES",
+      "iscustom": "false",
+      "label": "Enable start and end dates",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Term period",
+      "id": "TERMPERIOD",
+      "iscustom": "false",
+      "label": "Periods measured in",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Days",
+        "Weeks",
+        "Months",
+        "Years"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Default number of periods",
+      "id": "TOTALPERIODS",
+      "iscustom": "false",
+      "label": "Number of periods",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Compute price for short term",
+      "id": "COMPUTEFORSHORTTERM",
+      "iscustom": "false",
+      "label": "Allow prorated pricing",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RENEWALMACROID",
+      "iscustom": "false",
+      "label": "Default renewal template",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "RENEWALMACROKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGLGROUP.INCOMEACCOUNT.ACCTNO",
+      "iscustom": "false",
+      "label": "Income account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGLGROUP.EXPENSEACCOUNT.ACCTNO",
+      "iscustom": "false",
+      "label": "Expense account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGLGROUP.INVENTORYACCOUNT.ACCTNO",
+      "iscustom": "false",
+      "label": "Inventory account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGLGROUP.COGSACCOUNT.ACCTNO",
+      "iscustom": "false",
+      "label": "COGS account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGLGROUP.DEFRRGLACCOUNT.ACCTNO",
+      "iscustom": "false",
+      "label": "Deferred revenue account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGLGROUP.OEGLACCOUNT.ACCTNO",
+      "iscustom": "false",
+      "label": "AR GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "ITEMGLGROUP.POGLACCOUNT.ACCTNO",
+      "iscustom": "false",
+      "label": "AP GL account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Enable allocation of landed costs to this item",
+      "id": "ENABLELANDEDCOST",
+      "iscustom": "false",
+      "label": "Enable distribution of landed costs to this item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default contract delivery status",
+      "id": "DEFCONTRACTDELIVERYSTATUS",
+      "iscustom": "false",
+      "label": "Default contract delivery status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Delivered",
+        "Undelivered"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default deferral status",
+      "id": "DEFCONTRACTDEFERRALSTATUS",
+      "iscustom": "false",
+      "label": "Default contract deferral status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Defer revenue until item is delivered",
+        "Defer revenue until all items are delivered"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "IONORDER",
+      "iscustom": "false",
+      "label": "On order",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "IONHAND",
+      "iscustom": "false",
+      "label": "On hand",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "IONHOLD",
+      "iscustom": "false",
+      "label": "On hold",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "GLGRPKEY",
+      "iscustom": "false",
+      "label": "GL group record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "UOMGRPKEY",
+      "iscustom": "false",
+      "label": "UOM group record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "TAXGROUPKEY",
+      "iscustom": "false",
+      "label": "Tax group record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Available for drop ship",
+      "id": "DROPSHIP",
+      "iscustom": "false",
+      "label": "Available for drop ship",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Available for buy to order",
+      "id": "BUYTOORDER",
+      "iscustom": "false",
+      "label": "Available for buy to order",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "IALLOCATED",
+      "iscustom": "false",
+      "label": "Allocated",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "IRESERVED",
+      "iscustom": "false",
+      "label": "Reserved",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "IUNCOMMITTED",
+      "iscustom": "false",
+      "label": "Uncommitted",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "IINTRANSIT",
+      "iscustom": "false",
+      "label": "In transit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Base price",
+      "id": "BASEPRICE",
+      "iscustom": "false",
+      "label": "Base price",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "ENABLE_REPLENISHMENT",
+      "iscustom": "false",
+      "label": "Enable replenishment for this item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Replenishment method",
+      "id": "REPLENISHMENT_METHOD",
+      "iscustom": "false",
+      "label": "Replenishment method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Demand forecast by single value",
+        "Reorder point",
+        "Demand forecast by fluctuating values"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "DEFAULT_REPLENISHMENT_UOM",
+      "iscustom": "false",
+      "label": "Units of measure default",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "REORDER_POINT",
+      "iscustom": "false",
+      "label": "Reorder point",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "SAFETY_STOCK",
+      "iscustom": "false",
+      "label": "Safety stock",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "REORDER_QTY",
+      "iscustom": "false",
+      "label": "Quantity to reorder",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MAX_ORDER_QTY",
+      "iscustom": "false",
+      "label": "Maximum order quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Auto-print label",
+      "id": "AUTOPRINTLABEL",
+      "iscustom": "false",
+      "label": "Auto-print label",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable multiple item tax groups, one per each tax solution",
+      "id": "ALLOWMULTIPLETAXGRPS",
+      "iscustom": "false",
+      "label": "Enable multiple item tax groups, one per each tax solution",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXGROUP.TAXSOLUTION.SOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM for weight",
+      "id": "WEIGHTUOM",
+      "iscustom": "false",
+      "label": "UOM for weight",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Net weight",
+      "id": "NETWEIGHT",
+      "iscustom": "false",
+      "label": "Net weight",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM for length, width, and height",
+      "id": "LWHUOM",
+      "iscustom": "false",
+      "label": "UOM for length, width, and height",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Length",
+      "id": "LENGTH",
+      "iscustom": "false",
+      "label": "Length",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Width",
+      "id": "WIDTH",
+      "iscustom": "false",
+      "label": "Width",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Height",
+      "id": "HEIGHT",
+      "iscustom": "false",
+      "label": "Height",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM for thickness",
+      "id": "THICKNESSUOM",
+      "iscustom": "false",
+      "label": "UOM for thickness",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Thickness",
+      "id": "THICKNESS",
+      "iscustom": "false",
+      "label": "Thickness",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Minimum thickness",
+      "id": "MINIMUMTHICKNESS",
+      "iscustom": "false",
+      "label": "Minimum thickness",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Maximum thickness",
+      "id": "MAXIMUMTHICKNESS",
+      "iscustom": "false",
+      "label": "Maximum thickness",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM for area",
+      "id": "AREAUOM",
+      "iscustom": "false",
+      "label": "UOM for area",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Area",
+      "id": "AREA",
+      "iscustom": "false",
+      "label": "Area",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM for volume",
+      "id": "VOLUMEUOM",
+      "iscustom": "false",
+      "label": "UOM for volume",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Volume",
+      "id": "VOLUME",
+      "iscustom": "false",
+      "label": "Volume",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM for diameter",
+      "id": "DIAMETERUOM",
+      "iscustom": "false",
+      "label": "UOM for diameter",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Inner diameter",
+      "id": "INNERDIAMETER",
+      "iscustom": "false",
+      "label": "Inner diameter",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Outer diameter",
+      "id": "OUTERDIAMETER",
+      "iscustom": "false",
+      "label": "Outer diameter",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Durometer",
+      "id": "DUROMETER",
+      "iscustom": "false",
+      "label": "Durometer",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "UOM for density",
+      "id": "DENSITYUOM",
+      "iscustom": "false",
+      "label": "UOM for density",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Density",
+      "id": "DENSITY",
+      "iscustom": "false",
+      "label": "Density",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "UPC-12",
+      "id": "UPC12",
+      "iscustom": "false",
+      "label": "UPC-12",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "EAN-13 European article number",
+      "id": "EAN13",
+      "iscustom": "false",
+      "label": "EAN-13",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Safety item",
+      "id": "SAFETYITEM",
+      "iscustom": "false",
+      "label": "Safety item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Restricted item",
+      "id": "RESTRICTEDITEM",
+      "iscustom": "false",
+      "label": "Restricted item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Compliant item",
+      "id": "COMPLIANTITEM",
+      "iscustom": "false",
+      "label": "Compliant item",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Condition",
+      "id": "CONDITION",
+      "iscustom": "false",
+      "label": "Condition",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Engineering alert",
+      "id": "ENGINEERINGALERT",
+      "iscustom": "false",
+      "label": "Engineering alert",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Specification 1",
+      "id": "SPECIFICATION1",
+      "iscustom": "false",
+      "label": "Specification 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Specification 2",
+      "id": "SPECIFICATION2",
+      "iscustom": "false",
+      "label": "Specification 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Specification 3",
+      "id": "SPECIFICATION3",
+      "iscustom": "false",
+      "label": "Specification 3",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Engineering approval",
+      "id": "ENGINEERINGAPPROVAL",
+      "iscustom": "false",
+      "label": "Engineering approval",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Quality control approval",
+      "id": "QUALITYCONTROLAPPROVAL",
+      "iscustom": "false",
+      "label": "Quality control approval",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Sales approval",
+      "id": "SALESAPPROVAL",
+      "iscustom": "false",
+      "label": "Sales approval",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Primary country of origin",
+      "id": "PRIMARYCOUNTRYOFORIGIN",
+      "iscustom": "false",
+      "label": "Primary country of origin",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Brand",
+      "id": "BRAND",
+      "iscustom": "false",
+      "label": "Brand",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Sub brand",
+      "id": "SUBBRAND",
+      "iscustom": "false",
+      "label": "Sub brand",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Category",
+      "id": "CATEGORY",
+      "iscustom": "false",
+      "label": "Category",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Sub category",
+      "id": "SUBCATEGORY",
+      "iscustom": "false",
+      "label": "Sub category",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Catalog reference",
+      "id": "CATALOGREF",
+      "iscustom": "false",
+      "label": "Catalog reference",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Color",
+      "id": "COLOR",
+      "iscustom": "false",
+      "label": "Color",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Style",
+      "id": "STYLE",
+      "iscustom": "false",
+      "label": "Style",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Size 1",
+      "id": "SIZE1",
+      "iscustom": "false",
+      "label": "Size 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Size 2",
+      "id": "SIZE2",
+      "iscustom": "false",
+      "label": "Size 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Gift card",
+      "id": "GIFTCARD",
+      "iscustom": "false",
+      "label": "Gift card",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Web enabled",
+      "id": "WEBENABLED",
+      "iscustom": "false",
+      "label": "Web enabled",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Web name",
+      "id": "WEBNAME",
+      "iscustom": "false",
+      "label": "Web name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Web short description",
+      "id": "WEBSHORTDESC",
+      "iscustom": "false",
+      "label": "Web short description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Web long description",
+      "id": "WEBLONGDESC",
+      "iscustom": "false",
+      "label": "Web long description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Fulfillment",
+      "id": "ENABLEFULFILLMENT",
+      "iscustom": "false",
+      "label": "Fulfillment",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable for Contracts",
+      "id": "CONTRACTENABLED",
+      "iscustom": "false",
+      "label": "Enable for Contracts",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ITEM",
+  "relationships": [
+    {
+      "label": "Item GL group",
+      "objectname": "ITEMGLGROUP",
+      "objectpath": "GLGROUP",
+      "relatedby": "GLGROUP",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Product line",
+      "objectname": "PRODUCTLINE",
+      "objectpath": "PRODUCTLINE",
+      "relatedby": "PRODUCTLINEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Item tax group",
+      "objectname": "TAXGROUP",
+      "objectpath": "TAXGROUP",
+      "relatedby": "TAXGROUPKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Billing template",
+      "objectname": "MEACATEGORY",
+      "objectpath": "CNMEACATEGORY",
+      "relatedby": "CNMEACATEGORYNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Billing template",
+      "objectname": "CONTRACTBILLINGTEMPLATE",
+      "objectpath": "CNBILLINGTEMPLATE",
+      "relatedby": "CNBILLINGTEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Revenue template #1",
+      "objectname": "CONTRACTREVENUETEMPLATE",
+      "objectpath": "CNREVENUETEMPLATE",
+      "relatedby": "CNREVENUETEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Revenue template #2",
+      "objectname": "CONTRACTREVENUETEMPLATE",
+      "objectpath": "CNREVENUE2TEMPLATE",
+      "relatedby": "CNREVENUE2TEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Expense template #1",
+      "objectname": "CONTRACTEXPENSETEMPLATE",
+      "objectpath": "CNEXPENSETEMPLATE",
+      "relatedby": "CNEXPENSETEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Expense template #2",
+      "objectname": "CONTRACTEXPENSETEMPLATE",
+      "objectpath": "CNEXPENSE2TEMPLATE",
+      "relatedby": "CNEXPENSE2TEMPLATENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

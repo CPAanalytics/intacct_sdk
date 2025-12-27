@@ -1,0 +1,872 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change request ID",
+      "id": "CHANGEREQUESTID",
+      "iscustom": "false",
+      "label": "Change request ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Change request type key",
+      "id": "CHANGEREQUESTTYPEKEY",
+      "iscustom": "false",
+      "label": "Change request type key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change request type",
+      "id": "CHANGEREQUESTTYPENAME",
+      "iscustom": "false",
+      "label": "Change request type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project key",
+      "id": "PROJECTKEY",
+      "iscustom": "false",
+      "label": "Project key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project ID",
+      "id": "PROJECTID",
+      "iscustom": "false",
+      "label": "Project ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project name",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location ID",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location name",
+      "id": "LOCATIONNAME",
+      "iscustom": "false",
+      "label": "Location name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Customer key",
+      "id": "CUSTOMERKEY",
+      "iscustom": "false",
+      "label": "Customer key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer ID",
+      "id": "CUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer name",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Change request date",
+      "id": "CHANGEREQUESTDATE",
+      "iscustom": "false",
+      "label": "Change request date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State",
+      "id": "CHANGEREQUESTSTATE",
+      "iscustom": "false",
+      "label": "State",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "Draft",
+        "Posted"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Change request status key",
+      "id": "CHANGEREQUESTSTATUSKEY",
+      "iscustom": "false",
+      "label": "Change request status key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Change request status",
+      "id": "CHANGEREQUESTSTATUSNAME",
+      "iscustom": "false",
+      "label": "Change request status",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Workflow type",
+      "id": "WFTYPE",
+      "iscustom": "false",
+      "label": "Workflow type",
+      "readonly": "true",
+      "required": "false",
+      "valid_values": [
+        "none",
+        "original",
+        "revision",
+        "forecast",
+        "approved change",
+        "pending change",
+        "other"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Cost effective date",
+      "id": "COSTEFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Cost effective date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Price effective date",
+      "id": "PRICEEFFECTIVEDATE",
+      "iscustom": "false",
+      "label": "Price effective date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Total cost",
+      "id": "TOTALCOST",
+      "iscustom": "false",
+      "label": "Total cost",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Total price",
+      "id": "TOTALPRICE",
+      "iscustom": "false",
+      "label": "Total price",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project change order key",
+      "id": "PROJECTCHANGEORDERKEY",
+      "iscustom": "false",
+      "label": "Project change order key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project change order ID",
+      "id": "PROJECTCHANGEORDERID",
+      "iscustom": "false",
+      "label": "Project change order ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Scope",
+      "id": "SCOPE",
+      "iscustom": "false",
+      "label": "Scope",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inclusions",
+      "id": "INCLUSIONS",
+      "iscustom": "false",
+      "label": "Inclusions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Exclusions",
+      "id": "EXCLUSIONS",
+      "iscustom": "false",
+      "label": "Exclusions",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Terms",
+      "id": "TERMS",
+      "iscustom": "false",
+      "label": "Terms",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Scheduled start date",
+      "id": "SCHEDULEDSTARTDATE",
+      "iscustom": "false",
+      "label": "Scheduled start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Actual start date",
+      "id": "ACTUALSTARTDATE",
+      "iscustom": "false",
+      "label": "Actual start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Scheduled completion date",
+      "id": "SCHEDULEDCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Scheduled completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Revised completion date",
+      "id": "REVISEDCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Revised completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Substantial completion date",
+      "id": "SUBSTANTIALCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Substantial completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Actual completion date",
+      "id": "ACTUALCOMPLETIONDATE",
+      "iscustom": "false",
+      "label": "Actual completion date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Notice to proceed",
+      "id": "NOTICETOPROCEED",
+      "iscustom": "false",
+      "label": "Notice to proceed",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Response due",
+      "id": "RESPONSEDUE",
+      "iscustom": "false",
+      "label": "Response due",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Executed on",
+      "id": "EXECUTEDON",
+      "iscustom": "false",
+      "label": "Executed on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule impact",
+      "id": "SCHEDULEIMPACT",
+      "iscustom": "false",
+      "label": "Schedule impact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal reference no.",
+      "id": "INTERNALREFNO",
+      "iscustom": "false",
+      "label": "Internal reference no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Initiated by key",
+      "id": "INTERNALINITIATEDBYKEY",
+      "iscustom": "false",
+      "label": "Initiated by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal initiated by",
+      "id": "INTERNALINITIATEDBY",
+      "iscustom": "false",
+      "label": "Internal initiated by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal initiated by name",
+      "id": "INTERNALINITIATEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal initiated by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Verbal by key",
+      "id": "INTERNALVERBALBYKEY",
+      "iscustom": "false",
+      "label": "Verbal by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal verbal by",
+      "id": "INTERNALVERBALBY",
+      "iscustom": "false",
+      "label": "Internal verbal by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal verbal by name",
+      "id": "INTERNALVERBALBYNAME",
+      "iscustom": "false",
+      "label": "Internal verbal by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Issued by key",
+      "id": "INTERNALISSUEDBYKEY",
+      "iscustom": "false",
+      "label": "Issued by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal issued by",
+      "id": "INTERNALISSUEDBY",
+      "iscustom": "false",
+      "label": "Internal issued by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal issued by name",
+      "id": "INTERNALISSUEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal issued by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Internal issued on",
+      "id": "INTERNALISSUEDON",
+      "iscustom": "false",
+      "label": "Internal issued on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Approved by key",
+      "id": "INTERNALAPPROVEDBYKEY",
+      "iscustom": "false",
+      "label": "Approved by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal approved by",
+      "id": "INTERNALAPPROVEDBY",
+      "iscustom": "false",
+      "label": "Internal approved by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal approved by name",
+      "id": "INTERNALAPPROVEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal approved by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Internal approved on",
+      "id": "INTERNALAPPROVEDON",
+      "iscustom": "false",
+      "label": "Internal approved on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Signed by key",
+      "id": "INTERNALSIGNEDBYKEY",
+      "iscustom": "false",
+      "label": "Signed by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal signed by",
+      "id": "INTERNALSIGNEDBY",
+      "iscustom": "false",
+      "label": "Internal signed by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal signed by name",
+      "id": "INTERNALSIGNEDBYNAME",
+      "iscustom": "false",
+      "label": "Internal signed by name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Internal signed on",
+      "id": "INTERNALSIGNEDON",
+      "iscustom": "false",
+      "label": "Internal signed on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal source",
+      "id": "INTERNALSOURCE",
+      "iscustom": "false",
+      "label": "Internal source",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Internal source reference no.",
+      "id": "INTERNALSOURCEREFNO",
+      "iscustom": "false",
+      "label": "Internal source reference no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External reference no.",
+      "id": "EXTERNALREFNO",
+      "iscustom": "false",
+      "label": "External reference no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Verbal by key",
+      "id": "EXTERNALVERBALBYKEY",
+      "iscustom": "false",
+      "label": "Verbal by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External verbal by",
+      "id": "EXTERNALVERBALBY",
+      "iscustom": "false",
+      "label": "External verbal by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Approved by key",
+      "id": "EXTERNALAPPROVEDBYKEY",
+      "iscustom": "false",
+      "label": "Approved by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External approved by",
+      "id": "EXTERNALAPPROVEDBY",
+      "iscustom": "false",
+      "label": "External approved by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "External approved on",
+      "id": "EXTERNALAPPROVEDON",
+      "iscustom": "false",
+      "label": "External approved on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Signed by key",
+      "id": "EXTERNALSIGNEDBYKEY",
+      "iscustom": "false",
+      "label": "Signed by key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "External signed by",
+      "id": "EXTERNALSIGNEDBY",
+      "iscustom": "false",
+      "label": "External signed by",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "External signed on",
+      "id": "EXTERNALSIGNEDON",
+      "iscustom": "false",
+      "label": "External signed on",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Attachment",
+      "id": "SUPDOCID",
+      "iscustom": "false",
+      "label": "Attachment",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project contract key",
+      "id": "PROJECTCONTRACTKEY",
+      "iscustom": "false",
+      "label": "Project contract key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract ID",
+      "id": "PROJECTCONTRACTID",
+      "iscustom": "false",
+      "label": "Project contract ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract name",
+      "id": "PROJECTCONTRACTNAME",
+      "iscustom": "false",
+      "label": "Project contract name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PROJECTCONTRACTLINEKEY",
+      "iscustom": "false",
+      "label": "Project contract line key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECTCONTRACTLINEID",
+      "iscustom": "false",
+      "label": "Project contract line ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project contract line name",
+      "id": "PROJECTCONTRACTLINENAME",
+      "iscustom": "false",
+      "label": "Project contract line name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PCNINTEGRATIONLEVEL",
+      "iscustom": "false",
+      "label": "Project contract line source",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "none",
+        "project change order",
+        "change request",
+        "change request entry"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CHANGEREQUEST",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "CHANGEREQUESTTYPE",
+      "objectpath": "CRTYPE",
+      "relatedby": "CHANGEREQUESTTYPENAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CHANGEREQUESTSTATUS",
+      "objectpath": "CRSTATUS",
+      "relatedby": "CHANGEREQUESTSTATUSNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PROJECTCONTRACT",
+      "objectpath": "PROJECTCONTRACT",
+      "relatedby": "PROJECTCONTRACTID",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PROJECTCONTRACTLINE",
+      "objectpath": "PROJECTCONTRACTLINE",
+      "relatedby": "PROJECTCONTRACTLINEID",
+      "relationshiptype": "ONE2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PROJECT",
+      "objectpath": "PROJECT",
+      "relatedby": "PROJECTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "PROJECTCHANGEORDER",
+      "objectpath": "PJCHANGEORDER",
+      "relatedby": "PROJECTCHANGEORDERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

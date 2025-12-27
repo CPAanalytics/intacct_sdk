@@ -1,0 +1,177 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "ID",
+      "id": "ID",
+      "iscustom": "false",
+      "label": "ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse ID",
+      "id": "WAREHOUSEID",
+      "iscustom": "false",
+      "label": "Warehouse ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Bin key",
+      "id": "BINKEY",
+      "iscustom": "false",
+      "label": "Bin key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Bin ID",
+      "id": "BINID",
+      "iscustom": "false",
+      "label": "Bin ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Aisle ID",
+      "id": "AISLE",
+      "iscustom": "false",
+      "label": "Aisle ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Row ID",
+      "id": "ROW",
+      "iscustom": "false",
+      "label": "Row ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Zone ID",
+      "id": "ZONE",
+      "iscustom": "false",
+      "label": "Zone ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Serial number",
+      "id": "SERIALNO",
+      "iscustom": "false",
+      "label": "Serial number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Lot number",
+      "id": "LOTNO",
+      "iscustom": "false",
+      "label": "Lot number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Expiration date",
+      "id": "EXPIRATIONDATE",
+      "iscustom": "false",
+      "label": "Expiration date",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Date received",
+      "id": "DATERECEIVED",
+      "iscustom": "false",
+      "label": "Date received",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity left",
+      "id": "QUANTITYLEFT",
+      "iscustom": "false",
+      "label": "Quantity left",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity allocated",
+      "id": "QUANTITYALLOCATED",
+      "iscustom": "false",
+      "label": "Quantity allocated",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Quantity reserved",
+      "id": "QUANTITYRESERVED",
+      "iscustom": "false",
+      "label": "Quantity reserved",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item description",
+      "id": "ITEMDESCRIPTION",
+      "iscustom": "false",
+      "label": "Item description",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unit of measurement",
+      "id": "UOM",
+      "iscustom": "false",
+      "label": "Unit of measurement",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse name",
+      "id": "WAREHOUSENAME",
+      "iscustom": "false",
+      "label": "Warehouse name",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "AVAILABLEINVENTORY",
+  "relationships": []
+}

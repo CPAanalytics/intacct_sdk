@@ -1,0 +1,406 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record no.",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record no.",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item dimension key",
+      "id": "ITEMDIMKEY",
+      "iscustom": "false",
+      "label": "Item dimension key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Item ID",
+      "id": "ITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse dimension key",
+      "id": "WAREHOUSEDIMKEY",
+      "iscustom": "false",
+      "label": "Warehouse dimension key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse ID",
+      "id": "WAREHOUSEID",
+      "iscustom": "false",
+      "label": "Warehouse ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default subsection",
+      "id": "DEFAULT_SUBSECTION",
+      "iscustom": "false",
+      "label": "Storage area",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inventory cycle key",
+      "id": "CYCLEKEY",
+      "iscustom": "false",
+      "label": "Inventory cycle key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Inventory cycle default",
+      "id": "CYCLE",
+      "iscustom": "false",
+      "label": "Inventory cycle default",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Standard cost",
+      "id": "STANDARD_COST",
+      "iscustom": "false",
+      "label": "Standard cost",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Last unit cost",
+      "id": "LAST_COST",
+      "iscustom": "false",
+      "label": "Last unit cost",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Average cost",
+      "id": "AVERAGE_COST",
+      "iscustom": "false",
+      "label": "Average cost",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Reorder method",
+      "id": "REORDER_METHOD",
+      "iscustom": "false",
+      "label": "Reorder method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Economic Qty",
+        "Max Stock Level",
+        "Reorder Point"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Economic order quantity",
+      "id": "ECONOMIC_ORDER_QTY",
+      "iscustom": "false",
+      "label": "Economic order quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Reorder point",
+      "id": "REORDER_POINT",
+      "iscustom": "false",
+      "label": "Reorder point",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Reorder quantity",
+      "id": "REORDER_QTY",
+      "iscustom": "false",
+      "label": "Quantity to reorder",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Minimum order quantity",
+      "id": "MIN_ORDER_QTY",
+      "iscustom": "false",
+      "label": "Minimum order quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Maximum order quantity",
+      "id": "MAX_ORDER_QTY",
+      "iscustom": "false",
+      "label": "Maximum order quantity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Maximum stocking amount",
+      "id": "MAX_STOCK",
+      "iscustom": "false",
+      "label": "Maximum stocking amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Minimum stocking amount",
+      "id": "MIN_STOCK",
+      "iscustom": "false",
+      "label": "Minimum stocking amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Last date sold",
+      "id": "DATE_LASTSOLD",
+      "iscustom": "false",
+      "label": "Last date sold",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Last date received",
+      "id": "DATE_LASTRECEIVED",
+      "iscustom": "false",
+      "label": "Last date received",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default aisle",
+      "id": "DEFAULT_AISLE",
+      "iscustom": "false",
+      "label": "Default aisle",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default row",
+      "id": "DEFAULT_ROW",
+      "iscustom": "false",
+      "label": "Default row",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": []
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default bin",
+      "id": "DEFAULT_BIN",
+      "iscustom": "false",
+      "label": "Default bin",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": []
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "WONORDER",
+      "iscustom": "false",
+      "label": "On order",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "WINTRANSIT",
+      "iscustom": "false",
+      "label": "In transit",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "WONHAND",
+      "iscustom": "false",
+      "label": "On hand",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "WONHOLD",
+      "iscustom": "false",
+      "label": "On hold",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "WRESERVED",
+      "iscustom": "false",
+      "label": "Reserved",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "WALLOCATED",
+      "iscustom": "false",
+      "label": "Allocated",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "WUNCOMMITTED",
+      "iscustom": "false",
+      "label": "Uncommitted",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse location currency key",
+      "id": "WHSE_LOCATION_KEY",
+      "iscustom": "false",
+      "label": "Currency",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse location currency",
+      "id": "WHSE_CURRENCY",
+      "iscustom": "false",
+      "label": "Currency",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Warehouse location ID",
+      "id": "WHSE_LOCATION_ID",
+      "iscustom": "false",
+      "label": "Warehouse location ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Safety stock",
+      "id": "SAFETY_STOCK",
+      "iscustom": "false",
+      "label": "Safety stock",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Replenishment method",
+      "id": "REPLENISHMENT_METHOD",
+      "iscustom": "false",
+      "label": "Replenishment method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Demand forecast by single value",
+        "Reorder point",
+        "Demand forecast by fluctuating values"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "ENABLE_REPLENISHMENT",
+      "iscustom": "false",
+      "label": "Override replenishment values on the vendor history tab",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default aisle key",
+      "id": "DEFAULT_AISLE_KEY",
+      "iscustom": "false",
+      "label": "Default aisle key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default row key",
+      "id": "DEFAULT_ROW_KEY",
+      "iscustom": "false",
+      "label": "Default row key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default bin key",
+      "id": "DEFAULT_BIN_KEY",
+      "iscustom": "false",
+      "label": "Default bin key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "ITEMWAREHOUSEINFO",
+  "relationships": [
+    {
+      "label": "Item",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "ITEMID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Warehouse",
+      "objectname": "WAREHOUSE",
+      "objectpath": "WAREHOUSE",
+      "relatedby": "WAREHOUSEID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

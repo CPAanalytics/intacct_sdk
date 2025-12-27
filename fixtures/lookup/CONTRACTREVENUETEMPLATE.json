@@ -1,0 +1,267 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Description",
+      "id": "DESCRIPTION",
+      "iscustom": "false",
+      "label": "Description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Schedule period",
+      "id": "SCHEDULEPERIOD",
+      "iscustom": "false",
+      "label": "Recognition schedule period",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Monthly",
+        "Quarterly",
+        "Semi-annually",
+        "Annually"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Posting day",
+      "id": "POSTINGDAY",
+      "iscustom": "false",
+      "label": "Posting day",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Recognition method",
+      "id": "METHOD",
+      "iscustom": "false",
+      "label": "Recognition method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Straight line",
+        "Daily rate",
+        "Quantity based",
+        "Predefined percentages",
+        "Project percent complete",
+        "Task percent complete",
+        "Revenue Recognition on Invoice"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Recognition method source",
+      "id": "SOURCE",
+      "iscustom": "false",
+      "label": "Recognition method source",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Estimated hours",
+        "Observed % completed",
+        "Budgeted hours",
+        "Planned hours"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Recognition method source",
+      "id": "STEPTEMPLATE",
+      "iscustom": "false",
+      "label": "Step revenue",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RESUMEOPTION",
+      "iscustom": "false",
+      "label": "Revenue adjustment option",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "One time",
+        "Distributed",
+        "Walk forward"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default posting type",
+      "id": "POSTINGTYPE",
+      "iscustom": "false",
+      "label": "Default posting type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Automatic",
+        "Manual"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "System template",
+      "id": "SYSTEM",
+      "iscustom": "false",
+      "label": "System",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "CONTRACTREVENUETEMPLATE",
+  "relationships": [
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

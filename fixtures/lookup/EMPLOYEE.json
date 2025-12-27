@@ -1,0 +1,1288 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique ID of employee",
+      "id": "EMPLOYEEID",
+      "iscustom": "false",
+      "label": "Employee ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Social security number",
+      "id": "SSN",
+      "iscustom": "false",
+      "label": "SSN",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Title",
+      "id": "TITLE",
+      "iscustom": "false",
+      "label": "Title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Location ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Location key",
+      "id": "LOCATIONKEY",
+      "iscustom": "false",
+      "label": "Location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Department",
+      "id": "DEPARTMENTID",
+      "iscustom": "false",
+      "label": "Department ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Department key",
+      "id": "DEPARTMENTKEY",
+      "iscustom": "false",
+      "label": "Department key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "PARENTKEY",
+      "iscustom": "false",
+      "label": "Parent key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Manager",
+      "id": "SUPERVISORID",
+      "iscustom": "false",
+      "label": "Manager",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "SUPERVISORNAME",
+      "iscustom": "false",
+      "label": "Supervisor name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Birth date",
+      "id": "BIRTHDATE",
+      "iscustom": "false",
+      "label": "Birth date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Start date",
+      "id": "STARTDATE",
+      "iscustom": "false",
+      "label": "Start date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "End date",
+      "id": "ENDDATE",
+      "iscustom": "false",
+      "label": "End date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Employee type",
+      "id": "EMPLOYEETYPE",
+      "iscustom": "false",
+      "label": "Employee type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Form 1099 type",
+      "id": "EMPLOYEETYPE1099TYPE",
+      "iscustom": "false",
+      "label": "Employee form 1099 type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPTYPEKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Gender",
+      "id": "GENDER",
+      "iscustom": "false",
+      "label": "Gender",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "female",
+        "male"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Termination type",
+      "id": "TERMINATIONTYPE",
+      "iscustom": "false",
+      "label": "Termination type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "voluntary",
+        "involuntary",
+        "deceased",
+        "disability",
+        "retired"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contact name",
+      "id": "CONTACT_NAME",
+      "iscustom": "false",
+      "label": "Primary contact name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contact name",
+      "id": "PERSONALINFO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "Primary contact name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Prefix",
+      "id": "PERSONALINFO.PREFIX",
+      "iscustom": "false",
+      "label": "Prefix",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "First name",
+      "id": "PERSONALINFO.FIRSTNAME",
+      "iscustom": "false",
+      "label": "First name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Middle name",
+      "id": "PERSONALINFO.INITIAL",
+      "iscustom": "false",
+      "label": "Middle name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Last name",
+      "id": "PERSONALINFO.LASTNAME",
+      "iscustom": "false",
+      "label": "Last name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Full name of the company",
+      "id": "PERSONALINFO.COMPANYNAME",
+      "iscustom": "false",
+      "label": "Company name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Name as appears on official documents",
+      "id": "PERSONALINFO.PRINTAS",
+      "iscustom": "false",
+      "label": "Print as",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Primary phone",
+      "id": "PERSONALINFO.PHONE1",
+      "iscustom": "false",
+      "label": "Primary phone",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Secondary phone",
+      "id": "PERSONALINFO.PHONE2",
+      "iscustom": "false",
+      "label": "Secondary phone",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Mobile phone number",
+      "id": "PERSONALINFO.CELLPHONE",
+      "iscustom": "false",
+      "label": "Mobile phone",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Pager",
+      "id": "PERSONALINFO.PAGER",
+      "iscustom": "false",
+      "label": "Pager",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Fax",
+      "id": "PERSONALINFO.FAX",
+      "iscustom": "false",
+      "label": "Fax",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Primary email address",
+      "id": "PERSONALINFO.EMAIL1",
+      "iscustom": "false",
+      "label": "Primary email address",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Secondary email address",
+      "id": "PERSONALINFO.EMAIL2",
+      "iscustom": "false",
+      "label": "Secondary email addresses",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Primary URL",
+      "id": "PERSONALINFO.URL1",
+      "iscustom": "false",
+      "label": "Primary URL",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Secondary URL",
+      "id": "PERSONALINFO.URL2",
+      "iscustom": "false",
+      "label": "Secondary URL",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 1",
+      "id": "PERSONALINFO.MAILADDRESS.ADDRESS1",
+      "iscustom": "false",
+      "label": "Address line 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 2",
+      "id": "PERSONALINFO.MAILADDRESS.ADDRESS2",
+      "iscustom": "false",
+      "label": "Address line 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 3",
+      "id": "PERSONALINFO.MAILADDRESS.ADDRESS3",
+      "iscustom": "false",
+      "label": "Address line 3",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "City",
+      "id": "PERSONALINFO.MAILADDRESS.CITY",
+      "iscustom": "false",
+      "label": "City",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State or territory",
+      "id": "PERSONALINFO.MAILADDRESS.STATE",
+      "iscustom": "false",
+      "label": "State or territory",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "ZIP or postal code",
+      "id": "PERSONALINFO.MAILADDRESS.ZIP",
+      "iscustom": "false",
+      "label": "ZIP or postal code",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Country",
+      "id": "PERSONALINFO.MAILADDRESS.COUNTRY",
+      "iscustom": "false",
+      "label": "Country",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Country code",
+      "id": "PERSONALINFO.MAILADDRESS.COUNTRYCODE",
+      "iscustom": "false",
+      "label": "Country code",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "US",
+        "AF",
+        "AX",
+        "AL",
+        "DZ",
+        "AS",
+        "AD",
+        "AO",
+        "AI",
+        "AQ",
+        "AG",
+        "AR",
+        "AM",
+        "AW",
+        "AU",
+        "AT",
+        "AZ",
+        "BS",
+        "BH",
+        "BD",
+        "BB",
+        "BY",
+        "BE",
+        "BZ",
+        "BJ",
+        "BM",
+        "BT",
+        "BO",
+        "BQ",
+        "BA",
+        "BW",
+        "BV",
+        "BR",
+        "IO",
+        "BN",
+        "BG",
+        "BF",
+        "BI",
+        "KH",
+        "CM",
+        "CA",
+        "IC",
+        "CV",
+        "KY",
+        "CF",
+        "TD",
+        "CL",
+        "CN",
+        "CX",
+        "CC",
+        "CO",
+        "KM",
+        "CG",
+        "CD",
+        "CK",
+        "CR",
+        "CI",
+        "HR",
+        "CU",
+        "CW",
+        "CY",
+        "CZ",
+        "DK",
+        "DJ",
+        "DM",
+        "DO",
+        "EC",
+        "EG",
+        "SV",
+        "GQ",
+        "ER",
+        "EE",
+        "SZ",
+        "ET",
+        "FK",
+        "FO",
+        "FJ",
+        "FI",
+        "FR",
+        "GF",
+        "PF",
+        "TF",
+        "GA",
+        "GM",
+        "GE",
+        "DE",
+        "GH",
+        "GI",
+        "GR",
+        "GL",
+        "GD",
+        "GP",
+        "GU",
+        "GT",
+        "GG",
+        "GN",
+        "GW",
+        "GY",
+        "HT",
+        "HM",
+        "HN",
+        "HK",
+        "HU",
+        "IS",
+        "IN",
+        "ID",
+        "IR",
+        "IQ",
+        "IE",
+        "IM",
+        "IL",
+        "IT",
+        "JM",
+        "JP",
+        "JE",
+        "JO",
+        "KZ",
+        "KE",
+        "KI",
+        "KR",
+        "KP",
+        "XK",
+        "KW",
+        "KG",
+        "LA",
+        "LV",
+        "LB",
+        "LS",
+        "LR",
+        "LY",
+        "LI",
+        "LT",
+        "LU",
+        "MO",
+        "MK",
+        "MG",
+        "MW",
+        "MY",
+        "MV",
+        "ML",
+        "MT",
+        "MH",
+        "MQ",
+        "MR",
+        "MU",
+        "YT",
+        "MX",
+        "FM",
+        "MD",
+        "MC",
+        "MN",
+        "ME",
+        "MS",
+        "MA",
+        "MZ",
+        "MM",
+        "NA",
+        "NR",
+        "NP",
+        "NL",
+        "AN",
+        "NC",
+        "NZ",
+        "NI",
+        "NE",
+        "NG",
+        "NU",
+        "NF",
+        "MP",
+        "NO",
+        "OM",
+        "PK",
+        "PW",
+        "PS",
+        "PA",
+        "PG",
+        "PY",
+        "PE",
+        "PH",
+        "PN",
+        "PL",
+        "PT",
+        "PR",
+        "QA",
+        "RE",
+        "RO",
+        "RU",
+        "RW",
+        "BL",
+        "SH",
+        "KN",
+        "LC",
+        "MF",
+        "PM",
+        "VC",
+        "WS",
+        "SM",
+        "ST",
+        "SA",
+        "SN",
+        "RS",
+        "SC",
+        "SL",
+        "SG",
+        "SX",
+        "SK",
+        "SI",
+        "SB",
+        "SO",
+        "ZA",
+        "GS",
+        "ES",
+        "LK",
+        "SD",
+        "SS",
+        "SR",
+        "SJ",
+        "SE",
+        "CH",
+        "SY",
+        "TW",
+        "TJ",
+        "TZ",
+        "TH",
+        "TL",
+        "TG",
+        "TK",
+        "TO",
+        "TT",
+        "TN",
+        "TR",
+        "TM",
+        "TC",
+        "TV",
+        "UG",
+        "UA",
+        "AE",
+        "GB",
+        "UM",
+        "UY",
+        "UZ",
+        "VU",
+        "VA",
+        "VE",
+        "VN",
+        "VG",
+        "VI",
+        "WF",
+        "EH",
+        "YE",
+        "ZM",
+        "ZW"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Entity",
+      "id": "ENTITY",
+      "iscustom": "false",
+      "label": "Entity",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Attachment folder name",
+      "id": "SUPDOCFOLDERNAME",
+      "iscustom": "false",
+      "label": "Attachment folder",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default currency",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Default currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "1099 name",
+      "id": "NAME1099",
+      "iscustom": "false",
+      "label": "1099 name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Form 1099 type",
+      "id": "FORM1099TYPE",
+      "iscustom": "false",
+      "label": "Form 1099 type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Form 1099 box",
+      "id": "FORM1099BOX",
+      "iscustom": "false",
+      "label": "Form 1099 box",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Earning type key",
+      "id": "EARNINGTYPEKEY",
+      "iscustom": "false",
+      "label": "Earning type key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Earning type",
+      "id": "EARNINGTYPENAME",
+      "iscustom": "false",
+      "label": "Earning type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Earning type method",
+      "id": "EARNINGTYPEMETHOD",
+      "iscustom": "false",
+      "label": "Earning type method",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Post actual labor costs with variance",
+      "id": "POSTACTUALCOST",
+      "iscustom": "false",
+      "label": "Post actual labor costs with variance",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Class ID",
+      "id": "CLASSID",
+      "iscustom": "false",
+      "label": "Class ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Class name",
+      "id": "CLASSNAME",
+      "iscustom": "false",
+      "label": "Class name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Class key",
+      "id": "CLASSKEY",
+      "iscustom": "false",
+      "label": "Class key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Preferred payment method",
+      "id": "PAYMETHODKEY",
+      "iscustom": "false",
+      "label": "Preferred payment method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "",
+        "Printed Check",
+        "EFT",
+        "Cash",
+        "ACH"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Country code",
+      "id": "PYMTCOUNTRYCODE",
+      "iscustom": "false",
+      "label": "Payment country",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Currency supported by a country to make bank file payments.",
+      "id": "PYMTCURRENCY",
+      "iscustom": "false",
+      "label": "Payment currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "File payment service type",
+      "id": "FILEPAYMENTSERVICE",
+      "iscustom": "false",
+      "label": "File payment service type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "ACH",
+        "BANKFILE",
+        "NONE"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable ACH",
+      "id": "ACHENABLED",
+      "iscustom": "false",
+      "label": "Enable ACH",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "ACH bank routing number",
+      "id": "ACHBANKROUTINGNUMBER",
+      "iscustom": "false",
+      "label": "ACH bank routing number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "ACH account number",
+      "id": "ACHACCOUNTNUMBER",
+      "iscustom": "false",
+      "label": "Account number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "ACH account type",
+      "id": "ACHACCOUNTTYPE",
+      "iscustom": "false",
+      "label": "Account type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Checking Account",
+        "Savings Account"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account classification",
+      "id": "ACHREMITTANCETYPE",
+      "iscustom": "false",
+      "label": "Account classification",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Personal(PPD)",
+        "Business(CCD)",
+        "Business(CTX)"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Send payment notification",
+      "id": "PAYMENTNOTIFY",
+      "iscustom": "false",
+      "label": "Send automatic payment notification",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Placeholder resource",
+      "id": "GENERIC",
+      "iscustom": "false",
+      "label": "Placeholder resource",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Merge payment requests",
+      "id": "MERGEPAYMENTREQ",
+      "iscustom": "false",
+      "label": "Merge payment requests",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "CONTACTKEY",
+      "iscustom": "false",
+      "label": "Contact record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "EMPPOSITIONKEY",
+      "iscustom": "false",
+      "label": "No label specified",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPPOSITIONID",
+      "iscustom": "false",
+      "label": "Employee position ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EMPPOSITIONNAME",
+      "iscustom": "false",
+      "label": "Employee position name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEFAULTCUSTOMERID",
+      "iscustom": "false",
+      "label": "Customer ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEFAULTCUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DEFAULTCUSTOMERKEY",
+      "iscustom": "false",
+      "label": "Customer key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Vendor ID",
+      "id": "DEFAULTVENDORID",
+      "iscustom": "false",
+      "label": "Vendor",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEFAULTITEMID",
+      "iscustom": "false",
+      "label": "Item ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEFAULTITEMNAME",
+      "iscustom": "false",
+      "label": "Item name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "DEFAULTITEMKEY",
+      "iscustom": "false",
+      "label": "Item key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEFAULTTIMEALLOCATIONID",
+      "iscustom": "false",
+      "label": "Time allocation",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "DEFAULTEXPENSEDISTRIBUTIONID",
+      "iscustom": "false",
+      "label": "Expense distribution",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Created by",
+      "id": "CREATEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Modified by",
+      "id": "MODIFIEDBYLOGINID",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "If using People Sync in Expensify, check this box if you don't want the employee to be automatically created in Expensify.",
+      "id": "EXPENSIFY_RESTRICT_INVITE",
+      "iscustom": "true",
+      "label": "Restrict access to Expensify",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "EMPLOYEE",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "DEPARTMENT",
+      "objectpath": "DEPARTMENT",
+      "relatedby": "DEPARTMENTID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTACT",
+      "objectpath": "CONTACT",
+      "relatedby": "PERSONALINFO.CONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Manager",
+      "objectname": "EMPLOYEE",
+      "objectpath": "MANAGER",
+      "relatedby": "SUPERVISORID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "LOCATION",
+      "objectpath": "LOCATION",
+      "relatedby": "LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EMPLOYEERATE",
+      "objectpath": "EMPLOYEERATE",
+      "relatedby": "EMPLOYEEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Earning type",
+      "objectname": "EARNINGTYPE",
+      "objectpath": "EARNINGTYPE",
+      "relatedby": "EARNINGTYPEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CLASS",
+      "objectpath": "CLASS",
+      "relatedby": "CLASSID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EMPLOYEEPOSITION",
+      "objectpath": "EMPLOYEEPOSITION",
+      "relatedby": "EMPPOSITIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Bank file",
+      "objectname": "EMPLOYEEBANKFILEDETAIL",
+      "objectpath": "BANKFILE",
+      "relatedby": "EMPLOYEEKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CUSTOMER",
+      "objectpath": "CUSTOMER",
+      "relatedby": "DEFAULTCUSTOMERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "VENDOR",
+      "objectpath": "VENDOR",
+      "relatedby": "DEFAULTVENDORID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ITEM",
+      "objectpath": "ITEM",
+      "relatedby": "DEFAULTITEMID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ALLOCATION",
+      "objectpath": "TIMEALLOCATION",
+      "relatedby": "DEFAULTTIMEALLOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ALLOCATION",
+      "objectpath": "EXPENSEDISTRIBUTION",
+      "relatedby": "DEFAULTEXPENSEDISTRIBUTIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created by",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOCREATEDBY",
+      "relatedby": "CREATEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Last modified user",
+      "objectname": "USERINFO",
+      "objectpath": "USERINFOMODIFIEDBY",
+      "relatedby": "MODIFIEDBY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

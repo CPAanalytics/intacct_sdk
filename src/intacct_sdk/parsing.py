@@ -87,10 +87,15 @@ def _raise_on_failure(root: ET.Element) -> None:
     result_status = _get_text(root, "operation/result/status")
     if result_status != "success":
         error = root.find("operation/result/errormessage/error")
+        description = _get_text(error, "description") if error is not None else None
+        description2 = _get_text(error, "description2") if error is not None else None
+        full_description = description or description2
+        if description and description2 and description2 not in description:
+            full_description = f"{description} | {description2}"
         raise IntacctError(
             "Result status not success",
             error_number=_get_text(error, "errorno") if error is not None else None,
-            description=_get_text(error, "description") if error is not None else None,
+            description=full_description,
             correction=_get_text(error, "correction") if error is not None else None,
             control_id=_get_text(root, "control/controlid"),
             operation_id=_get_text(root, "operation/result/controlid"),

@@ -1,0 +1,263 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique identifier",
+      "id": "LOCATIONID",
+      "iscustom": "false",
+      "label": "Warehouse ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Free form name for this warehouse location.",
+      "id": "NAME",
+      "iscustom": "false",
+      "label": "Name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Parent warehouse",
+      "id": "PARENTID",
+      "iscustom": "false",
+      "label": "Parent warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Unique identifier",
+      "id": "WAREHOUSEID",
+      "iscustom": "false",
+      "label": "Warehouse ID",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Location",
+      "id": "LOC.LOCATIONID",
+      "iscustom": "false",
+      "label": "Location",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Manager in charge",
+      "id": "MANAGER.NAME",
+      "iscustom": "false",
+      "label": "Manager ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Manager in charge",
+      "id": "MANAGERID",
+      "iscustom": "false",
+      "label": "Manager ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contact employee",
+      "id": "CONTACTINFO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "Contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ship-to contact",
+      "id": "SHIPTO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "Ship-to contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Used in GL",
+      "id": "USEDINGL",
+      "iscustom": "false",
+      "label": "Used in GL",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Enable replenishment for this warehouse",
+      "id": "ENABLE_REPLENISHMENT",
+      "iscustom": "false",
+      "label": "Enable replenishment for this warehouse",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Allow negative inventory for this warehouse",
+      "id": "ENABLENEGATIVEINV",
+      "iscustom": "false",
+      "label": "Allow negative inventory for this warehouse",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "WAREHOUSE",
+  "relationships": [
+    {
+      "label": "Warehouse location",
+      "objectname": "LOCATION",
+      "objectpath": "LOC",
+      "relatedby": "LOC.LOCATIONID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "CONTACT",
+      "objectpath": "CONTACT",
+      "relatedby": "CONTACTINFO.CONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "EMPLOYEE",
+      "objectpath": "MANAGER",
+      "relatedby": "MANAGERID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Ship-to contact",
+      "objectname": "CONTACT",
+      "objectpath": "SHIPTO",
+      "relatedby": "SHIPTO.CONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Parent warehouse",
+      "objectname": "WAREHOUSE",
+      "objectpath": "PARENT",
+      "relatedby": "WAREHOUSEID",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}

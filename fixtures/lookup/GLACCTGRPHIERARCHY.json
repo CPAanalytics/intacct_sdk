@@ -1,0 +1,165 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Account group key",
+      "id": "GLACCTGRPKEY",
+      "iscustom": "false",
+      "label": "Account group key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account group name",
+      "id": "GLACCTGRPNAME",
+      "iscustom": "false",
+      "label": "Account group name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account group title",
+      "id": "GLACCTGRPTITLE",
+      "iscustom": "false",
+      "label": "Account group title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Normal balance",
+      "id": "GLACCTGRPNORMALBALANCE",
+      "iscustom": "false",
+      "label": "Normal balance",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "debit",
+        "credit"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Type of account group",
+      "id": "GLACCTGRPMEMBERTYPE",
+      "iscustom": "false",
+      "label": "Type of account group",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Accounts",
+        "Statistical Accounts",
+        "Groups",
+        "Computation",
+        "Category",
+        "Statistical Category"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "How created",
+      "id": "GLACCTGRPHOWCREATED",
+      "iscustom": "false",
+      "label": "How created",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "User Defined",
+        "System"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Account group location key",
+      "id": "GLACCTGRPLOCATIONKEY",
+      "iscustom": "false",
+      "label": "Account group location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Account key",
+      "id": "ACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Account key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account number",
+      "id": "ACCOUNTNO",
+      "iscustom": "false",
+      "label": "Account number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Account title",
+      "id": "ACCOUNTTITLE",
+      "iscustom": "false",
+      "label": "Account title",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Account normal balance",
+      "id": "ACCOUNTNORMALBALANCE",
+      "iscustom": "false",
+      "label": "Account normal balance",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "debit",
+        "credit"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Account type",
+      "id": "ACCOUNTTYPE",
+      "iscustom": "false",
+      "label": "Account type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "balancesheet",
+        "incomestatement"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Account location key",
+      "id": "ACCOUNTLOCATIONKEY",
+      "iscustom": "false",
+      "label": "Account location key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GLACCTGRPHIERARCHY",
+  "relationships": []
+}

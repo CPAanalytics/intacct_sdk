@@ -1,0 +1,151 @@
+{
+  "fields": [
+    {
+      "datatype": "INTEGER",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Entity",
+      "id": "ENTITYID",
+      "iscustom": "false",
+      "label": "Entity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Ownership percent",
+      "id": "OWNERSHIPPERCENTAGE",
+      "iscustom": "false",
+      "label": "Ownership percent",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Consolidation method",
+      "id": "CONSOLIDATIONMETHOD",
+      "iscustom": "false",
+      "label": "Consolidation method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "consolidation",
+        "proportional",
+        "full consolidation",
+        "equity"
+      ]
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "Allocate subsidiary income to parent entity",
+      "id": "ISALLOCATESUBSIDIARYINCOME",
+      "iscustom": "false",
+      "label": "Allocate subsidiary income to parent entity",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Investment in subsidiary account",
+      "id": "INVESTMENTINSUBSACCT",
+      "iscustom": "false",
+      "label": "Investment in subsidiary account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Subsidiary revenue account",
+      "id": "SUBSIDIARYREVENUEACCT",
+      "iscustom": "false",
+      "label": "Subsidiary revenue account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Net income attributable to NCI",
+      "id": "NETINCOMEATTRIBUTABLETONCI",
+      "iscustom": "false",
+      "label": "Net income attributable to NCI",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Equity attributable to NCI",
+      "id": "EQUITYATTRIBUTABLETONCI",
+      "iscustom": "false",
+      "label": "Equity attributable to NCI",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contributed capital account",
+      "id": "CONTRIBUTEDCAPITALACCT",
+      "iscustom": "false",
+      "label": "Contributed capital account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was created.",
+      "id": "WHENCREATED",
+      "iscustom": "false",
+      "label": "When created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "GCOWNERSHIPCHILDENTITY",
+  "relationships": []
+}

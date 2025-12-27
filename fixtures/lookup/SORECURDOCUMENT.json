@@ -1,0 +1,884 @@
+{
+  "fields": [
+    {
+      "datatype": "TEXT",
+      "description": "Record number",
+      "id": "RECORDNO",
+      "iscustom": "false",
+      "label": "Record number",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Active or inactive",
+      "id": "STATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "active",
+        "inactive"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "PO number",
+      "id": "PONUMBER",
+      "iscustom": "false",
+      "label": "Reference number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Vendor document number",
+      "id": "VENDORDOCNO",
+      "iscustom": "false",
+      "label": "Vendor document number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Shipping method",
+      "id": "SHIPVIA",
+      "iscustom": "false",
+      "label": "Shipping method",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "User key",
+      "id": "USERKEY",
+      "iscustom": "false",
+      "label": "User key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Default site",
+      "id": "WAREHOUSE.LOCATIONID",
+      "iscustom": "false",
+      "label": "Default warehouse",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ship-to version key",
+      "id": "SHIPTOKEY",
+      "iscustom": "false",
+      "label": "Ship-to version key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Bill-to version key",
+      "id": "BILLTOKEY",
+      "iscustom": "false",
+      "label": "Bill-to version key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Message",
+      "id": "MESSAGE",
+      "iscustom": "false",
+      "label": "Message",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Entity",
+      "id": "ENTITY",
+      "iscustom": "false",
+      "label": "Entity",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract ID",
+      "id": "CONTRACTID",
+      "iscustom": "false",
+      "label": "Contract ID",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contract",
+      "id": "CONTRACTDESC",
+      "iscustom": "false",
+      "label": "Contract description",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Note",
+      "id": "NOTE",
+      "iscustom": "false",
+      "label": "Note",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Subtotal",
+      "id": "SUBTOTAL",
+      "iscustom": "false",
+      "label": "Subtotal",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "Total",
+      "id": "TOTAL",
+      "iscustom": "false",
+      "label": "Total",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Scheduled operation key",
+      "id": "SCHOPKEY",
+      "iscustom": "false",
+      "label": "Scheduled operation key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Source document",
+      "id": "SOURCEDOCUMENT",
+      "iscustom": "false",
+      "label": "Source document",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Document type",
+      "id": "DOCID",
+      "iscustom": "false",
+      "label": "Document type",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Document par ID",
+      "id": "DOCPARID",
+      "iscustom": "false",
+      "label": "Document par ID",
+      "readonly": "true",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Start date",
+      "id": "STARTDATE",
+      "iscustom": "false",
+      "label": "Start date",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "DATE",
+      "description": "End date",
+      "id": "ENDDATE",
+      "iscustom": "false",
+      "label": "End date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Next execution date",
+      "id": "NEXTEXECDATE",
+      "iscustom": "false",
+      "label": "Next execution date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Last execution date",
+      "id": "LASTEXECDATE",
+      "iscustom": "false",
+      "label": "Last execution date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "Due date",
+      "id": "RECURDUEDATE",
+      "iscustom": "false",
+      "label": "Due date",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Recurring frequency",
+      "id": "FREQUENCY",
+      "iscustom": "false",
+      "label": "Frequency",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "None",
+        "Days",
+        "Weeks",
+        "Months",
+        "Years",
+        "End Of Month"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Transactions created",
+      "id": "EXECCOUNT",
+      "iscustom": "false",
+      "label": "Transactions created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Repeat count",
+      "id": "REPEATCOUNT",
+      "iscustom": "false",
+      "label": "Repeat count",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "REPEATBY",
+      "iscustom": "false",
+      "label": "Repeat by",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "None",
+        "Days",
+        "Weeks",
+        "Months",
+        "EndOfMonth",
+        "Years"
+      ]
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Repeat interval",
+      "id": "INTERVAL",
+      "iscustom": "false",
+      "label": "Repeat interval",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "User",
+      "id": "USER",
+      "iscustom": "false",
+      "label": "User",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer name",
+      "id": "CUSTOMERNAME",
+      "iscustom": "false",
+      "label": "Customer name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Payment terms",
+      "id": "TERM.NAME",
+      "iscustom": "false",
+      "label": "Payment terms",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Email contact",
+      "id": "SCHEDULEDCONTACTEMAIL",
+      "iscustom": "false",
+      "label": "Email contact",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Contact",
+      "id": "CONTACT.CONTACTNAME",
+      "iscustom": "false",
+      "label": "Contact name",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Primary email address",
+      "id": "CONTACT.EMAIL1",
+      "iscustom": "false",
+      "label": "Contact: Email 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Secondary email address",
+      "id": "CONTACT.EMAIL2",
+      "iscustom": "false",
+      "label": "Contact: Email 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Ship-to contact name",
+      "id": "SHIPTO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 1",
+      "id": "SHIPTO.MAILADDRESS.ADDRESS1",
+      "iscustom": "false",
+      "label": "Address line 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 2",
+      "id": "SHIPTO.MAILADDRESS.ADDRESS2",
+      "iscustom": "false",
+      "label": "Address line 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 3",
+      "id": "SHIPTO.MAILADDRESS.ADDRESS3",
+      "iscustom": "false",
+      "label": "Address line 3",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "City",
+      "id": "SHIPTO.MAILADDRESS.CITY",
+      "iscustom": "false",
+      "label": "City",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State or territory",
+      "id": "SHIPTO.MAILADDRESS.STATE",
+      "iscustom": "false",
+      "label": "State or territory",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "ZIP or postal code",
+      "id": "SHIPTO.MAILADDRESS.ZIP",
+      "iscustom": "false",
+      "label": "ZIP or postal code",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Country",
+      "id": "SHIPTO.MAILADDRESS.COUNTRY",
+      "iscustom": "false",
+      "label": "Country",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Primary email address",
+      "id": "SHIPTO.EMAIL1",
+      "iscustom": "false",
+      "label": "Ship-to contact: Email 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Secondary email address",
+      "id": "SHIPTO.EMAIL2",
+      "iscustom": "false",
+      "label": "Ship-to contact: Email 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Bill-to contact name",
+      "id": "BILLTO.CONTACTNAME",
+      "iscustom": "false",
+      "label": "",
+      "readonly": "false",
+      "required": "true"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 1",
+      "id": "BILLTO.MAILADDRESS.ADDRESS1",
+      "iscustom": "false",
+      "label": "Address line 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 2",
+      "id": "BILLTO.MAILADDRESS.ADDRESS2",
+      "iscustom": "false",
+      "label": "Address line 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Address line 3",
+      "id": "BILLTO.MAILADDRESS.ADDRESS3",
+      "iscustom": "false",
+      "label": "Address line 3",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "City",
+      "id": "BILLTO.MAILADDRESS.CITY",
+      "iscustom": "false",
+      "label": "City",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "State or territory",
+      "id": "BILLTO.MAILADDRESS.STATE",
+      "iscustom": "false",
+      "label": "State or territory",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "ZIP or postal code",
+      "id": "BILLTO.MAILADDRESS.ZIP",
+      "iscustom": "false",
+      "label": "ZIP or postal code",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Country",
+      "id": "BILLTO.MAILADDRESS.COUNTRY",
+      "iscustom": "false",
+      "label": "Country",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Primary email address",
+      "id": "BILLTO.EMAIL1",
+      "iscustom": "false",
+      "label": "Bill-to contact: Email 1",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Secondary email address",
+      "id": "BILLTO.EMAIL2",
+      "iscustom": "false",
+      "label": "Bill-to contact: Email 2",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Document header number",
+      "id": "DOCHDRNO",
+      "iscustom": "false",
+      "label": "Document header number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "BASECURR",
+      "iscustom": "false",
+      "label": "Base currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Defaulting currency",
+      "id": "CURRENCY",
+      "iscustom": "false",
+      "label": "Currency",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DATE",
+      "description": "No description specified",
+      "id": "EXCHRATEDATE",
+      "iscustom": "false",
+      "label": "Exchange rate date",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "EXCHRATETYPES.NAME",
+      "iscustom": "false",
+      "label": "Exchange rate type",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "DECIMAL",
+      "description": "No description specified",
+      "id": "EXCHRATE",
+      "iscustom": "false",
+      "label": "Exchange rate",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Transaction subtotal",
+      "id": "TRX_SUBTOTAL",
+      "iscustom": "false",
+      "label": "Transaction subtotal",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Transaction total",
+      "id": "TRX_TOTAL",
+      "iscustom": "false",
+      "label": "Transaction total",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "Visible document status",
+      "id": "DOCSTATUS",
+      "iscustom": "false",
+      "label": "Status",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Active",
+        "Inactive",
+        "Ended"
+      ]
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Tax solution",
+      "id": "TAXSOLUTIONID",
+      "iscustom": "false",
+      "label": "Tax solution",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Audit timestamp when record was created.",
+      "id": "AUWHENCREATED",
+      "iscustom": "false",
+      "label": "Audit when created",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TIMESTAMP",
+      "description": "Timestamp marking last time this was changed.",
+      "id": "WHENMODIFIED",
+      "iscustom": "false",
+      "label": "When modified",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who created this.",
+      "id": "CREATEDBY",
+      "iscustom": "false",
+      "label": "Created by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "User who modified this.",
+      "id": "MODIFIEDBY",
+      "iscustom": "false",
+      "label": "Modified by",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "PAYMETHOD",
+      "iscustom": "false",
+      "label": "Payment method",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": []
+    },
+    {
+      "datatype": "BOOLEAN",
+      "description": "No description specified",
+      "id": "PAYINFULL",
+      "iscustom": "false",
+      "label": "Pay in full",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "datatype": "CURRENCY",
+      "description": "Payment amount",
+      "id": "PAYMENTAMOUNT",
+      "iscustom": "false",
+      "label": "Payment amount",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERCREDITCARDKEY",
+      "iscustom": "false",
+      "label": "Credit card",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "CUSTOMERBANKACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Customer bank account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "CREDITCARDTYPE",
+      "iscustom": "false",
+      "label": "Card type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": []
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "ACCOUNTTYPE",
+      "iscustom": "false",
+      "label": "Account type",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": [
+        "Bank",
+        "Undeposited Funds Account"
+      ]
+    },
+    {
+      "datatype": "ENUM",
+      "description": "No description specified",
+      "id": "BANKACCOUNTID",
+      "iscustom": "false",
+      "label": "Bank account",
+      "readonly": "false",
+      "required": "false",
+      "valid_values": []
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "GLACCOUNTKEY",
+      "iscustom": "false",
+      "label": "Undeposited funds account",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "Project key",
+      "id": "PROJECTKEY",
+      "iscustom": "false",
+      "label": "Project key",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "PROJECT",
+      "iscustom": "false",
+      "label": "Project",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Project name",
+      "id": "PROJECTNAME",
+      "iscustom": "false",
+      "label": "Project name",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "Customer PO number",
+      "id": "CUSTOMERPONUMBER",
+      "iscustom": "false",
+      "label": "Customer PO number",
+      "readonly": "false",
+      "required": "false"
+    },
+    {
+      "datatype": "INTEGER",
+      "description": "No description specified",
+      "id": "MEGAENTITYKEY",
+      "iscustom": "false",
+      "label": "Created at - Entity key",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYID",
+      "iscustom": "false",
+      "label": "Created at - Entity ID",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "No description specified",
+      "id": "MEGAENTITYNAME",
+      "iscustom": "false",
+      "label": "Created at - Entity name",
+      "readonly": "true",
+      "required": "false"
+    },
+    {
+      "datatype": "TEXT",
+      "description": "A portable, user-independent, deep-link URL for viewing this record",
+      "id": "RECORD_URL",
+      "iscustom": "false",
+      "label": "Record URL",
+      "readonly": "true",
+      "required": "false"
+    }
+  ],
+  "object_name": "SORECURDOCUMENT",
+  "relationships": [
+    {
+      "label": "",
+      "objectname": "ARRECURPAYMENT",
+      "objectpath": "ARRECURPAYMENT",
+      "relatedby": "RECURPAYMENTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "ARTERM",
+      "objectpath": "TERM",
+      "relatedby": "TERM.NAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Bill-to contact",
+      "objectname": "CONTACT",
+      "objectpath": "BILLTO",
+      "relatedby": "BILLTOCONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Ship-to contact",
+      "objectname": "CONTACT",
+      "objectpath": "SHIPTO",
+      "relatedby": "SHIPTOCONTACTNAME",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "",
+      "objectname": "SCHEDULEDOPERATION",
+      "objectpath": "SCHEDULEDOPERATION",
+      "relatedby": "SCHOPKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Project",
+      "objectname": "PROJECT",
+      "objectpath": "PROJECT",
+      "relatedby": "PROJECTKEY",
+      "relationshiptype": "MANY2ONE"
+    },
+    {
+      "label": "Created at entity information",
+      "objectname": "LOCATION",
+      "objectpath": "MELOCATION",
+      "relatedby": "MEGAENTITYID",
+      "relationshiptype": "MANY2ONE"
+    }
+  ]
+}
