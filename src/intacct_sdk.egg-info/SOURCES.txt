@@ -9,10 +9,15 @@ src/intacct_sdk/client.py
 src/intacct_sdk/config.py
 src/intacct_sdk/errors.py
 src/intacct_sdk/models.py
+src/intacct_sdk/object_services_base.py
+src/intacct_sdk/object_services_generated.py
 src/intacct_sdk/operations_generated.py
 src/intacct_sdk/parsing.py
 src/intacct_sdk/sanitize.py
 src/intacct_sdk/transport.py
+src/intacct_sdk/typed_models.py
+src/intacct_sdk/typed_models_base.py
+src/intacct_sdk/typed_models_generated.py
 src/intacct_sdk/xml.py
 src/intacct_sdk.egg-info/PKG-INFO
 src/intacct_sdk.egg-info/SOURCES.txt
